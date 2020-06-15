@@ -243,7 +243,7 @@ label[for] {
 }
 
 .border-red {
-    border:3px solid red;
+    border: 3px solid red;
 }
 
 /* 라이브러리 - flex */
@@ -275,6 +275,10 @@ label[for] {
     align-items: center;
 }
 
+*>.flex-as-c {
+    align-self: center;
+}
+
 *>.flex-row-nowrap {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -292,63 +296,187 @@ label[for] {
     flex: 1 0 0;
 }
 
+/* 공통 CSS */
+@media (max-width:799px) {
+    .visible-md-up {
+        display: none;
+    }
+}
+
+@media (min-width:800px) {
+    .visible-sm-down {
+        display: none;
+    }
+}
+
+.btn-toggle-mobile-side-bar {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.btn-toggle-mobile-side-bar>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    transition: top .3s .3s, transform .3s, opacity .2s .3s;
+}
+
+.btn-toggle-mobile-side-bar>div:nth-child(2) {
+    top: 40%;
+}
+
+.btn-toggle-mobile-side-bar>div:nth-child(3) {
+    top: 80%;
+}
+
+.btn-toggle-mobile-side-bar.active>div {
+    top: 40%;
+    transition: top .3s, transform .3s .3s, opacity .2s 0s;
+}
+
+.btn-toggle-mobile-side-bar.active>div:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.btn-toggle-mobile-side-bar.active>div:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.btn-toggle-mobile-side-bar.active>div:nth-child(2) {
+    opacity: 0;
+}
+
 /* 커스텀 */
+@media (max-width:799px) {
+    body {
+        padding-top:50px;
+    }
+}
+
 .con {
     max-width: 800px;
 }
 
 /* 탑바 시작 */
 .top-bar {
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
     height: 100px;
 }
-.top-bar .logo {
-    padding:0 50px;
-    font-size:2rem;
+
+.top-bar > .logo-box > a {
+    padding: 0 50px;
+    font-size: 2rem;
+    color: white;
+    
 }
 
-.top-bar .menu-box-1 > ul > li {
+.top-bar .menu-box-1>ul>li {
     position: relative;
 }
 
-.top-bar .menu-box-1 ul > li > a {
+.top-bar .menu-box-1 ul>li>a {
     font-weight: bold;
 }
 
-.top-bar .menu-box-1 > ul > li:hover > a {
-    background-color:white;
-    color:black;
-    font-weight: bold;
+.top-bar .menu-box-1>ul>li:hover>a {
+    background-color: white;
+    color: black;
     text-decoration: underline;
 }
-/* 탑바 끝 */ 
 
-.top-bar .menu-box-1 > ul ul {
+.top-bar .menu-box-1>ul ul {
     display: none;
     position: absolute;
-    top:100%;
-    left:-2px;
-    width:100%;
-    background-color:white;
-    color:black;
-    border:2px solid black;
-    border-top:0;
+    top: 100%;
+    left: -2px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-top: 0;
 }
 
-.top-bar .menu-box-1 > ul > li:hover > ul {
-    display:block;
+.top-bar .menu-box-1>ul>li:hover>ul {
+    display: block;
 }
 
-.top-bar .menu-box-1 > ul ul > li > a {
+.top-bar .menu-box-1>ul ul>li>a {
     display: block;
     text-align: center;
-    padding:20px 0;
+    padding: 20px 0;
 }
 
-.top-bar .menu-box-1 > ul ul > li:hover > a {
-    background-color:black;
-    color:white;
+.top-bar .menu-box-1>ul ul>li:hover>a {
+    background-color: black;
+    color: white;
+    font-weight: bold;
 }
 
 /* 탑바 끝 */
+
+/* 모바일 탑바 시작 */
+.mobile-top-bar {
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.mobile-top-bar .btn-toggle-mobile-side-bar {
+    margin:0 10px;
+}
+
+/* 모바일 탑바 끝 */
+
+/* 모바일 사이드 바 시작 */
+.mobile-side-bar {
+    position: fixed;
+    top:50px;
+    left:-300px;
+    width:300px;
+    bottom:0;
+    background-color: black;
+    transition: left .3s;
+}
+
+.mobile-side-bar.active {
+    left:0;
+}
+
+.mobile-side-bar > .menu-box-2 > ul > li > a {
+    display: block;
+    padding : 30px;
+    color :white;
+
+}
+
+.mobile-side-bar > .menu-box-2 > ul > li:hover > a {
+    background-color:white;
+    color :black;
+    text-decoration: underline;
+}
+
+/* 모바일 사이드 바 끝 */
+
+.mobile-side-bar-bg{
+    position : fixed;
+    top:50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color :rgba(0,0,0,0);
+    visibility : hidden;
+    transition : background-color 0.3s;
+}
+
+.mobile-side-bar-bg.active{
+    visibility: visible;
+    background-color :rgba(0,0,0,0.7);
+}
