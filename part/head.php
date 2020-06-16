@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블로그</title>
+    <title>이지윤 블로그</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="/resource/common.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,12 +20,48 @@
     </div>
     <div class="mobile-side-bar-bg"></div> 
     <div class="mobile-side-bar">
-        <div class="menu-box-2"><ul>
-            <li><a href="#"><i class="fas fa-globe"></i> &nbsp&nbsp myPlan</a></li>
-            <li><a href="#"><i class="fas fa-republican"></i> &nbsp&nbsp myPlace</a></li>
-            <li><a href="#"><i class="fas fa-user-friends"></i> &nbsp&nbsp myPerson</a></li>
-            <li><a href="#"><i class="fas fa-icons"></i> &nbsp&nbsp myPart</a></li>
-        </ul></div>
+        <div class="menu-box-2">
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-globe"></i> &nbsp&nbsp myPlan</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-republican"></i> &nbsp&nbsp myPlace</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-icons"></i> &nbsp&nbsp myPart</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user-friends"></i> &nbsp&nbsp myPerson</a>
+                    <ul>
+                        <li>
+                            <a href="#" >
+                                GITHUB
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                FACEBOOK
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                INSTA
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">내용</a>
+                                </li>
+                                <li>
+                                    <a href="#">내용</a>
+                                </li>   
+                            </ul>  
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="top-bar visible-md-up">
