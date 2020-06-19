@@ -371,17 +371,20 @@ label[for] {
 
 /* 탑바 시작 */
 .top-bar {
-    background-color: black;
+    background-color: lightcoral;
     color: white;
     height: 100px;
 }
 
-.top-bar > .logo-box > a {
+.top-bar > .logo-box > a  {
     padding: 0 50px;
     font-size: 2rem;
     color: white;
-    
 }
+
+.top-bar > .logo-box > a >img {
+    height: 60px;
+ }
 
 .top-bar .menu-box-1>ul>li {
     position: relative;
@@ -430,11 +433,12 @@ label[for] {
 /* 모바일 탑바 시작 */
 .mobile-top-bar {
     height: 50px;
-    background-color: black;
+    background-color: lightcoral;
     position: fixed;
     top:0;
     left:0;
     width:100%;
+    z-index: 10px;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
@@ -450,8 +454,9 @@ label[for] {
     left:-300px;
     width:300px;
     bottom:0;
-    background-color:black;
+    background-color: lightcoral;
     transition: left .3s;
+    z-index: 10;
 }
 
 .mobile-side-bar.active {
@@ -490,10 +495,6 @@ label[for] {
 }
 
 
-
-
-
-
 /* 모바일 사이드 바 끝 */
 
 .mobile-side-bar-bg{
@@ -505,9 +506,70 @@ label[for] {
     background-color :rgba(0,0,0,0);
     visibility : hidden;
     transition : background-color 0.3s;
+    z-index: 10;
 }
 
 .mobile-side-bar-bg.active{
     visibility: visible;
     background-color :rgba(0,0,0,0.7);
+}
+
+html, body {
+    height:100%;
+}
+
+.sbs-slider {
+    height:50%;
+    position:relative;
+    user-select:none;
+}
+
+.sbs-slider .side-bars > div {
+    position:absolute;
+    top:0;
+    left:0;
+    /* ie 9 이상에서만 사용 가능 */
+    width:calc(50% - 100px);
+    height:100%;
+    cursor:pointer;
+}
+
+.sbs-slider .side-bars > div:last-child {
+    left:auto;
+    right:0;
+}
+
+.sbs-slider .side-bars > div > span {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:inherit;
+    right:inherit;
+    font-size:5rem;
+    transition: transform 0.2s;
+    margin:0 10px;
+}
+
+.sbs-slider .side-bars > div:active > span {
+    transform:translateY(-40%);
+}
+
+.sbs-slider > .slides > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* 완전투명하게 만든다. */
+    opacity:0;
+    transition:opacity 0.5s;
+    background-repeat:no-repeat;
+    background-position:center;
+    /* cover => 만약에 배경이미지가 엘리먼트 보다 더 작다면 배경이미지를 확대시켜서 덮는다. */
+    background-size:cover;
+    /* contain => 만약에 배경이미지가 엘리먼트 보다 더 작다면 배경이미지를 확대시켜서 덮는다. 단 이미지가 짤리지 않는 범위에서 작업한다. */
+}
+
+.sbs-slider > .slides > div.active {
+    opacity:1;
 }
