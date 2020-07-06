@@ -1,11 +1,13 @@
 /* 폰트적용 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
     font-family: "Noto Sans KR", sans-serif;
 }
 
+
 /* 노말라이즈 */
+
 body,
 ul,
 li,
@@ -25,7 +27,9 @@ label[for] {
     user-select: none;
 }
 
+
 /* 라이브러리 */
+
 .block {
     display: block;
 }
@@ -246,7 +250,21 @@ label[for] {
     border: 3px solid red;
 }
 
+.border-blue {
+    border: 3px solid blue;
+}
+
+.border-green {
+    border: 3px solid green;
+}
+
+.border-gold {
+    border: 3px solid gold;
+}
+
+
 /* 라이브러리 - flex */
+
 *>.flex {
     display: flex;
 }
@@ -296,7 +314,9 @@ label[for] {
     flex: 1 0 0;
 }
 
+
 /* 공통 CSS */
+
 @media (max-width:799px) {
     .visible-md-up {
         display: none;
@@ -350,16 +370,18 @@ label[for] {
     opacity: 0;
 }
 
+
 /* 커스텀 */
+
 @media (max-width:799px) {
     body {
-        padding-top:50px;
+        padding-top: 50px;
     }
 }
 
 @media (max-width:799px) {
     body {
-        html.mobile-side-bar-actived{
+        html.mobile-side-bar-actived {
             overflow-y: hidden;
         }
     }
@@ -369,35 +391,37 @@ label[for] {
     max-width: 800px;
 }
 
+
 /* 탑바 시작 */
+
 .top-bar {
-    background-color: lightcoral;
-    color: white;
-    height: 100px;
+    background-color: rgb(51, 51, 51);
+    color: whitesmoke;
+    height: 80px;
 }
 
-.top-bar > .logo-box > a  {
+.top-bar>.logo-box>a {
     padding: 0 50px;
     font-size: 2rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.top-bar > .logo-box > a >img {
+.top-bar>.logo-box>a>img {
     height: 60px;
- }
+}
 
 .top-bar .menu-box-1>ul>li {
     position: relative;
 }
 
-.top-bar .menu-box-1 ul>li>a {
+.top-bar .menu-box-1 ul>li> a {
     font-weight: bold;
+    padding : 0 50px;
 }
 
 .top-bar .menu-box-1>ul>li:hover>a {
     background-color: white;
     color: black;
-    text-decoration: underline;
 }
 
 .top-bar .menu-box-1>ul ul {
@@ -419,7 +443,7 @@ label[for] {
 .top-bar .menu-box-1>ul ul>li>a {
     display: block;
     text-align: center;
-    padding: 20px 0;
+    padding: 50px;
 }
 
 .top-bar .menu-box-1>ul ul>li:hover>a {
@@ -428,148 +452,161 @@ label[for] {
     font-weight: bold;
 }
 
+
 /* 탑바 끝 */
 
+
 /* 모바일 탑바 시작 */
+
 .mobile-top-bar {
     height: 50px;
-    background-color: lightcoral;
+    background-color: black;
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10px;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
-    margin:0 10px;
+    margin: 0 10px;
 }
+
 
 /* 모바일 탑바 끝 */
 
+
 /* 모바일 사이드 바 시작 */
+
 .mobile-side-bar {
     position: fixed;
-    top:50px;
-    left:-300px;
-    width:300px;
-    bottom:0;
-    background-color: lightcoral;
+    top: 50px;
+    left: -300px;
+    width: 300px;
+    bottom: 0;
+    background-color: black;
     transition: left .3s;
     z-index: 10;
 }
 
 .mobile-side-bar.active {
-    left:0;
+    left: 0;
 }
 
-.mobile-side-bar .menu-box-2 ul > li > a {
-    display:block;
+.mobile-side-bar .menu-box-2 ul>li>a {
+    display: block;
     font-weight: bold;
-    padding:15px;
+    padding: 15px;
     color: white;
 }
 
-.mobile-side-bar .menu-box-2 ul > li > a:not(:only-child)::after {
-    content:"[+]";
-    float:right;
+.mobile-side-bar .menu-box-2 ul>li>a:not(:only-child)::after {
+    content: "[+]";
+    float: right;
 }
 
-.mobile-side-bar .menu-box-2 ul > li.active > a:not(:only-child)::after {
-    content:"[-]";
+.mobile-side-bar .menu-box-2 ul>li.active>a:not(:only-child)::after {
+    content: "[-]";
 }
 
-.mobile-side-bar .menu-box-2 ul > li.active > a:not(:only-child) {
-    background-color:white;
-    color:black;
+.mobile-side-bar .menu-box-2 ul>li.active>a:not(:only-child) {
+    background-color: white;
+    color: black;
 }
 
-.mobile-side-bar .menu-box-2 ul > li.active > ul {
+.mobile-side-bar .menu-box-2 ul>li.active>ul {
     display: block;
 }
 
-.mobile-side-bar .menu-box-2 > ul ul {
-    display:none;
-    padding-left :20px;
-
+.mobile-side-bar .menu-box-2>ul ul {
+    display: none;
+    padding-left: 20px;
 }
 
 
 /* 모바일 사이드 바 끝 */
 
-.mobile-side-bar-bg{
-    position : fixed;
-    top:50px;
+.mobile-side-bar-bg {
+    position: fixed;
+    top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color :rgba(0,0,0,0);
-    visibility : hidden;
-    transition : background-color 0.3s;
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    transition: background-color 0.3s;
     z-index: 10;
 }
 
-.mobile-side-bar-bg.active{
+.mobile-side-bar-bg.active {
     visibility: visible;
-    background-color :rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-html, body {
-    height:100%;
+html,
+body {
+    height: 100%;
 }
 
 .sbs-slider {
-    height:50%;
-    position:relative;
-    user-select:none;
+    height: 100%;
+    position: relative;
+    user-select: none;
 }
 
-.sbs-slider .side-bars > div {
-    position:absolute;
-    top:0;
-    left:0;
+.sbs-slider .side-bars>div {
+    position: absolute;
+    top: 0;
+    left: 0;
     /* ie 9 이상에서만 사용 가능 */
-    width:calc(50% - 100px);
-    height:100%;
-    cursor:pointer;
+    width: calc(50% - 100px);
+    height: 100%;
+    cursor: pointer;
 }
 
-.sbs-slider .side-bars > div:last-child {
-    left:auto;
-    right:0;
+.sbs-slider .side-bars>div:last-child {
+    left: auto;
+    right: 0;
 }
 
-.sbs-slider .side-bars > div > span {
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    left:inherit;
-    right:inherit;
-    font-size:5rem;
+.sbs-slider .side-bars>div>span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: inherit;
+    right: inherit;
+    font-size: 5rem;
     transition: transform 0.2s;
-    margin:0 10px;
+    margin: 0 10px;
+    color: white;
 }
 
-.sbs-slider .side-bars > div:active > span {
-    transform:translateY(-40%);
+.sbs-slider .side-bars>div:active>span {
+    transform: translateY(-40%);
 }
 
-.sbs-slider > .slides > div {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.sbs-slider>.slides>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     /* 완전투명하게 만든다. */
-    opacity:0;
-    transition:opacity 0.5s;
-    background-repeat:no-repeat;
-    background-position:center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
     /* cover => 만약에 배경이미지가 엘리먼트 보다 더 작다면 배경이미지를 확대시켜서 덮는다. */
-    background-size:cover;
+    background-size: cover;
     /* contain => 만약에 배경이미지가 엘리먼트 보다 더 작다면 배경이미지를 확대시켜서 덮는다. 단 이미지가 짤리지 않는 범위에서 작업한다. */
 }
 
-.sbs-slider > .slides > div.active {
-    opacity:1;
+.sbs-slider>.slides>div.active {
+    opacity: 1;
+}
+
+/* main 2age 시작 */
+
+.plan-box> .plan-img-box>div>img{
+    width : 300px;
 }

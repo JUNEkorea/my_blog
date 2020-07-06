@@ -47,12 +47,12 @@
                         </li>
                         <li>
                             <a href="#">
-                                FACEBOOK
+                               Youtube
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                INSTA
+                                Blogtistory
                             </a>
                             <ul>
                                 <li>
@@ -71,34 +71,35 @@
     </div>
 
     <div class="top-bar visible-md-up">
-        <div class="logo-box con height-100p flex">
-            <a href="/" class="logo flex flex-ai-c"><img src="/resource/img/leaf2.png" alt=""></a>
+        <div class="logo-box  height-100p flex style =" background-color : grey;">
+            <a href="/" class="logo flex flex-ai-c"><img src="/resource/img/wing4.png" alt=""></a>
 
             <nav class="menu-box-1 flex flex-1-0-0">
-                <ul class="flex flex-1-0-0">
-                    <li class="flex-1-0-0 flex"><a href="/" class="flex flex-1-0-0 flex-ai-c flex-jc-c">MyPlan</a></li>
-                    <li class="flex-1-0-0 flex"><a href="/list.php"
+                <ul class="flex flex-jc-end  flex-1-0-0 ">
+                    <li class=" flex"><a href="/" class="flex flex-1-0-0 flex-ai-c flex-jc-c">MyPlan</a></li>
+                    <li class=" flex"><a href="/list.php"
                             class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPlace</a>
                     </li>
-                    <li class="flex-1-0-0 flex"><a href="/aboutMe.php"
+                    <li class=" flex"><a href="/aboutMe.php"
                             class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPart</a>
                     </li>
-                    <li class="flex-1-0-0 flex">
+                    <li class=" flex">
                         <a href="#" class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPeople</a>
                         <ul>
                             <li>
-                                <a href="https://github.com/jhs512" target="_blank">
+                                <a href="https://github.com/JUNEkorea" target="_blank">
                                     GITHUB
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/jhs512" target="_blank">
-                                    FACEBOOK
+                                <a href="https://www.youtube.com/channel/UCBTWaHNycs3pqXgt5v3nGGQ?view_as=subscriber" target="_blank">
+                                    
+                                YouTube
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/jhs512" target="_blank">
-                                    INSTA
+                                <a href="https://junnykorea.tistory.com/" target="_blank">
+                                    BlogTistory
                                 </a>
                             </li>
                         </ul>
@@ -108,32 +109,4 @@
         </div>
     </div>
 
-    <div class="sbs-slider">
-        <div class="slides">
-            <div style="background-image:url(https://cdn.pixabay.com/photo/2020/06/15/15/43/couple-5302344_960_720.jpg);"
-                class="active"></div>
-            <div
-                style="background-image:url(https://cdn.pixabay.com/photo/2014/02/07/11/36/couple-260899_960_720.jpg);">
-            </div>
-            <div
-                style="background-size:contain; background-image:url(https://cdn.pixabay.com/photo/2016/10/06/05/19/engagement-1718244_960_720.jpg);">
-            </div>
-            <div
-                style="background-size:contain; background-image:url(https://cdn.pixabay.com/photo/2015/11/07/11/01/couple-1030744_960_720.jpg);">
-            </div>
-            <div
-                style="background-size:contain; background-image:url(https://cdn.pixabay.com/photo/2015/03/30/20/33/heart-700141_960_720.jpg);">
-            </div>
-        </div>
-
-        <div class="side-bars">
-            <div>
-                <span>
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </span>
-            </div>
-            <div>
-                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-            </div>
-        </div>
-    </div>
+   
