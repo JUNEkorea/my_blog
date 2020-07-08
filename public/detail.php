@@ -3,6 +3,9 @@ include "../part/head.php";
 ?>
 <?php
 $conn = mysqli_connect("site14.blog.oa.gg", "site14", "sbs123414", "site14", 3306);
+
+mysqli_query($conn, "SET NAMES utf8mb4");
+
 $id = $_GET['id'];
 $sql = "
 SELECT *
@@ -51,9 +54,7 @@ $row = mysqli_fetch_assoc($rs);
 <div class="con">
     작성자 : 이지윤
 </div>
-<div class="con" style="display:none;" id="origin1">
-<?=$row['body']?>
-</div>
+<script type="text/x-template" style="display:none;" id="origin1"><?=$row['body']?></script>
 <div class="con" id="viewer1">
     
 </div>
@@ -62,10 +63,9 @@ $row = mysqli_fetch_assoc($rs);
 var editor1__initialValue = $('#origin1').html();
 var editor1 = new toastui.Editor({
   el: document.querySelector('#viewer1'),
-  height: '600px',
   initialValue: editor1__initialValue,
   viewer:true,
-  plugins: [toastui.Editor.plugin.codeSyntaxHighlight]
+  plugins: [toastui.Editor.plugin.codeSyntaxHighlight, youtubePlugin, replPlugin, codepenPlugin]
 });
 </script>
 
