@@ -12,8 +12,7 @@
 <body>
     <div class="top-bar-box">
         <div class="top-bar flex con">
-            <div class="logo flex-ai-c"><a href="#"><img src="http://www.kocom-align.com/thema/Align/logo-top.png"
-                        alt=""></a>
+            <div class="logo flex-ai-c"><a href="#"><img src="http://www.kocom-align.com/thema/Align/logo-top.png" alt=""></a>
             </div>
             <nav class="menu-box-1 flex ">
                 <ul class="flex flex-ai-c">

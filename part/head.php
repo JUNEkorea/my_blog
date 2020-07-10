@@ -35,7 +35,7 @@
                     <a href="#"><i class="fas fa-republican"></i> &nbsp&nbsp myPlace</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-icons"></i> &nbsp&nbsp myPart</a>
+                    <a href="/portfolio"><i class="fas fa-icons"></i> &nbsp&nbsp myPart</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-user-friends"></i> &nbsp&nbsp myPerson</a>
@@ -77,11 +77,10 @@
             <nav class="menu-box-1 flex flex-1-0-0">
                 <ul class="flex flex-jc-end  flex-1-0-0 ">
                     <li class=" flex"><a href="/" class="flex flex-1-0-0 flex-ai-c flex-jc-c">MyPlan</a></li>
-                    <li class=" flex"><a href="/list.php"
-                            class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPlace</a>
+                    <li class=" flex"><a href="/list.php" class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPlace</a>
                     </li>
-                    <li class=" flex"><a href="/aboutMe.php"
-                            class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPart</a>
+                    <li class=" flex">
+                        <a href="/portfolio" class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPart</a>
                     </li>
                     <li class=" flex">
                         <a href="#" class="flex flex-1-0-0 flex-ai-c flex-jc-c">myPeople</a>
@@ -93,8 +92,7 @@
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UCBTWaHNycs3pqXgt5v3nGGQ?view_as=subscriber" target="_blank">
-                                    
-                                YouTube
+                                    YouTube
                                 </a>
                             </li>
                             <li>

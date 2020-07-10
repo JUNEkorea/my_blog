@@ -310,133 +310,53 @@ label[for] {
   justify-content: flex-end;
 }
 
-/* 커스텀 */
+
 /* 커스텀 */
 .con {
-  max-width: 1500px;
+  max-width: 1240px;
 }
 
 /* 탑바시작 */
-.top-bar-box {
-  /* background-color: greenyellow; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
+body{
+    background-color: blue;
 }
 
-
-.top-bar {
-  height: 100px;
-  border: 1px solid red;
+.top-bar{
+    border: 1px solid red;
+    height: 100px;
 }
 
-.logo {
-  border: 1px solid green;
-  /* width:250px;
-    height:80px; */
-
-  margin: 0 auto;
+.top-bar > .logo {
+    border: 1px solid gold;
 }
 
-div>a>img {
-  width: 125px;
-
+.top-bar > .logo> h1 > a {
+    font-size : 20px;
+    font-weight : 600;
+    color : white;
 }
 
-.menu-box-1 {
-  border: 1px solid blue;
-  margin: 0 100px;
+.top-bar > .logo  > h1 > a > span {
+    font-size: 14px;
+    color :white;
 }
 
-.top-bar>.menu-box-1>ul>li>a {
+.top-bar > nav {
+    border : 1px solid green;
+    width : 100%; /*nav 자체가 같은 너비가 좁기때문에 왼쪽 끝으로 이동하기 어려우므로 100%로 만든다. */
+
+}
+.top-bar > nav > ul{
+    border : 1px solid green;
+}
+
+.top-bar > nav > ul > li {
+    border : 1px solid white;
+}
+
+.top-bar > nav > ul > li > a{
   display: block;
-  padding: 0 30px;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
+  font-size: 16px;
+  padding : 0 30px;
+  color : white;
 }
-
-.top-bar>.menu-box-1>ul>li:hover>a {
-  color: red;
-}
-
-/* 탑바끝 */
-
-.page-1 {
-  height: 826px;
-  background-image: url(http://www.kocom-align.com/images/main_20190214_1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* 문구 -코콤이 만든 프리미엄 브랜드입니다.  */
-.page-1>.copy-1 {
-  border: 1px solid red;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  font-size: 24px;
-  color: white;
-  font-weight: 200;
-  z-index: 1;
-}
-
-/* 오른쪽 사이드 바 시작 */
-.side-right-menu {
-  border: 1px solid blue;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  color: white;
-  z-index: 3;
-}
-
-.side-right-menu>ul {
-  border: 1px solid gold;
-  padding: 10px;
-
-
-}
-
-.side-right-menu>ul>li {
-  border: 1px solid green;
-  /* line-height: 20px;   */
-}
-
-.side-right-menu>ul>li>a {
-  opacity: 0.5;
-  display: block;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  padding-left: 70px;
-  position: relative;
- 
-}
-
-.side-right-menu>ul>li:first-child>a::before,.side-right-menu>ul>li:hover>a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 3px;
-  transform: translateY(-50%);
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: white;
-
-}
-
-.side-right-menu>ul>li:hover>a, .side-right-menu>ul>li:first-child>a {
-  font-weight: 600;
-  opacity: 0.5;
-}
-
-
-
-/* 오른쪽 사이드 바 끝 */
