@@ -292,8 +292,8 @@
     <!-- box-3  -->
     <div class="box-3 con">
         <div class="row">
-            <div class="cell">
-                <div class="content">
+            <div class="cell"> <!-- 보도자료 -->
+                <div class="content"> <!-- 보도자료 -->
                     <div class="head head-type-1 row">
                         <div class="title cell">보도자료</div>
                         <div class="btn-more cell-right"></div>
@@ -328,35 +328,35 @@
                     </div>
                 </div>
             </div>
-            <div class="cell">
+            <div class="cell"> <!-- 공지사항 /입찰공고 탭키 -->
                 <div class="content">
                     <div class="head head-type-2 row">
                         <div class="active cell" data-tab-name ="box-1" data-tab-body-item-name ="1">공지사항</div>
                         <div class="cell"  data-tab-name ="box-1" data-tab-body-item-name ="2" >입찰공고</div>
                     </div>
-                    <div class="body body-type-2">
+                    <div class="body body-type-2"><!-- 글리스트들 -->
                         <div class="tab-box-list-1">
-                            <ul>
-                                <li class ="active" data-tab-name ="box-1" data-tab-body-item-name ="1">
+                            <ul class ="active" data-tab-name ="box-1" data-tab-body-item-name ="1">
+                                <li >
                                     <a href="#" class="block row" >
                                         <span class="title cell" > 2020년 「제3회 깨끗하고 아름다운 농촌마을 가꾸기 경진대회」 결과보고서 양식 안내
                                         </span>
                                         <span class="reg-date cell-right">2020.07.08</span>
                                     </a>
                                 </li>
-                                <li  data-tab-name ="box-1" data-tab-body-item-name ="1">
+                                <li >
                                     <a href="#" class="block row">
                                         <span class="title cell">(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정결과 공고</span>
                                         <span class="reg-date cell-right">2020.06.25</span>
                                     </a>
                                 </li>
-                                <li  data-tab-name ="box-1" data-tab-body-item-name ="1">
+                                <li>
                                     <a href="#" class="block row">
                                         <span class="title cell">(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정계획 공고</span>
                                         <span class="reg-date cell-right">2020.07.07</span>
                                     </a>
                                 </li>
-                                <li  data-tab-name ="box-1" data-tab-body-item-name ="1">
+                                <li>
                                     <a href="#" class="block row">
                                         <span class="title cell">2019년 한우자조금 결산서 공시</span>
                                         <span class="reg-date cell-right">2020.05.06</span>
@@ -365,27 +365,27 @@
                             </ul>
                         </div>
                         <div class="tab-box-list-2">
-                            <ul>
-                                <li data-tab-name ="box-1" data-tab-body-item-name ="2" >
+                            <ul data-tab-name ="box-1" data-tab-body-item-name ="2">
+                                <li>
                                     <a href="#" class="block row">
                                         <span class="title cell"> 「2020년 천연꿀 수입권 공매(5차)」및 인조꿀 배정
                                         </span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <li data-tab-name ="box-1" data-tab-body-item-name ="2" >
+                                <li >
                                     <a href="#" class="block row">
                                         <span class="title cell">『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <li data-tab-name ="box-1" data-tab-body-item-name ="2" >
+                                <li >
                                     <a href="#" class="block row">
                                         <span class="title cell">『(손해) 노후화 정보보호시스템 1차 교체(웹방화벽)』제한경쟁입찰 공고</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <li data-tab-name ="box-1" data-tab-body-item-name ="2" >
+                                <l >
                                     <a href="#" class="block row">
                                         <span class="title cell">『(손해)노후화 정보보호시스템 1차 교체(망연계솔루션)』 제한경쟁입찰</span>
                                         <span class="reg-date cell-right">2020.07.13</span>

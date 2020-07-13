@@ -1,623 +1,681 @@
 /* 폰트적용 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
-  font-family: "Noto Sans KR", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
+
 /* 노말라이즈 */
+
 body,
 ul,
 li,
 h1 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 label[for] {
-  cursor: pointer;
-  user-select: none;
+    cursor: pointer;
+    user-select: none;
 }
 
+
 /* 라이브러리 */
+
 .block {
-  display: block;
+    display: block;
 }
 
 .inline-block {
-  display: inline-block;
+    display: inline-block;
 }
 
 .absolute-left {
-  position: absolute;
-  left: 0;
+    position: absolute;
+    left: 0;
 }
 
 .absolute-right {
-  position: absolute;
-  right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .absolute-bottom {
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .absolute-top {
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 0;
 }
 
 .absolute-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .absolute-middle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .absolute-middle.absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .relative {
-  position: relative;
+    position: relative;
 }
 
 .cell {
-  float: left;
-  box-sizing: border-box;
+    float: left;
+    box-sizing: border-box;
 }
 
 .cell-right {
-  float: right;
-  box-sizing: border-box;
+    float: right;
+    box-sizing: border-box;
 }
 
 .row::after {
-  content: "";
-  display: block;
-  clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .clear-both {
-  clear: both;
+    clear: both;
 }
 
 .img-box>img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 .con {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .margin-0-auto {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-align-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-align-right {
-  text-align: right;
+    text-align: right;
 }
 
 .line-height-0 {
-  line-height: 0;
+    line-height: 0;
 }
 
 .line-height-0>* {
-  line-height: normal;
+    line-height: normal;
 }
 
 .width-30px {
-  width: 30px;
+    width: 30px;
 }
 
 .width-35px {
-  width: 35px;
+    width: 35px;
 }
 
 .width-40px {
-  width: 35px;
+    width: 35px;
 }
 
 .width-45px {
-  width: 35px;
+    width: 35px;
 }
 
 .width-50px {
-  width: 50px;
+    width: 50px;
 }
 
 .width-80px {
-  width: 80px;
+    width: 80px;
 }
 
 .width-100px {
-  width: 100px;
+    width: 100px;
 }
 
 .width-100p {
-  width: 100%;
+    width: 100%;
 }
 
 .width-60p {
-  width: 60%;
+    width: 60%;
 }
 
 .width-55p {
-  width: 55%;
+    width: 55%;
 }
 
 .width-50p {
-  width: 50%;
+    width: 50%;
 }
 
 .width-45p {
-  width: 45%;
+    width: 45%;
 }
 
 .width-40p {
-  width: 40%;
+    width: 40%;
 }
 
 .width-30p {
-  width: 30%;
+    width: 30%;
 }
 
 .width-35p {
-  width: 35%;
+    width: 35%;
 }
 
 .width-100p-except-30px {
-  width: calc(100% - 30px);
+    width: calc(100% - 30px);
 }
 
 .width-100p-except-35px {
-  width: calc(100% - 35px);
+    width: calc(100% - 35px);
 }
 
 .width-100p-except-40px {
-  width: calc(100% - 40px);
+    width: calc(100% - 40px);
 }
 
 .width-100p-except-50px {
-  width: calc(100% - 50px);
+    width: calc(100% - 50px);
 }
 
 .width-100p-except-80px {
-  width: calc(100% - 80px);
+    width: calc(100% - 80px);
 }
 
 .width-100p-except-100px {
-  width: calc(100% - 100px);
+    width: calc(100% - 100px);
 }
 
 .border-box {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .font-size-dot-8rem {
-  font-size: .8rem;
+    font-size: .8rem;
 }
 
 .table-row {
-  display: table;
+    display: table;
 }
 
 .table-row.row::after {
-  display: inline;
-  clear: non;
+    display: inline;
+    clear: non;
 }
 
 .table-row>.cell {
-  float: none;
-  display: table-cell;
+    float: none;
+    display: table-cell;
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .flex>.cell {
-  float: none;
+    float: none;
 }
 
 .ch-flex-1-0-auto>* {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
+
 /* 라이브러리 - flex */
+
 *>.flex {
-  display: flex;
+    display: flex;
 }
 
 *>.flex-column-nowrap {
-  display: flex;
-  flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 *>.flex-grow-1 {
-  flex-grow: 1;
+    flex-grow: 1;
 }
-
 
 *>.flex-jc-c {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-
 *>.flex-jc-end {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 *>.flex-ai-c {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 *>.flex-row-nowrap {
-  flex-direction: row;
-  flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 *>.flex-jt-sb {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 *>.flex-ch-basis-0 {
-  display: flex;
+    display: flex;
 }
 
 .flex-ch-basis-0>* {
-  flex-basis: 0;
+    flex-basis: 0;
 }
 
 *>.flex-as-c {
-  align-self: center;
+    align-self: center;
 }
 
 *>.flex-1-0-0 {
-  flex: 1 0 0;
+    flex: 1 0 0;
 }
 
 *>.flex-2-0-0 {
-  flex: 2 0 0;
+    flex: 2 0 0;
 }
 
 *>.flex-jc-e {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 
 /* 커스텀 */
 
 .con {
-  width:1140px;
+    width: 1140px;
 }
 
 .con-min-width {
-  min-width:1140px;
+    min-width: 1140px;
 }
+
+
 /* 탑바구현 */
+
 .top-box {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  background-color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
 }
 
 body {
-  padding-top:87px;
+    padding-top: 87px;
 }
+
+
 /* 탑바1 구현 */
+
 .top-box .top-bar-1 {
-  border-bottom:1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .top-box .top-bar-1 .btn-all-menu {
-  margin-left:5px;
+    margin-left: 5px;
 }
 
-.top-box .top-bar-1 .menu-box-1 > ul > li > a {
-  position:relative;
+.top-box .top-bar-1 .menu-box-1>ul>li>a {
+    position: relative;
 }
 
-.top-box .top-bar-1 .menu-box-1 > ul > li > a {
-  padding:0 10px;
+.top-box .top-bar-1 .menu-box-1>ul>li>a {
+    padding: 0 10px;
 }
 
-.top-box .top-bar-1 .menu-box-1 > ul > li:not(:first-child) > a::after {
-  content:"";
-  position:absolute;
-  top:50%;
-  left:0;
-  width:1px;
-  height:10px;
-  background-color:black;
+.top-box .top-bar-1 .menu-box-1>ul>li:not(:first-child)>a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: black;
 }
 
 .top-box .top-bar-1 .content-item {
-  line-height:40px;
+    line-height: 40px;
 }
 
-.top-box .top-bar-1 .content-item > * {
-  line-height:normal;
-  display:inline-block;
-  vertical-align:middle;
+.top-box .top-bar-1 .content-item>* {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+
 /*탑바 2 구현  */
+
 .top-box .top-bar-2 .logo {
-  margin-top:9px;
+    margin-top: 9px;
 }
 
-.top-box .top-bar-2 .menu-box-1 ul > li > a {
-  padding:10px;
-  display:block;
+.top-box .top-bar-2 .menu-box-1 ul>li>a {
+    padding: 10px;
+    display: block;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li > a {
-  font-size:18px;
+.top-box .top-bar-2 .menu-box-1>ul>li>a {
+    font-size: 18px;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li > a::after {
-  content:"";
-  display:inline-block;
-  width:10px;
-  height:6px;
-  background-image:url(https://www.nonghyup.com/images/common/arr_gnb_on.png);
-  margin-left:10px;
-  position:relative;
-  top:-2px;
-  visibility:hidden;
+.top-box .top-bar-2 .menu-box-1>ul>li>a::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-image: url(https://www.nonghyup.com/images/common/arr_gnb_on.png);
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+    visibility: hidden;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li:hover > a::after {
-  visibility:visible;
+.top-box .top-bar-2 .menu-box-1>ul>li:hover>a::after {
+    visibility: visible;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li:hover > a {
-  color:#0158b9;
+.top-box .top-bar-2 .menu-box-1>ul>li:hover>a {
+    color: #0158b9;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li > ul > li > a {
-  padding:3px 10px;
+.top-box .top-bar-2 .menu-box-1>ul>li>ul>li>a {
+    padding: 3px 10px;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li > ul > li:hover > a {
-  color:#005bac;
+.top-box .top-bar-2 .menu-box-1>ul>li>ul>li:hover>a {
+    color: #005bac;
 }
-
 
 .top-box .top-bar-2-line-1 {
-  position:absolute;
-  left:0;
-  right:0;
-  height:1px;
-  background-color:black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li {
-  min-width:140px;
+.top-box .top-bar-2 .menu-box-1>ul>li {
+    min-width: 140px;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul ul {
-  transition:height 0.3s;
-  height:0;
-  overflow:hidden;
-  position:relative;
+.top-box .top-bar-2 .menu-box-1>ul ul {
+    transition: height 0.3s;
+    height: 0;
+    overflow: hidden;
+    position: relative;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul ul::before {
-  content:"";
-  display:block;
-  height:3px;
-  background-color:#0158b9;
-  display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
+.top-box .top-bar-2 .menu-box-1>ul ul::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #0158b9;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li:hover > ul::before {
-  display:block;
+.top-box .top-bar-2 .menu-box-1>ul>li:hover>ul::before {
+    display: block;
 }
 
-.top-box .top-bar-2 .menu-box-1 > ul > li:hover > ul {
-  background-color:#f1f7f9;
+.top-box .top-bar-2 .menu-box-1>ul>li:hover>ul {
+    background-color: #f1f7f9;
 }
 
-.top-box .top-bar-2 .menu-box-1:hover > ul ul {
-  height:300px;
+.top-box .top-bar-2 .menu-box-1:hover>ul ul {
+    height: 300px;
 }
+
 
 /* 탑배너 시작 */
-.box-1{
-  height:381px;
-  background-image:url(https://www.nonghyup.com/images/main/img_main_visual.jpg);
-  background-repeat:norepeat;
-  background-size:cover;
-  background-position:center;
-  padding-top:30px;
+
+.box-1 {
+    height: 381px;
+    background-image: url(https://www.nonghyup.com/images/main/img_main_visual.jpg);
+    background-repeat: norepeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
 }
 
-.box-1 .text-box{
-  color:white;
+.box-1 .text-box {
+    color: white;
 }
+
 
 /* 탑배너 및 아이콘 메뉴 박스7개 가로나열  */
-.box-2{
-  background-color:#ebf3fc;
+
+.box-2 {
+    background-color: #ebf3fc;
 }
 
-.box-2 > .con > ul > li {
-  width:calc(100% / 7);
-
+.box-2>.con>ul>li {
+    width: calc(100% / 7);
 }
 
-.box-2 > .con > ul > li > a {
-  height :116px;
-  display:block;/* 화면을 꽉채우게 도와줌 */
-  position:relative; /* .img를 유령화해서  a에 가둬두므로   */
-/*     border :1px solid blue; */
- 
+.box-2>.con>ul>li>a {
+    height: 116px;
+    display: block;
+    /* 화면을 꽉채우게 도와줌 */
+    position: relative;
+    /* .img를 유령화해서  a에 가둬두므로   */
+    /*     border :1px solid blue; */
 }
 
-.box-2 > .con > ul > li > a > .img{
-/*     border :1px solid red; */
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%; /* 갇혀진 a에 이미지가 꽉 차도록 해준다.  */
-  height:100%;
-  background-position:center 15px; /* center에서 15px위로 이동 */
-  background-repeat:no-repeat;  
+.box-2>.con>ul>li>a>.img {
+    /*     border :1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 갇혀진 a에 이미지가 꽉 차도록 해준다.  */
+    height: 100%;
+    background-position: center 15px;
+    /* center에서 15px위로 이동 */
+    background-repeat: no-repeat;
 }
 
-.box-2 > .con > ul > li > a > .img > .on-img{
-  display:none; /* 평소에는 없다가  */
+.box-2>.con>ul>li>a>.img>.on-img {
+    display: none;
+    /* 평소에는 없다가  */
 }
 
-.box-2 > .con > ul > li:hover > a > .img > .on-img{
-  display:block; /* 짜잔 하고 나타난다.  */
+.box-2>.con>ul>li:hover>a>.img>.on-img {
+    display: block;
+    /* 짜잔 하고 나타난다.  */
 }
 
-.box-2 > .con > ul > li:hover > a > .img > .off-img{
-  display:none; /* 없어진다.*/
+.box-2>.con>ul>li:hover>a>.img>.off-img {
+    display: none;
+    /* 없어진다.*/
 }
 
-.box-2 > .con > ul > li:hover > a > .title-box > .title{
-  color:white;/* 글자도 바뀌게  */
+.box-2>.con>ul>li:hover>a>.title-box>.title {
+    color: white;
+    /* 글자도 바뀌게  */
 }
 
-.box-2 > .con > ul > li:hover > a {
-  background-color: #005bac; /* li랑 a가 크기가 같다. 이왕이면 li에 호버를  */
+.box-2>.con>ul>li:hover>a {
+    background-color: #005bac;
+    /* li랑 a가 크기가 같다. 이왕이면 li에 호버를  */
 }
 
-.box-2 > .con > ul > li > a > .title-box {
-  position:absolute;
-/*     background-color:red; */
-  bottom:24px;
-  left:0;
-  width:100%;
+.box-2>.con>ul>li>a>.title-box {
+    position: absolute;
+    /*     background-color:red; */
+    bottom: 24px;
+    left: 0;
+    width: 100%;
 }
 
-.box-2 > .con > ul > li > a > .title-box > .title {
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:0;
-  width:100%;   
-  text-align:center;
+.box-2>.con>ul>li>a>.title-box>.title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
+
+
 /* box-3 레이아웃박스 구현 */
 
-
-.box-3 > .row {
-  margin:0 -10px;/* 음수마진 */
+.box-3>.row {
+    margin: 0 -10px;
+    /* 음수마진 */
 }
 
-.box-3 > .row > .cell {
-  width: 33.3333%;
-  padding: 0 10px;/* 좌우 패딩 주고 음수 마진 주면 옆선 맞아짐. */
-  margin-top:20px;
-}
-.box-3 > .row > .cell:nth-child(3n+1){
-  clear:both;
+.box-3>.row>.cell {
+    width: 33.3333%;
+    padding: 0 10px;
+    /* 좌우 패딩 주고 음수 마진 주면 옆선 맞아짐. */
+    margin-top: 20px;
 }
 
-.box-3 > .row > .cell > .content {
-/*     background-color: red; */
-  height:100px;
+.box-3>.row>.cell:nth-child(3n+1) {
+    clear: both;
 }
 
-.box-3 > .row > .cell > .content >.head{
-/*     border: 1px solid green; */
+.box-3>.row>.cell>.content {
+    /*     background-color: red; */
+    height: 100px;
 }
+
+.box-3>.row>.cell>.content>.head {
+    /*     border: 1px solid green; */
+}
+
+
 /* 보도자료 */
-.box-3 > .row > .cell >.content >.head>.title{
-  font-size:22px;
-  font-weight:bold;
+
+.box-3>.row>.cell>.content>.head>.title {
+    font-size: 22px;
+    font-weight: bold;
 }
+
+
 /* + 더 보기 버튼. */
-.box-3 > .row > .cell > .content >.head>.btn-more{
-  width:19px;
-  height:19px;
-  background-image:url(https://www.nonghyup.com/images/main/btn_more.png);
-  margin-top:5px;
-  margin-right:5px;
-  cursor:pointer;
+
+.box-3>.row>.cell>.content>.head>.btn-more {
+    width: 19px;
+    height: 19px;
+    background-image: url(https://www.nonghyup.com/images/main/btn_more.png);
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 
 /* 보도자료 리스트 글들 */
-.box-3 > .row > .cell > .content >.body-type-1 > ul > li > a > .title {
-  white-space:nowrap;
-  width:calc(100% - 80px); /* -  띄어쓰기 중요.100% - 100px */
-  overflow:hidden;
-  text-overflow:ellipsis;  /* 말줄임표 */ 
+
+.box-3>.row>.cell>.content>.body-type-1>ul>li>a>.title {
+    white-space: nowrap;
+    width: calc(100% - 80px);
+    /* -  띄어쓰기 중요.100% - 100px */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 말줄임표 */
 }
 
-.box-3 > .row > .cell > .content >.body-type-1 > ul > li > a{
-  color:#434343;
-  font-size:14px;
+.box-3>.row>.cell>.content>.body-type-1>ul>li>a {
+    color: #434343;
+    font-size: 14px;
 }
 
-.box-3 > .row > .cell > .content >.body > ul > li > a:hover > .title{
-  color:#005BAC;
-  text-decoration:underline;
+.box-3>.row>.cell>.content>.body>ul>li>a:hover>.title {
+    color: #005BAC;
+    text-decoration: underline;
 }
+
+
 /* 보도자료 글리스트 박스 */
-.box-3 > .row > .cell > .content >.body-type-1 {
-   padding-top:20px;
-   border-top:1px solid #dfdfdf;
+
+.box-3>.row>.cell>.content>.body-type-1 {
+    padding-top: 20px;
+    border-top: 1px solid #dfdfdf;
 }
+
 
 /* 공지사항/입찰공고 박스 */
-.box-3 > .row > .cell > .content > .body-type-2 {
-  border: 1px solid red;
+
+.box-3>.row>.cell>.content>.body-type-2 {
+    /* border: 1px solid red; */
 }
 
-.box-3 > .row > .cell > .content > .body-type-2 >ul > li > a > .title{
-  white-space:nowrap;
-  width:calc(100% - 80px); 
-  overflow:hidden;
-  text-overflow:ellipsis; 
+.box-3>.row>.cell>.content>.body>ul>li>a>.title {
+    white-space: nowrap;
+    width: calc(100% - 80px);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.box-3 > .row > .cell > .content > .body-type-2> .tab-box-list-1 >ul > li > a {
-  color:#434343;
-  font-size:14px;
+.box-3>.row>.cell>.content>.body-type-2>.tab-box-list-1>ul>li>a {
+    color: #434343;
+    font-size: 14px;
 }
 
-.box-3 > .row > .cell > .content > * > .active{
-  outline : 1px solid green;
+.box-3>.row>.cell>.content>.head-type-2>div {
+    font-size: 16px;
+    border: 1px solid#dfdfdf;
+    /* 평소에 보이는 선상태 */
+    border-bottom-color: #005bac;
+    width: 50%;
+    text-align: center;
+    padding: 3.5px 0;
+    cursor: pointer;
 }
 
-.box-3 > .row > .cell > .content > * > * > * > .active {
-    outline : 1px solid goldenrod;
+.box-3>.row>.cell>.content>.head-type-2>div.active {
+    color: #005bac;
+    border-color: #697cbb;
+    background-color: #ecf4fc;
+    border-bottom-color: transparent;
 }
 
+.box-3>.row>.cell>.content>.body-type-2>div>top-box-list-1>ul.active {
+    display: block;
+}
+
+box-3>.row>.cell>.content>.body-type-2>div>top-box-list-2>ul {
+    display: none;
+}
