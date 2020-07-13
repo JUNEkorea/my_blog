@@ -203,7 +203,7 @@ function MobileSideBar__init() {
         e.stopPropagation();
     });
 }
-
+//꼭 써줘야 js누락안된다 .
 $(function() {
     MobileSideBar__init();
 });
