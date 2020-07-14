@@ -638,10 +638,6 @@ body {
 
 /* 공지사항/입찰공고 박스 */
 
-.box-3>.row>.cell>.content>.body-type-2 {
-    /* border: 1px solid red; */
-}
-
 .box-3>.row>.cell>.content>.body>ul>li>a>.title {
     white-space: nowrap;
     width: calc(100% - 80px);
@@ -672,10 +668,10 @@ body {
     border-bottom-color: transparent;
 }
 
-.box-3>.row>.cell>.content>.body-type-2>div>top-box-list-1>ul.active {
+.box-3>.row>.cell>.content>.body-type-2>div.active {
     display: block;
 }
 
-box-3>.row>.cell>.content>.body-type-2>div>top-box-list-2>ul {
+.box-3>.row>.cell>.content>.body-type-2>div {
     display: none;
 }
