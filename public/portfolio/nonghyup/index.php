@@ -1,4 +1,4 @@
-10 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>nonghyup</title>
-    <link rel="stylesheet" href="/portfolio/nonghyup/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 슬릭 슬라이더 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- 페이지용 -->
+    <link rel="stylesheet" href="/portfolio/nonghyup/index.css">
     <script src="/portfolio/nonghyup/index.js"></script>
 
 </head>
@@ -292,8 +303,10 @@
     <!-- box-3  -->
     <div class="box-3 con">
         <div class="row">
-            <div class="cell"> <!-- 보도자료 -->
-                <div class="content"> <!-- 보도자료 -->
+            <div class="cell">
+                <!-- 1. 보도자료 -->
+                <div class="content">
+                    <!-- 보도자료 -->
                     <div class="head head-type-1 row">
                         <div class="title cell">보도자료</div>
                         <div class="btn-more cell-right"></div>
@@ -302,25 +315,25 @@
                         <ul>
                             <li>
                                 <a href="#" class="block row">
-                                    <span class="title cell">농협,"국산 약용작물 소비촉진 행사" 개최!</span>
+                                    <span class="title cell"> &middot;농협,"국산 약용작물 소비촉진 행사" 개최!</span>
                                     <span class="reg-date cell-right">2020.07.09</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="block row">
-                                    <span class="title cell">농협, 임직원 대상 정보보호 캠페인 실시</span>
+                                    <span class="title cell"> &middot;농협, 임직원 대상 정보보호 캠페인 실시</span>
                                     <span class="reg-date cell-right">2020.07.08</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="block row">
-                                    <span class="title cell">NH농협무역,신선농산물극동 러시아로 첫수출!</span>
+                                    <span class="title cell"> &middot;NH농협무역,신선농산물극동 러시아로 첫수출!</span>
                                     <span class="reg-date cell-right">2020.07.07</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="block row">
-                                    <span class="title cell">농협경제지주,농축산물생산.유통혁신을위한 [올바른유통위원회] 3차정기회의개최</span>
+                                    <span class="title cell"> &middot;농협경제지주,농축산물생산.유통혁신을위한 [올바른유통위원회] 3차정기회의개최</span>
                                     <span class="reg-date cell-right">2020.07.07</span>
                                 </a>
                             </li>
@@ -328,66 +341,71 @@
                     </div>
                 </div>
             </div>
-            <div class="cell"> <!-- 공지사항 /입찰공고 탭키 -->
+            <div class="cell">
+                <!-- 2. 공지사항 /입찰공고 탭키 -->
                 <div class="content">
                     <div class="head head-type-2 row">
-                        <div class="active cell" data-tab-name ="box-1" data-tab-head-item-name="1">공지사항</div>
-                        <div class="cell"  data-tab-name ="box-1" data-tab-head-item-name="2" >입찰공고</div>
+                        <div class="active cell" data-tab-name="box-1" data-tab-head-item-name="1">공지사항</div>
+                        <div class="cell" data-tab-name="box-1" data-tab-head-item-name="2">입찰공고</div>
                     </div>
-                    <div class="body body-type-2"><!-- 글리스트들 -->
-                        <div class="tab-box-list-1 active" data-tab-name ="box-1" data-tab-body-item-name ="1">
+                    <div class="body body-type-2">
+                        <!-- 글리스트들 -->
+                        <div class="tab-box-list-1 active" data-tab-name="box-1" data-tab-body-item-name="1">
                             <ul>
-                                <li >
-                                    <a href="#" class="block row" >
-                                        <span class="title cell" > 2020년 「제3회 깨끗하고 아름다운 농촌마을 가꾸기 경진대회」 결과보고서 양식 안내
+                                <li>
+                                    <a href="#" class="block row">
+                                        <span class="title cell"> &middot;2020년 「제3회 깨끗하고 아름다운 농촌마을 가꾸기 경진대회」 결과보고서 양식
+                                            안내
                                         </span>
                                         <span class="reg-date cell-right">2020.07.08</span>
                                     </a>
                                 </li>
-                                <li >
+                                <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정결과 공고</span>
+                                        <span class="title cell"> &middot;(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정결과
+                                            공고</span>
                                         <span class="reg-date cell-right">2020.06.25</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정계획 공고</span>
+                                        <span class="title cell"> &middot;(2020년 3사분기) 농협중앙회 상호금융 국내주식 거래증권사 선정계획
+                                            공고</span>
                                         <span class="reg-date cell-right">2020.07.07</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">2019년 한우자조금 결산서 공시</span>
+                                        <span class="title cell">&middot;2019년 한우자조금 결산서 공시</span>
                                         <span class="reg-date cell-right">2020.05.06</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-box-list-1" data-tab-name ="box-1" data-tab-body-item-name ="2">
+                        <div class="tab-box-list-1" data-tab-name="box-1" data-tab-body-item-name="2">
                             <ul>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell"> 「2020년 천연꿀 수입권 공매(5차)」및 인조꿀 배정
+                                        <span class="title cell"> &middot;「2020년 천연꿀 수입권 공매(5차)」및 인조꿀 배정
                                         </span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <li >
+                                <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
+                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <li >
+                                <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">『(손해) 노후화 정보보호시스템 1차 교체(웹방화벽)』제한경쟁입찰 공고</span>
+                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
-                                <l >
+                                <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">『(손해)노후화 정보보호시스템 1차 교체(망연계솔루션)』 제한경쟁입찰</span>
+                                        <span class="title cell">&middot;『(손해)노후화 정보보호시스템 1차 교체(망연계솔루션)』 제한경쟁입찰</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
@@ -397,60 +415,115 @@
                 </div>
             </div>
             <div class="cell">
+                <!--3. 이미지 슬라이더-->
                 <div class="content">
-                <div class="head head-type-1 row">
-                        <div class="title cell">이벤트&배너</div>
+                    <div class="my-slider-box-1">
+                        <div class="title-box">
+                            이벤트&배너
+                        </div>
+                        <div class="btns flex flex-ai-c">
+                            <div class="btn-left"><i class="fas fa-angle-left"></i></div>
+                            <div class="btn-play-and-stop"><i class="fas fa-pause"></i></div>
+                            <div class="btn-right"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                        <div class="slides">
+                            <div class="item">
+                                <a href="http://nhbank.recruiter.co.kr" title="2020년 NH농협은행 채용연계형 인턴 서류전형 합격자 발표 안내"
+                                    target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000462351&fileSn=0'
+                                        alt="2020년 NH농협은행 채용연계형 인턴 서류전형 합격자 발표 안내" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.agriwork.kr" title="‘도농 인력중개 서비스 사이트’ 홍보" target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000432178&fileSn=0'
+                                        alt="‘도농 인력중개 서비스 사이트’ 홍보" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.fbo.or.kr/index.do" title="농지임대수탁사업(농지은행) 홍보" target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000440641&fileSn=0'
+                                        alt="농지임대수탁사업(농지은행) 홍보" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/cmm/file/resourceDownLoad.do?filepath=financial_statements_movie.zip"
+                                    title="알기쉬운-농·축협-재무제표" target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000404987&fileSn=0'
+                                        alt="알기쉬운-농·축협-재무제표" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="http://www.agrimuseum.or.kr/contest" title="2020년 농업박물관 제9회 농사랑쌀사랑 공모전 안내"
+                                    target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000420060&fileSn=0'
+                                        alt="2020년 농업박물관 제9회 농사랑쌀사랑 공모전 안내" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="http://uni.agrix.go.kr/webportal/main/portalBizPriceCal.do"
+                                    title="공익직불제 기본 직불금 미리 계산하기" target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000400164&fileSn=0'
+                                        alt="공익직불제 기본 직불금 미리 계산하기" />
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.redwhistle.org/report/reportNew.asp?organ=7655&amp;RType=1"
+                                    title="익명제보시스템 홍보" target="_blank">
+                                    <img src='https://nonghyup.com/cmm/fms/getImage.do?atchFileId=FILE_000000000289153&fileSn=0'
+                                        alt="익명제보시스템 홍보" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cell">
+                <!--4. 영상뉴스-->
+                <div class="content">
+                    <div class="head head-type-1 row">
+                        <div class="title cell">영상뉴스</div>
                         <div class="btn-more cell-right"></div>
                     </div>
-                    <div class="body body-type-1">
-                        <ul>
-                            <li>
-                                <a href="#" class="block row">
-                                    <span class="title cell">농협,"국산 약용작물 소비촉진 행사" 개최!</span>
-                                    <span class="reg-date cell-right">2020.07.09</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block row">
-                                    <span class="title cell">농협, 임직원 대상 정보보호 캠페인 실시</span>
-                                    <span class="reg-date cell-right">2020.07.08</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block row">
-                                    <span class="title cell">NH농협무역,신선농산물극동 러시아로 첫수출!</span>
-                                    <span class="reg-date cell-right">2020.07.07</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="block row">
-                                    <span class="title cell">농협경제지주,농축산물생산.유통혁신을위한 [올바른유통위원회] 3차정기회의개최</span>
-                                    <span class="reg-date cell-right">2020.07.07</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="body body-type-2">
+                        <div class="img-box"
+                            style="background-image:url('https://junekorea.github.io/img1/ph/nonghyup/getImage.png')">
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
             <div class="cell">
+                <!--5. 농촌봉사활동 참여-->
                 <div class="content">
-                    <div class="head">제목4</div>
-                    <div class="body"></div>
-                </div>
+                    <div class="head head-type-1">
+                        <div class="title cell">농촌봉사활동 참여</div>
+                    </div>
+                    <div class="body body-type-2">
+                        <div class="img-box"
+                            style="background-image:url('https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg')">
+                        </div>
+                        <div class="text-box flex">
+                            <div class="promotion-1 flex-1-0-0"><a href="#" class="block">개인참여</a></div>
+                            <div class="promotion-1 flex-1-0-0"><a href="#" class="block">기업참여</a></div>
+                        </div>
+                    </div>
             </div>
-            <div class="cell">
-                <div class="content">
-                    <div class="head">제목5</div>
-                    <div class="body"></div>
-                </div>
-            </div>
+
+
             <div class="cell">
                 <div class="content">
                     <div class="head">제목6</div>
                     <div class="body"></div>
                 </div>
+
             </div>
         </div>
+
     </div>
 
 </body>
