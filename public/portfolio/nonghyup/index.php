@@ -507,9 +507,9 @@
                         <div class="img-box"
                             style="background-image:url('https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg')">
                         </div>
-                        <div class="text-box flex">
-                            <div class="promotion-1 flex-1-0-0"><a href="#" class="block">개인참여</a></div>
-                            <div class="promotion-1 flex-1-0-0"><a href="#" class="block">기업참여</a></div>
+                        <div class="promotion-box row">
+                            <div class="promotion-1 cell"><a href="#" class="block">개인참여</a></div>
+                            <div class="promotion-1 cell-right"><a href="#" class="block">기업참여</a></div>
                         </div>
                     </div>
             </div>
