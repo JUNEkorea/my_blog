@@ -491,21 +491,21 @@
 
             <div class="cell"> <!--5. 농촌봉사활동 참여-->
                 <div class="content">
-                    <div class="head head-type-1">
-                        <div class="title cell">농촌봉사활동 참여</div>
+	                <div class="head head-type-1">
+                        <div class="title ">농촌봉사활동 참여</div>
                     </div>
-                    <div class="body body-type-2">
-                        <div class="img-box pt-img"
-                            style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg)">
-                        
-                        </div>
-                        
-                    </div>
+	            <div class="body body-type-2">
+		            <div class="img-box pt-img" style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg)">
+			        <div class="pt-box flex">
+				        <div flex-1-0-0><a href="#" class="block">개인참여</a></div>
+				        <div flex-1-0-0><a href="#" class="block">기업.단체참여</a></div>
+			        </div>
+                </div>
             </div>
 
-            <div class="cell"> <!--6. 농촌봉사활동 참여-->
+            <div class="cell"> <!--6. 사회공헌활동-->
                 <div class="content">
-                    <div class="head">제목6</div>
+                    <div class="head"></div>
                     <div class="body"></div>
                 </div>
 

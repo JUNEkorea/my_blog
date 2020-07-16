@@ -767,24 +767,43 @@ body {
 
 /* 5. 농촌봉사활동 */
 
-.box-3>.row>.cell>.content>.body.body-type-2>.img-box. pt-img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150px;
-    /* div는 원래 높이가 0, 높이를 줘야 div속 이미지가 보인다. */
-    border: 1px solid #434343;
+.box-3>.row>.cell>.content > .head > .title {
+	font-size: 22px;
+	font-weight:bold;
+	
 }
 
-.box-3>.row>.cell>.content>.body.body-type-2>.img-box.pt-img {
-    position: relative;
-    outline: 1px solid red;
+.box-3>.row>.cell>.content > .body > .img-box{
+	
+	height:150px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	margin-top:10px;	
+	position:relative;
 }
 
-.box-3>.row>.cell>.content>.body.body-type-2>.pt-box {
-    background-color: #fe8e08;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+
+.box-3>.row>.cell>.content > .body > .img-box > .pt-box {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
 }
+
+.box-3>.row>.cell>.content > .body > .img-box > .pt-box > div {
+	border-left: 1px solid white;
+	width:50%;
+	background-color:orange;
+}
+
+.content > .body > .img-box > .pt-box > div > a {
+	padding: 5px 10px;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+	letter-spacing:1.5px;
+}
+
+/* 5. 사회공헌활동 */
