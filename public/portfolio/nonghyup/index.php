@@ -303,10 +303,8 @@
     <!-- box-3  -->
     <div class="box-3 con">
         <div class="row">
-            <div class="cell">
-                <!-- 1. 보도자료 -->
-                <div class="content">
-                    <!-- 보도자료 -->
+            <div class="cell"> <!-- 1. 보도자료 -->
+                <div class="content"><!-- 보도자료 -->
                     <div class="head head-type-1 row">
                         <div class="title cell">보도자료</div>
                         <div class="btn-more cell-right"></div>
@@ -341,8 +339,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cell">
-                <!-- 2. 공지사항 /입찰공고 탭키 -->
+            <div class="cell"><!-- 2. 공지사항 /입찰공고 탭키 -->
                 <div class="content">
                     <div class="head head-type-2 row">
                         <div class="active cell" data-tab-name="box-1" data-tab-head-item-name="1">공지사항</div>
@@ -414,8 +411,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cell">
-                <!--3. 이미지 슬라이더-->
+            <div class="cell"><!--3. 이미지 슬라이더-->
                 <div class="content">
                     <div class="my-slider-box-1">
                         <div class="title-box">
@@ -479,9 +475,7 @@
                 </div>
             </div>
 
-
-            <div class="cell">
-                <!--4. 영상뉴스-->
+            <div class="cell"> <!--4. 영상뉴스-->
                 <div class="content">
                     <div class="head head-type-1 row">
                         <div class="title cell">영상뉴스</div>
@@ -489,33 +483,27 @@
                     </div>
                     <div class="body body-type-2">
                         <div class="img-box"
-                            style="background-image:url('https://junekorea.github.io/img1/ph/nonghyup/getImage.png')">
+                            style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/getImage.png)">
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
-            <div class="cell">
-                <!--5. 농촌봉사활동 참여-->
+            <div class="cell"> <!--5. 농촌봉사활동 참여-->
                 <div class="content">
                     <div class="head head-type-1">
                         <div class="title cell">농촌봉사활동 참여</div>
                     </div>
                     <div class="body body-type-2">
-                        <div class="img-box"
-                            style="background-image:url('https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg')">
+                        <div class="img-box pt-img"
+                            style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg)">
+                        
                         </div>
-                        <div class="promotion-box row">
-                            <div class="promotion-1 cell"><a href="#" class="block">개인참여</a></div>
-                            <div class="promotion-1 cell-right"><a href="#" class="block">기업참여</a></div>
-                        </div>
+                        
                     </div>
             </div>
 
-
-            <div class="cell">
+            <div class="cell"> <!--6. 농촌봉사활동 참여-->
                 <div class="content">
                     <div class="head">제목6</div>
                     <div class="body"></div>

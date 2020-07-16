@@ -1,0 +1,426 @@
+/* 폰트적용 */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+/* 노말라이즈 */
+
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+label[for] {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* 라이브러리 */
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+    position: relative;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-0-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0>* {
+    line-height: normal;
+}
+
+.width-30px {
+    width: 30px;
+}
+
+.width-35px {
+    width: 35px;
+}
+
+.width-40px {
+    width: 35px;
+}
+
+.width-45px {
+    width: 35px;
+}
+
+.width-50px {
+    width: 50px;
+}
+
+.width-80px {
+    width: 80px;
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-60p {
+    width: 60%;
+}
+
+.width-55p {
+    width: 55%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-45p {
+    width: 45%;
+}
+
+.width-40p {
+    width: 40%;
+}
+
+.width-30p {
+    width: 30%;
+}
+
+.width-35p {
+    width: 35%;
+}
+
+.width-100p-except-30px {
+    width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+    width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+    width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+    width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+    width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+    width: calc(100% - 100px);
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+    font-size: .8rem;
+}
+
+.table-row {
+    display: table;
+}
+
+.table-row.row::after {
+    display: inline;
+    clear: non;
+}
+
+.table-row>.cell {
+    float: none;
+    display: table-cell;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex>.cell {
+    float: none;
+}
+
+.ch-flex-1-0-auto>* {
+    flex: 1 0 auto;
+}
+
+
+/* 라이브러리 - flex */
+
+*>.flex {
+    display: flex;
+}
+
+*>.flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+*>.flex-grow-1 {
+    flex-grow: 1;
+}
+
+*>.flex-jc-c {
+    display: flex;
+    justify-content: center;
+}
+
+*>.flex-jc-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+*>.flex-ai-c {
+    display: flex;
+    align-items: center;
+}
+
+*>.flex-row-nowrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+*>.flex-jt-sb {
+    justify-content: space-between;
+}
+
+*>.flex-ch-basis-0 {
+    display: flex;
+}
+
+.flex-ch-basis-0>* {
+    flex-basis: 0;
+}
+
+*>.flex-as-c {
+    align-self: center;
+}
+
+*>.flex-1-0-0 {
+    flex: 1 0 0;
+}
+
+*>.flex-2-0-0 {
+    flex: 2 0 0;
+}
+
+*>.flex-jc-e {
+    justify-content: flex-end;
+}
+
+
+/* 커스텀 */
+
+.con {}
+
+
+/* .title-box */
+
+.title-box {
+    margin-top: 30px;
+    border-top: 7px solid #222;
+    padding-top: 30px;
+}
+
+.title-box>hgroup>h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.title-box>hgroup>h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.title-box>.more-btn {
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #222;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.title-box>.more-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* box */
+
+.box-1>ul {
+    margin: 0 -15px;
+    /* 음수마진 */
+}
+
+.box-1>ul>li {
+    width: 33.3333%;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+.box-1>ul>li>.img-box {
+    position: relative;
+    /* 가두기 */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* 어두운 이미지 깔기. */
+
+.box-1>ul>li>.img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s;
+}
+
+.box-1>ul>li>.img-box:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 돋보기 유령화 */
+
+.box-1>ul>li>.img-box>.link-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 3px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.box-1>ul>li>.img-box:hover>.link-txt {
+    opacity: 1;
+}
+
+.box-1>ul>li>.img-box>img {
+    transition: transform 0.2s;
+    position: relative;
+    /* 이미지 가두기 */
+    z-index: -1;
+    /* 우선수위 */
+}
+
+.box-1>ul>li>.img-box:hover>img {
+    transform: scale(1.2);
+    /* 호버시 이미지 커지기 */
+}
