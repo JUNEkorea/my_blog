@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+    <!-- 탑바  -->
     <div class="top-box con-min-width">
         <!-- 최상단 탑바 top-bar-1     -->
         <div class="top-bar-1">
@@ -200,7 +200,7 @@
             </div>
         </div>
     </div>
-    <!--  탑배너 밑 퀵아이콘 메뉴박스7개 box-2 가로나열. -->
+    <!--  box-2 탑배너 밑 퀵아이콘 메뉴박스7개 box-2 가로나열. -->
     <div class="box-2 con-min-width">
         <div class="con">
             <ul class="row">
@@ -303,8 +303,10 @@
     <!-- box-3  -->
     <div class="box-3 con">
         <div class="row">
-            <div class="cell"> <!-- 1. 보도자료 -->
-                <div class="content"><!-- 보도자료 -->
+            <div class="cell">
+                <!-- 1. 보도자료 -->
+                <div class="content">
+                    <!-- 보도자료 -->
                     <div class="head head-type-1 row">
                         <div class="title cell">보도자료</div>
                         <div class="btn-more cell-right"></div>
@@ -339,7 +341,8 @@
                     </div>
                 </div>
             </div>
-            <div class="cell"><!-- 2. 공지사항 /입찰공고 탭키 -->
+            <div class="cell">
+                <!-- 2. 공지사항 /입찰공고 탭키 -->
                 <div class="content">
                     <div class="head head-type-2 row">
                         <div class="active cell" data-tab-name="box-1" data-tab-head-item-name="1">공지사항</div>
@@ -411,7 +414,8 @@
                     </div>
                 </div>
             </div>
-            <div class="cell"><!--3. 이미지 슬라이더-->
+            <div class="cell">
+                <!--3. 이미지 슬라이더-->
                 <div class="content">
                     <div class="my-slider-box-1">
                         <div class="title-box">
@@ -475,7 +479,8 @@
                 </div>
             </div>
 
-            <div class="cell"> <!--4. 영상뉴스-->
+            <div class="cell">
+                <!--4. 영상뉴스-->
                 <div class="content">
                     <div class="head head-type-1 row">
                         <div class="title cell">영상뉴스</div>
@@ -489,31 +494,117 @@
                 </div>
             </div>
 
-            <div class="cell"> <!--5. 농촌봉사활동 참여-->
+            <div class="cell">
+                <!--5. 농촌봉사활동 참여-->
                 <div class="content">
-	                <div class="head head-type-1">
+                    <div class="head head-type-1">
                         <div class="title ">농촌봉사활동 참여</div>
                     </div>
-	            <div class="body body-type-2">
-		            <div class="img-box pt-img" style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg)">
-			        <div class="pt-box flex">
-				        <div flex-1-0-0><a href="#" class="block">개인참여</a></div>
-				        <div flex-1-0-0><a href="#" class="block">기업.단체참여</a></div>
-			        </div>
-                </div>
+                    <div class="body body-type-2">
+                        <div class="img-box pt-img"
+                            style="background-image:url(https://junekorea.github.io/img1/ph/nonghyup/volunteer.jpg)">
+                            <div class="pt-box flex">
+                                <div flex-1-0-0><a href="#" class="block">개인참여</a></div>
+                                <div flex-1-0-0><a href="#" class="block">기업.단체참여</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell">
+                        <!--6. 사회공헌활동-->
+                        
+
+
             </div>
 
-            <div class="cell"> <!--6. 사회공헌활동-->
-                <div class="content">
-                    <div class="head"></div>
-                    <div class="body"></div>
-                </div>
-
-            </div>
+            <div class="cell">
+                <div class="box">
+                    <div class="title-bar">
+                        <div class="title">
+                            범농협 사회공헌 활동
+                        </div>
+                        <div class="date">
+                            2020년 07월 16일 기준
+                        </div>
+                    </div>
+                    <div class="icon-bar flex">
+                        <div class="icon-box">
+                            <img src="https://nonghyup.com/images/main/icon_people.png" alt="">
+                            <div>참여시간</div>
+                            <div class="bg">525,987시간</div>
+                        </div>
+                        <div class="icon-box">
+                            <img src="https://nonghyup.com/images/main/icon_people.png" alt="">
+                            <div>참여인원</div>
+                            <div class="bg">117,633명</div>
+                        </div>
+                        <div class="icon-box">
+                            <img src="https://nonghyup.com/images/main/icon_office.png" alt="">
+                            <div>참여사무소수</div>
+                            <div class="bg">56,180개소</div>
+                        </div>
+                    </div>
+                    <div class="sns-bar flex">
+                        <div class="title flex">
+                            농협 SNS 미디어룸
+                        </div>
+                        <div class="sns-icon flex">
+                            <a href="http://www.facebook.com/nh.nhnonghyup" tartet="_blank" class="ico-facebook block"
+                                title="새창_농협 페이스북"><img
+                                    src="https://junekorea.github.io/img1/ph/nonghyup/icon_facebook.png" alt=""></a>
+                            <a href="http://www.instagram.com/nh.nhnonghyup" tartet="_blank" class="ico-insta block"
+                                title="새창_농협 인스타그램"><img
+                                    src="https://junekorea.github.io/img1/ph/nonghyup/icon_insta.png" alt=""></a>
+                            <a href="#"><img src="https://nonghyup.com/images/main/icon_time.png" alt=""></a>
+                        </div>
+	                </div>
+</div></div>
         </div>
-
     </div>
 
+
+       
+    <!-- box-4 footer -->
+    <div class="box-4 ">
+        <div class="ft-box-1">
+            <div class="con row">
+                <nav class="ft-menu cell">
+                    <ul class="row">
+                        <li class="cell"><a href="#">사이트맵</a></li>
+                        <li class="cell"><a href="#">개인정보처리방침</a></li>
+                        <li class="cell"><a href="#">이용약관</a></li>
+                        <li class="cell"><a href="#">이메일주소부단수집거부</a></li>
+                        <li class="cell"><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </nav>
+                <nav class="ft-img cell-right">
+                    <ul class="row">
+                        <li class="cell img-box"><img
+                                src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite.png" alt="">
+                        </li>
+                        <li class="cell img-box"><img
+                                src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite2.png" alt="">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="ft-box-2">
+            <div class="con row">
+                <div class="txt-box cell">
+                    <p>(04516)서울시 중구 새문안로 16 대표자 이성희 사업자등록번호 104-82-07072<br>
+                        전화번호안내02-2080-5114 금융문의 농협은행 1661-3000,1522-3000 농&middot;축협1661-2100,1522-2100<br>
+                        COPYRIGHT2019.NONGHYUP ALL RIGHTS RESERVED
+                    </p>
+                </div>
+                <div class="ft-logo cell-right">
+                    <a href=""><img src="http://junekorea.github.io/img1/ph/nonghyup/wa.gif" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 
 </html>

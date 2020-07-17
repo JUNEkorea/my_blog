@@ -806,4 +806,58 @@ body {
 	letter-spacing:1.5px;
 }
 
-/* 5. 사회공헌활동 */
+/* 6. */
+
+/* box-4 foot 시작 */
+.box-4 {
+    background-color:#ebebeb;
+    margin-top:30px;
+}
+
+.box-4 > .ft-box-1 {
+	border-bottom: 1px solid #d6d6d6;
+    height: 70px;
+    
+}
+
+
+.box-4 > .ft-box-1 > .con > .ft-menu {
+	line-height:70px;
+}
+
+.box-4 > .ft-box-1 > .con > .ft-menu > ul > li > a {
+	display:block;
+	padding-right:10px;
+	font-size:15px;
+}
+
+.box-4 > .ft-box-1 > .con > .ft-menu > ul > li:hover > a {
+	text-decoration:underline;
+}
+
+.box-4 > .ft-box-1 > .con > .ft-img > ul > li {
+	padding: 20px 10px;	
+}
+
+.box-4 > .ft-box-1 > .con > .ft-img > ul > li:last-child{
+	margin-right:20px;
+}
+
+.box-4 > .ft-box-2 {
+	border-bottom: 1px solid #d6d6d6;
+	height: 190px;
+}
+
+.box-4 > .ft-box-2 > div > .txt-box > p {
+	margin-top:30px;
+}
+
+.box-4 > .ft-box-2 > div > .txt-box > p {
+	font-size: 14px;
+	font-weight:300;
+}
+
+.box-4 > .ft-box-2 > div > .ft-logo  {
+	margin-top:30px;
+	margin-right:30px;
+}

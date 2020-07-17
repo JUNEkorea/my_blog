@@ -1,6 +1,7 @@
 <?php
 include "../../part/head.php";
 ?>
+<link rel="stylesheet" href="/portfolio/index.css">
 <h1 class="con">포트폴리오</h1>
 
 <div class="box-1 con">
@@ -35,6 +36,7 @@ include "../../part/head.php";
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <div class="title"><a href="/portfolio/align" target="_blank">Align</a></div>
+            <div class="title"><a href="http://kocom-align.com/" target="_blank">원본</a></div>
             <div class="des">코콤이 만든 프리미엄 브랜드<br>
                 스마트 월패드 - 스마트홈 핵심 기기
             </div>
