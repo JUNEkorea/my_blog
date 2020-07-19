@@ -46,7 +46,7 @@
                 <li class="cell page-3-menu-item"><a href="#page-3" class="block">Store</a></li>
                 <li class="cell page-4-menu-item"><a href="#page-4" class="block">Franchise</a></li>
                 <li class="cell page-5-menu-item cs-center-cell">
-                    <a href="#page-5" class="block relative">
+                    <a href="#page-6" class="block relative">
                         CS center
                         <span class="ico ico-1 absolute-right absolude-middle"></span>
                     </a>
@@ -60,7 +60,8 @@
     <!-- 팝업 박스 만들기 -->
     <div class="popup-box-1">
         <div class="img-box">
-            <img src="http://rolling-pasta.com/upload/popup/W_816602001593595841.jpg" alt="">
+            <img src="http://junekorea.github.io/img1/ph/rollingpasta/p1.jpg" alt="">
+            <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
         </div>
         <div class="row">
             <div class="cell"><a href="#" class="block btn-close">오늘 하루 보지 않기</a></div>
@@ -73,23 +74,23 @@
         <div data-section-name="page-1" class="page-1 pag relative">
             <div class="scroll-down-icon-box">
                 <a href="#page-2" class="img-box block">
-                    <img src="http://rolling-pasta.com/_imgs/scroll2.png" alt="">
+                    <img src="http://junekorea.github.io/img1/ph/rollingpasta/scroll2.png" alt="">
                 </a>
             </div>
             <div class="my-carousel-1">
                 <div class="owl-carousel owl-theme">
                     <!-- 필수 : .owl-carousel와 .owl-theme -->
                     <div class="item"
-                        style="background-image: url(http://rolling-pasta.com/upload/bnr/W_560185001558932311.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide1_0506.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://rolling-pasta.com/upload/bnr/W_455015001558932328.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide2.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://rolling-pasta.com/upload/bnr/W_418069001564558567.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide3.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://rolling-pasta.com/upload/bnr/W_979733001588732285.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide4.jpg);">
                     </div>
                 </div>
             </div>
