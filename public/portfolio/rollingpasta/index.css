@@ -1,0 +1,638 @@
+/* 폰트적용 */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+
+/* 노말라이즈 */
+
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+label[for] {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* 라이브러리 */
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+    position: relative;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-0-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0>* {
+    line-height: normal;
+}
+
+.width-30px {
+    width: 30px;
+}
+
+.width-35px {
+    width: 35px;
+}
+
+.width-40px {
+    width: 35px;
+}
+
+.width-45px {
+    width: 35px;
+}
+
+.width-50px {
+    width: 50px;
+}
+
+.width-80px {
+    width: 80px;
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-60p {
+    width: 60%;
+}
+
+.width-55p {
+    width: 55%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-45p {
+    width: 45%;
+}
+
+.width-40p {
+    width: 40%;
+}
+
+.width-30p {
+    width: 30%;
+}
+
+.width-35p {
+    width: 35%;
+}
+
+.width-100p-except-30px {
+    width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+    width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+    width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+    width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+    width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+    width: calc(100% - 100px);
+}
+
+.height-100p {
+    height: 100%;
+}
+
+.height-50p {
+    height: 50%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+    font-size: .8rem;
+}
+
+.table-row {
+    display: table;
+}
+
+.table-row.row::after {
+    display: inline;
+    clear: non;
+}
+
+.table-row>.cell {
+    float: none;
+    display: table-cell;
+}
+
+.border-red {
+    border: 10px solid red;
+}
+
+.border-green {
+    border: 10px solid green;
+}
+
+.border-blue {
+    border: 10px solid blue;
+}
+
+.border-gold {
+    border: 10px solid gold;
+}
+
+.border-pink {
+    border: 10px solid pink;
+}
+
+
+/* 라이브러리 - flex */
+
+*>.flex {
+    display: flex;
+}
+
+*>.flex-grow-1 {
+    flex-grow: 1;
+}
+
+*>.flex-jc-c {
+    justify-content: center;
+}
+
+*>.flex-jc-s {
+    justify-content: flex-start;
+}
+
+*>.flex-jc-e {
+    justify-content: flex-end;
+}
+
+*>.flex-jc-sb {
+    justify-content: space-between;
+}
+
+*>.flex-ai-c {
+    align-items: center;
+}
+
+*>.flex-ai-s {
+    align-items: flex-start;
+}
+
+*>.flex-ai-e {
+    align-items: flex-end;
+}
+
+*>.flex-as-s {
+    align-self: stretch;
+}
+
+*>.flex-as-c {
+    align-self: center;
+}
+
+*>.flex-as-s {
+    align-self: flex-start;
+}
+
+*>.flex-as-e {
+    align-self: flex-end;
+}
+
+*>.flex-column-nowrap {
+    flex-flow: column nowrap;
+}
+
+*>.flex-column-wrap {
+    flex-flow: column wrap;
+}
+
+.flex-ch-basis-0>* {
+    flex-basis: 0;
+}
+
+*>.flex-1-0-0 {
+    flex: 1 0 0;
+}
+
+
+/* 커스텀 */
+
+.con {
+    max-width: 1465px;
+}
+
+
+/* 탑바시작 */
+
+body {
+    background-color: slateblue;
+}
+
+.top-bar {
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.top-bar:hover {
+    background-color: white;
+    border-bottom: black;
+}
+
+
+/* 탑바 전체 호버시 흰색으로 바뀌고 글자는 파란색#003E73으로 바뀐다.  */
+
+
+/* 아래 보더선만 평소엔 투명에서 검정색으로. */
+
+.top-bar .logo {
+    margin-left: 30px;
+    /* 로고 왼쪽에서 이동*/
+}
+
+.top-bar>.menu-box-1>ul>li>a {
+    padding: 30px 10px;
+    /* 위아래가 넓어진 효과 */
+    color: white;
+    /* 평소엔 흰색이었다가 */
+    /*   transition:color 0.3s;메뉴도 부드럽게 바뀌도록. */
+}
+
+
+/* 탑바 밑줄 효과 */
+
+.top-bar>.menu-box-1>ul>li>a::after {}
+
+.top-bar:hover>.menu-box-1>ul>li>a {
+    color: #003E73;
+}
+
+.top-bar .logo>.on {
+    opacity: 0;
+    /* 평소엔 보이지 않도록. */
+    transition: opacity 0.2s;
+    /* f로고가 부드럽게 바뀌도록 */
+}
+
+.top-bar:hover .logo>.on {
+    opacity: 1;
+}
+
+.top-bar>.menu-box-1>ul>li.cs-center-cell>a {
+    padding-right: 30px;
+    /* ico-1있을 공간을 부여해준다.   */
+}
+
+.top-bar>.menu-box-1>ul>li>a>.ico-1 {
+    width: 25px;
+    height: 25px;
+    background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/ico.png);
+    background-position-x: -50px;
+    /* 위치를 정확하게 기억해둔다.  */
+    background-position-y: 0;
+}
+
+.top-bar:hover>.menu-box-1>ul>li>a>.ico-1 {
+    background-position-x: 0;
+}
+
+
+/* 탑바 - 호버 (선생님) */
+
+.top-bar:hover,
+.top-bar.hover {
+    background-color: white;
+    border-bottom-color: black;
+}
+
+.top-bar:hover .menu-box-1>ul>li>a,
+.top-bar.hover .menu-box-1>ul>li>a {
+    color: #003E73;
+}
+
+.top-bar:hover .logo>.on,
+.top-bar.hover .logo>.on {
+    opacity: 1;
+}
+
+.top-bar:hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1,
+.top-bar.hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
+    background-position-x: 0;
+}
+
+
+/* 팝업창 꾸미기 */
+
+.popup-box-1 {
+    position: absolute;
+    width: 480px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+
+.popup-box-1>.row>.cell {
+    width: 50%;
+}
+
+.popup-box-1>.row>.cell>a {
+    text-align: center;
+    color: white;
+    background-color: #073C6D;
+    padding: 15px 0;
+}
+
+.popup-box-1>.row>.cell:first-child>a {
+    background-color: #7C7C7C;
+}
+
+
+/* 스크롤바 적용 */
+
+.page-1 .scroll-down-icon-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 9;
+    margin-top: 280px;
+}
+
+
+/* 스크롤바애니메이션-팝업창 닫기 active일때 활동하도록. */
+
+.page-1 .scroll-down-icon-box.active {
+    animation-name: up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up-down {
+    0% {
+        margin-top: 280px;
+    }
+    50% {
+        margin-top: 300px;
+    }
+    100% {
+        margin-top: 280px;
+    }
+}
+
+
+/* 스크롤리파이 적용 */
+
+
+/* 페이지 인디케이터 */
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.pagination a.active:after {
+    box-shadow: inset 0 0 0 5px;
+}
+
+.pagination a .hover-text {
+    display: none;
+    /* 사용안함- 호버시 동그라미 옆 글자들. */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    content: "";
+    transition: box-shadow 0.5s ease;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* 팝업창 */
+
+.page-1>.scroll-down-icon-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9
+}
+
+
+/* 페이지-아울 캐러샐 페이지 f12로 들여봐서 다 적기  */
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
+    height: 802px;
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /*  <>둘이 겹친 상태  */
+    top: 50%;
+    right: 50%;
+    margin-right: 500px;
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+    right: auto;
+    /*  <       > 오른쪽으로 옮기기 */
+    left: 50%;
+    margin-left: 500px;
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev>.btn-left,
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+    background-position: -50px -50px;
+    /*  < 왼쪽아이콘  */
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+    background-position: -50px -100px;
+    /*  > 오른쪽아이콘  */
+}
+
+.page-2 {
+    height: 50vh;
+}
+
+.page-3 {
+    height: 80vh;
+}
+
+.page-4 {
+    height: 180vh;
+}
+
+.page-5 {
+    height: 70vh;
+}

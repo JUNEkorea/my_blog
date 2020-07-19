@@ -1,96 +1,135 @@
-
 /* .title-box */
+
 .title-box {
-    margin-top:30px; 
+    margin-top: 30px;
 }
 
-.title-box > hgroup > h1 {
-    font-size:32px;
-    font-weight:700;
-    color:rgb(51,51,51);
+.title-box>hgroup>h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
 }
 
-.title-box > hgroup > h2 {
-    font-size:14px;
-    font-weight:400;
-    color:#797979;
+.title-box>hgroup>h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
 }
 
-.title-box > .more-btn {
-    color:#666;
-    font-size:12px;
-    border:1px solid #222;
-    padding:10px 15px;
-    cursor:pointer;
+.title-box>.more-btn {
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #222;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
-.title-box > .more-btn:hover {
-    text-decoration:underline;
+.title-box>.more-btn:hover {
+    text-decoration: underline;
 }
+
+.box-2 {
+    margin-top: 30px;
+}
+
 
 /* box */
-.box-1 > ul {
-    margin:0 -15px;/* 음수마진 */
+
+.box>ul {
+    margin: 0 -15px;
+    /* 음수마진 */
 }
 
-.box-1 > ul > li {
-    width:33.3333%;
-    padding:0 15px;
-    margin-top:30px;
+.box>ul>li {
+    width: 33.3333%;
+    padding: 0 15px;
+    margin-top: 30px;
 }
 
-.box-1 > ul > li:nth-child(3n+1){
-    clear:both;/* 줄바꿈  */
+.box>ul>li:nth-child(3n+1) {
+    clear: both;
+    /* 줄바꿈  */
+}
+
+.box>ul>li>.img-box {
+    position: relative;
+    /* 가두기 */
+    overflow: hidden;
+    cursor: pointer;
 }
 
 
-.box-1 > ul > li > .img-box {
-    position:relative;/* 가두기 */
-    overflow:hidden;
-    cursor:pointer;
-    border: 3px solid red;
-}
 /* 어두운 이미지 깔기. */
-.box-1 > ul > li > .img-box::before {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(0,0,0,0);
-    transition:background-color 0.2s;
+
+.box>ul>li>.img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s;
 }
 
-.box-1 > ul > li > .img-box:hover::before {
-    background-color:rgba(0,0,0,0.3);
+.box>ul>li>.img-box:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
+
 /* 돋보기 유령화 */
-.box-1 > ul > li > .img-box > .link-txt {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:white;
-    text-transform:uppercase;
-    border-radius:5px;
-    border:2px solid white;
-    padding:3px;
-    opacity:0;
-    transition:opacity .2s;
-    background-color: red;
+
+.box>ul>li>.img-box>.link-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 3px;
+    opacity: 0;
+    transition: opacity .2s;
 }
 
-.box-1 > ul > li > .img-box:hover > .link-txt {
-    opacity:1;
+.box>ul>li>.img-box:hover>.link-txt {
+    opacity: 1;
 }
 
-.box-1 > ul > li > .img-box > img {
-    transition:transform 0.2s;
-    position:relative;/* 이미지 가두기 */
-    z-index:-1;/* 우선수위 */
+.box>ul>li>.img-box>img {
+    transition: transform 0.2s;
+    position: relative;
+    /* 이미지 가두기 */
+    z-index: -1;
+    /* 우선수위 */
 }
 
-.box-1 > ul > li > .img-box:hover > img {
-    transform:scale(1.2);/* 호버시 이미지 커지기 */
+.box>ul>li>.img-box:hover>img {
+    transform: scale(1.2);
+    /* 호버시 이미지 커지기 */
+}
+
+
+/* 글씨꾸미기 */
+
+.box>ul>li>ul>li>a {
+    display: block;
+    font-weight: bold;
+    font-weight: 15px;
+    color: green;
+    line-height: 30px;
+}
+
+.box>ul>li>ul>li:hover>a {
+    text-decoration: underline;
+}
+
+.box>ul>li>ul>li:not(:first-child)>a {
+    padding: 0 10px;
+    color: salmon;
+}
+
+.box>ul>li>.list-box {
+    height: 30px;
 }

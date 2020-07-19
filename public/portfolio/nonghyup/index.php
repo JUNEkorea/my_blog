@@ -300,6 +300,11 @@
         </div>
     </div>
 
+
+
+
+
+
     <!-- box-3  -->
     <div class="box-3 con">
         <div class="row">
@@ -518,7 +523,8 @@
             </div>
 
             <div class="cell">
-                <div class="box">
+            <!-- 6.범농협사회공현활동 -->
+                <div class="content">
                     <div class="title-bar">
                         <div class="title">
                             범농협 사회공헌 활동
@@ -562,11 +568,15 @@
         </div>
     </div>
 
+</div>
 
-       
+
+
+
+
     <!-- box-4 footer -->
     <div class="box-4 ">
-        <div class="ft-box-1">
+        <div class="ft-box-1 con min width">
             <div class="con row">
                 <nav class="ft-menu cell">
                     <ul class="row">
