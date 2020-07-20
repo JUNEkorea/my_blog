@@ -31,98 +31,140 @@
 </head>
 
 <body>
-    <!-- 탑바시작 -->
-    <div class="top-bar relative">
-        <!--  로고 (유령화) -->
-        <a href="#" class="logo absoulte-left absolute-middle img-box">
-            <img src="http://rolling-pasta.com/_imgs/header_logo.png" alt="">
-            <img class="on absolute-left absolute-top" src="http://rolling-pasta.com/_imgs/header_logo_on.png" alt="">
-        </a>
-        <!-- 가운데 메뉴바   -->
-        <nav class="menu-box-1 text-align-center line-height-0-ch-only">
-            <ul class="row inline-block"><!-- 페이지2부터연결시작. -->
-                <li class="cell page-2-menu-item"><a href="#page-2" class="block">Rolling Pasta</a></li>
-                <li class="cell page-3-menu-item"><a href="#page-3" class="block">Menu</a></li>
-                <li class="cell page-4-menu-item"><a href="#page-4" class="block">Store</a></li>
-                <li class="cell page-5-menu-item"><a href="#page-5" class="block">Franchise</a></li>
-                <li class="cell page-6-menu-item cs-center-cell">
-                    <a href="#page-6" class="block relative">
-                        CS center
-                        <span class="ico ico-1 absolute-right absolude-middle"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!-- 중간 오른쪽 끝- 스크롤리파이적용 -->
-    <div class="page-indicator-box"></div>
 
-    <!-- 팝업 박스 만들기 -->
-    <div class="popup-box-1">
-        <div class="img-box">
-            <img src="http://junekorea.github.io/img1/ph/rollingpasta/p1.jpg" alt=""> -->
-            <!-- <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
-        </div>-->
-        <div class="row">
-            <div class="cell"><a href="#" class="block btn-close">오늘 하루 보지 않기</a></div>
-            <div class="cell"><a href="#" class="block btn-close">닫기</a></div>
-        </div>
-    </div>
+<div class="top-bar relative">
+    <a href="#" class="logo absolute-left absolute-middle img-box">
+        <img src="http://rolling-pasta.com/_imgs/header_logo.png" alt="">
+        <img class="on absolute-left absolute-top" src="http://rolling-pasta.com/_imgs/header_logo_on.png" alt="">
+    </a>
 
-    <!--메인페이지 -->
-    <div class="pages">
-        <div data-section-name="page-1" class="page-1 pag relative">
-            <div class="scroll-down-icon-box">
-                <a href="#page-2" class="img-box block">
-                    <img src="http://junekorea.github.io/img1/ph/rollingpasta/scroll2.png" alt="">
+    <nav class="menu-box-1 text-align-center line-height-0-ch-only">
+        <ul class="row inline-block">
+            <li class="cell page-2-menu-item"><a href="#page-2" class="block">Rolling Pasta</a></li>
+            <li class="cell page-3-menu-item"><a href="#page-3" class="block">Menu</a></li>
+            <li class="cell page-4-menu-item"><a href="#page-4" class="block">Store</a></li>
+            <li class="cell page-5-menu-item"><a href="#page-5" class="block">Franchise</a></li>
+            <li class="cell page-6-menu-item cs-center-cell">
+                <a href="#page-6" class="block relative">
+                    CS center
+                    <span class="ico ico-1 absolute-right absolude-middle"></span>
                 </a>
-            </div>
-            <div class="my-carousel-1">
-                <div class="owl-carousel owl-theme">
-                    <!-- 필수 : .owl-carousel와 .owl-theme -->
-                    <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/22.jpg);">
-                    </div>
-                    <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/17.jpg);">
-                    </div>
-                    <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/16.jpg);">
-                    </div>
-                    <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/14.jpg);">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div data-section-name="page-2" class="page-2 page">
-            <div class="head">
-                <div class="cell logo-cell text-align-center">
-                  <img href="" class="block img-block"><img src="(http://junekorea.github.io/img1/ph/rollingpasta/intro_logo.png" alt=""></a>
-                </div>
-                <div class="cell menu-cell">
-                    <span class="inline-block"><img src="(http://junekorea.github.io/img1/ph/rollingpasta/intro_img.png" alt=""></a></span>
-                    <h1>이탈리안 파스타의 캐주얼한 해석</h1>
-                    <div class="des">본질만 담음 합리적인 가격으로 맛있는 파스타와 잔와인까지,<br>
-부담없이 즐기고 가실 수 있는 곳입니다.</div>
-                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
 
-            </div>
+<div class="page-indicator-box"></div>
+
+<div class="popup-box-1">
+    <div class="img-box">
+        <img src="http://rolling-pasta.com/upload/popup/W_390057001566961886.jpg" alt="">
+    </div>
+    <div class="row">
+        <div class="cell">
+            <a href="#" class="block btn-close">오늘 하루 보지 않기</a>
         </div>
-        <div data-section-name="page-3" class="page-3 page">
-            <h1>페이지3</h1>
-        </div>
-        <div data-section-name="page-4" class="page-4 page">
-            <h1>페이지4</h1>
-        </div>
-        <div data-section-name="page-5" class="page-5 page">
-            <h1>페이지5</h1>
-        </div>
-        <div data-section-name="page-6" class="page-5 page">
-            <h1>페이지6</h1>
+        <div class="cell">
+            <a href="#" class="block btn-close">닫기</a>
         </div>
     </div>
+</div>
 
-</body>
+<div class="pages">
+    <div data-section-name="page-1" class="page page-1 relative">
+        <div class="scroll-down-icon-box">
+            <a href="#page-2" class="block img-box">
+                <img src="http://rolling-pasta.com/_imgs/scroll2.png" alt="">
+            </a>
+        </div>
 
-</html>
+        <div class="my-carousel-1">
+            <div class="owl-carousel owl-theme">
+                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_560185001558932311.jpg);">
+                </div>
+                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_455015001558932328.jpg);">
+                </div>    
+                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_418069001564558567.jpg);">
+                </div>
+                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_543547001559122792.jpg);">
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div data-section-name="page-2" class="page page-2">
+        <div class="head">
+            <div class="con row">
+                <div class="cell logo-cell">
+                    <a href="#" class="block img-box">
+                        <img src="http://rolling-pasta.com/_imgs/intro_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="cell menu-cell text-align-center">
+                    <span class="inline-block">
+                        <img src="http://rolling-pasta.com/_imgs/intro_img.png" alt="">
+                    </span>
+                    <h1>
+                        이탈리안 파스타의 캐주얼한 해석
+                    </h1>
+                    <div class="des">
+                        본연의 맛과 합리적인 가격으로 맛있게 즐기는 파스타와 잔와인까지,<br>
+                        언제나 부담 없이 즐기고 가실 수 있는 곳입니다.
+                    </div>
+                    <ul class="list-1 row">
+                        <li class="cell">
+                            <a href="#" class="block img-box">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico1.png" alt="">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico1_on.png" alt="">
+                            </a>
+                            <div class="text">
+                                좋은 식재료
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block img-box">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico2.png" alt="">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico2_on.png" alt="">
+                            </a>
+                            <div class="text">
+                                스마트한 가격
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block img-box">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico3.png" alt="">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico3_on.png" alt="">
+                            </a>
+                            <div class="text">
+                                트렌디한 음식
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block img-box">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico4.png" alt="">
+                                <img src="http://rolling-pasta.com/_imgs/intro_slide_ico4_on.png" alt="">
+                            </a>
+                            <div class="text">
+                                분위기 있는 공간
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+
+        </div>
+    </div>
+    <div data-section-name="page-3" class="page page-3">
+        <h1>페이지 3</h1>
+    </div>
+    <div data-section-name="page-4" class="page page-4">
+        <h1>페이지 4</h1>
+    </div>
+    <div data-section-name="page-5" class="page page-5">
+        <h1>페이지 5</h1>
+    </div>
+    <div data-section-name="page-6" class="page page-5">
+        <h1>페이지 6</h1>
+    </div>
+</div>

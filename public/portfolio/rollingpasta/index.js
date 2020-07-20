@@ -13,9 +13,13 @@ $(function() {
             $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
 
             if (ref != 'page-1') {
-                $('.top-bar').addClass('hover');
+                setTimeout(function() {
+                    $('.top-bar').addClass('hover');
+                }, 600);
             } else {
-                $('.top-bar').removeClass('hover');
+                setTimeout(function() {
+                    $('.top-bar').removeClass('hover');
+                }, 600);
             }
         },
         afterRender: function() {
@@ -35,6 +39,7 @@ $(function() {
 
             $(".pagination a").on("click", $.scrollify.move);
             $('.top-bar .menu-box-1 > ul > li > a').on("click", $.scrollify.move);
+            $('.scroll-down-icon-box > a').on("click", $.scrollify.move);
         }
     });
 });
