@@ -338,7 +338,8 @@
                             </li>
                             <li>
                                 <a href="#" class="block row">
-                                    <span class="title cell"> &middot;농협경제지주,농축산물생산.유통혁신을위한 [올바른유통위원회] 3차정기회의개최</span>
+                                    <span class="title cell"> &middot;농협경제지주,농축산물생산.유통혁신을위한 [올바른유통위원회]
+                                        3차정기회의개최</span>
                                     <span class="reg-date cell-right">2020.07.07</span>
                                 </a>
                             </li>
@@ -359,7 +360,8 @@
                             <ul>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell"> &middot;2020년 「제3회 깨끗하고 아름다운 농촌마을 가꾸기 경진대회」 결과보고서 양식
+                                        <span class="title cell"> &middot;2020년 「제3회 깨끗하고 아름다운 농촌마을 가꾸기 경진대회」 결과보고서
+                                            양식
                                             안내
                                         </span>
                                         <span class="reg-date cell-right">2020.07.08</span>
@@ -398,19 +400,22 @@
                                 </li>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
+                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템
+                                            개발)』일반경쟁입찰(재공고)</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템 개발)』일반경쟁입찰(재공고)</span>
+                                        <span class="title cell">&middot;『(증권) 통합지식관리시스템 구축(시스템
+                                            개발)』일반경쟁입찰(재공고)</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="block row">
-                                        <span class="title cell">&middot;『(손해)노후화 정보보호시스템 1차 교체(망연계솔루션)』 제한경쟁입찰</span>
+                                        <span class="title cell">&middot;『(손해)노후화 정보보호시스템 1차 교체(망연계솔루션)』
+                                            제한경쟁입찰</span>
                                         <span class="reg-date cell-right">2020.07.13</span>
                                     </a>
                                 </li>
@@ -514,16 +519,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="cell">
-                        <!--6. 사회공헌활동-->
-                        
-
-
+                </div>
             </div>
 
             <div class="cell">
-            <!-- 6.범농협사회공현활동 -->
                 <div class="content">
                     <div class="title-bar">
                         <div class="title">
@@ -563,56 +562,52 @@
                                     src="https://junekorea.github.io/img1/ph/nonghyup/icon_insta.png" alt=""></a>
                             <a href="#"><img src="https://nonghyup.com/images/main/icon_time.png" alt=""></a>
                         </div>
-	                </div>
-</div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+<!-- box-4 footer -->
+<div class="box-4">
+    <div class="ft-box-1 con min width">
+        <div class="con row">
+            <nav class="ft-menu cell">
+                <ul class="row">
+                    <li class="cell"><a href="#">사이트맵</a></li>
+                    <li class="cell"><a href="#">개인정보처리방침</a></li>
+                    <li class="cell"><a href="#">이용약관</a></li>
+                    <li class="cell"><a href="#">이메일주소부단수집거부</a></li>
+                    <li class="cell"><a href="#">찾아오시는길</a></li>
+                </ul>
+            </nav>
+            <nav class="ft-img cell-right">
+                <ul class="row">
+                    <li class="cell img-box"><img src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite.png"
+                            alt="">
+                    </li>
+                    <li class="cell img-box"><img src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite2.png"
+                            alt="">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="ft-box-2">
+        <div class="con row">
+            <div class="txt-box cell">
+                <p>(04516)서울시 중구 새문안로 16 대표자 이성희 사업자등록번호 104-82-07072<br>
+                    전화번호안내02-2080-5114 금융문의 농협은행 1661-3000,1522-3000 농&middot;축협1661-2100,1522-2100<br>
+                    COPYRIGHT2019.NONGHYUP ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="ft-logo cell-right">
+                <a href=""><img src="http://junekorea.github.io/img1/ph/nonghyup/wa.gif" alt=""></a>
+            </div>
+        </div>
+    </div>
 </div>
 
-
-
-
-
-    <!-- box-4 footer -->
-    <div class="box-4 ">
-        <div class="ft-box-1 con min width">
-            <div class="con row">
-                <nav class="ft-menu cell">
-                    <ul class="row">
-                        <li class="cell"><a href="#">사이트맵</a></li>
-                        <li class="cell"><a href="#">개인정보처리방침</a></li>
-                        <li class="cell"><a href="#">이용약관</a></li>
-                        <li class="cell"><a href="#">이메일주소부단수집거부</a></li>
-                        <li class="cell"><a href="#">찾아오시는길</a></li>
-                    </ul>
-                </nav>
-                <nav class="ft-img cell-right">
-                    <ul class="row">
-                        <li class="cell img-box"><img
-                                src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite.png" alt="">
-                        </li>
-                        <li class="cell img-box"><img
-                                src="http://junekorea.github.io/img1/ph/nonghyup/txt_familysite2.png" alt="">
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="ft-box-2">
-            <div class="con row">
-                <div class="txt-box cell">
-                    <p>(04516)서울시 중구 새문안로 16 대표자 이성희 사업자등록번호 104-82-07072<br>
-                        전화번호안내02-2080-5114 금융문의 농협은행 1661-3000,1522-3000 농&middot;축협1661-2100,1522-2100<br>
-                        COPYRIGHT2019.NONGHYUP ALL RIGHTS RESERVED
-                    </p>
-                </div>
-                <div class="ft-logo cell-right">
-                    <a href=""><img src="http://junekorea.github.io/img1/ph/nonghyup/wa.gif" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     
 </body>

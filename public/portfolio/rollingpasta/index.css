@@ -457,10 +457,21 @@
                 .popup-box-1>.row>.cell:first-child>a {
                     background-color: #7C7C7C;
                 }
-                /*아울 캐러샐 페이지 선택자 다 찾아서 다 적기  */
                 
+                
+                /*아울 캐러샐 페이지 -  선택자 다 찾아서 다 적기  */
+                .page-1>.my-carousel-1 {
+                    height:802px;
+                    overflow: hidden;
+                }  
+
+                .page-1>.my-carousel-1,
+                .page-1>.my-carousel-1>.owl-carousel,
+                .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer,
+                .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage,
+                .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item ,                   
                 .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
-                    height: 802px;
+                    height: 100%;
                 }
                 
                 .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
@@ -579,6 +590,12 @@
                     }
                 }
                 
+                /* 페이지2 시작 */
+                .page-2 > .head {
+                    
+                }
+
+
                 .page-2 {
                     height: 50vh;
                 }

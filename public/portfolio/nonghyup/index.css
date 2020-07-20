@@ -563,6 +563,9 @@ body {
 
 /* box-3 레이아웃박스 구현 */
 
+.box > .content {
+    height: 437px;
+}
 .box-3>.row {
     margin: 0 -10px;
     /* 음수마진 */
@@ -582,7 +585,7 @@ body {
 
 .box-3>.row>.cell>.content {
     /*     background-color: red; */
-    height: 100px;
+    
 }
 
 .box-3>.row>.cell>.content>.head {

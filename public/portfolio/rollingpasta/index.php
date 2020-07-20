@@ -60,9 +60,9 @@
     <!-- 팝업 박스 만들기 -->
     <div class="popup-box-1">
         <div class="img-box">
-            <!-- <img src="http://junekorea.github.io/img1/ph/rollingpasta/p1.jpg" alt=""> -->
-            <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
-        </div>
+            <img src="http://junekorea.github.io/img1/ph/rollingpasta/p1.jpg" alt=""> -->
+            <!-- <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
+        </div>-->
         <div class="row">
             <div class="cell"><a href="#" class="block btn-close">오늘 하루 보지 않기</a></div>
             <div class="cell"><a href="#" class="block btn-close">닫기</a></div>
@@ -81,23 +81,33 @@
                 <div class="owl-carousel owl-theme">
                     <!-- 필수 : .owl-carousel와 .owl-theme -->
                     <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide1_0506.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/22.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide2.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/17.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide3.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/16.jpg);">
                     </div>
                     <div class="item"
-                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta//intro_slide4.jpg);">
+                        style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/14.jpg);">
                     </div>
                 </div>
             </div>
-            <h1>페이지1</h1>
         </div>
         <div data-section-name="page-2" class="page-2 page">
-            <h1>페이지2</h1>
+            <div class="head">
+                <div class="cell logo-cell text-align-center">
+                  <img href="" class="block img-block"><img src="(http://junekorea.github.io/img1/ph/rollingpasta/intro_logo.png" alt=""></a>
+                </div>
+                <div class="cell menu-cell">
+                    <span class="inline-block"><img src="(http://junekorea.github.io/img1/ph/rollingpasta/intro_img.png" alt=""></a></span>
+                    <h1>이탈리안 파스타의 캐주얼한 해석</h1>
+                    <div class="des">본질만 담음 합리적인 가격으로 맛있는 파스타와 잔와인까지,<br>
+부담없이 즐기고 가실 수 있는 곳입니다.</div>
+                </div>
+
+            </div>
         </div>
         <div data-section-name="page-3" class="page-3 page">
             <h1>페이지3</h1>
