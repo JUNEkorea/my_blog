@@ -21,13 +21,17 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
     <!-- 스크롤리 파이 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
 
     <!-- 페이지용 -->
     <link rel="stylesheet" href="/portfolio/rollingpasta/index.css">
     <script src="/portfolio/rollingpasta/index.js"></script>
-
 </head>
 
 <body>
@@ -56,18 +60,29 @@
 <!-- 페이지 인디케이터 박스 (스크롤리파이) -->
 <div class="page-indicator-box"></div>
 <!-- 팝업박스 -->
-<div class="popup-box-1">
-    <div class="img-box">
-        <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
-    </div>
-    <div class="row">
-        <div class="cell">
-            <a href="#" class="block btn-close">오늘 하루 보지 않기</a>
-        </div>
-        <div class="cell">
-            <a href="#" class="block btn-close">닫기</a>
-        </div>
-    </div>
+<div class="popup-box-1 flex">
+	<div class="img-box">
+		<a href="#"><img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt=""></a>
+		<div class="row">
+			<div class="cell">
+				<a href="#" class="block btn-close">오늘 하루 보지 않기</a>
+			</div>
+			<div class="cell">
+				<a href="#" class="block btn-close">닫기</a>
+			</div>
+		</div>
+	</div>
+	<div class="img-box">
+    <a href="#"><img src="http://junekorea.github.io/img1/ph/rollingpasta/p1.jpg" alt=""></a>
+		<div class="row">
+			<div class="cell">
+				<a href="#" class="block btn-close">오늘 하루 보지 않기</a>
+			</div>
+			<div class="cell">
+				<a href="#" class="block btn-close">닫기</a>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- 페이지1 시작 -->
 <div class="pages">
@@ -153,9 +168,59 @@
             </div>
         </div>
         <div class="body">
-
+            <div class="slick-slider-box-1">
+                <div class="btn-left">
+                    <span><i class="fas fa-chevron-left"></i></span>
+                </div>
+                <div class="btn-right">
+                    <span><i class="fas fa-chevron-right"></i></span>
+                </div>
+                <div class="slick-slider">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="http://rolling-pasta.com/_imgs/intro_slide1.jpg" alt="">
+                        </div>
+                        <div class="txt-box row">
+                            <div class="cell cell-title">최상의 맛을 위한 <br>식재료를 사용합니다. </div>
+                            <div class="cell cell-des">좋은 식재료와 조리법, 모든 면에서 정성을 담으면서, 합리적인 가격을 제시한는 것. 그것이 <br>롤링파스타가
+                                지키는
+                                맛있는 고집입니다.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="http://rolling-pasta.com/_imgs/intro_slide2.jpg" alt="">
+                        </div>
+                        <div class="txt-box row">
+                            <div class="cell cell-title">합리적인 가격으로 즐기는 <br>파스타요리</div>
+                            <div class="cell cell-des">좋은 식재료와 조리법, 모든 과정에서 불필요한 과정과 비용을 제거해<br>합리적인 가격을 제시하는 것이
+                                롤링파스타의
+                                철칙입니다.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="http://rolling-pasta.com/_imgs/intro_slide3.jpg" alt="">
+                        </div>
+                        <div class="txt-box row">
+                            <div class="cell cell-title">쉐프의 아이디어가 돋보이는 <br>트렌디한 메뉴</div>
+                            <div class="cell cell-des">오직 롤링파스타에서만 맛볼 수 ㅣㅇㅆ는 트렌디하면서도 아이디어가 돋보이는 메뉴를 <br>제공합니다.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="http://rolling-pasta.com/_imgs/intro_slide4.jpg" alt="">
+                        </div>
+                        <div class="txt-box row">
+                            <div class="cell cell-title">노천카페의 분의기를 담은 <br>감각적인 공간</div>
+                            <div class="cell cell-des">이탈리안 파스타와 함께 유럽거리 노천카페의 분위기를 담음 감각적인 공간을 선사합니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+     </div>
+    <!-- 페이지3시작 -->
     <div data-section-name="page-3" class="page page-3">
         <h1>페이지 3</h1>
     </div>

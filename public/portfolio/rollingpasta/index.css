@@ -123,16 +123,79 @@ a {
     vertical-align: bottom;
 }
 
-
+/* 라이브러리 - flex */
+* > .flex {
+    display:flex;
+  }
+  
+  * > .flex-grow-1 {
+    flex-grow:1;
+  }
+  
+  * > .flex-jc-c {
+    justify-content:center;
+  }
+  
+  * > .flex-jc-s {
+    justify-content:flex-start;
+  }
+  
+  * > .flex-jc-e {
+    justify-content:flex-end;
+  }
+  
+  * > .flex-jc-sb {
+    justify-content:space-between;
+  }
+  
+  * > .flex-ai-c {
+    align-items:center;
+  }
+  
+  * > .flex-ai-s {
+    align-items:flex-start;
+  }
+  
+  * > .flex-ai-e {
+    align-items:flex-end;
+  }
+  
+  * > .flex-as-s {
+    align-self:stretch;
+  }
+  
+  * > .flex-as-c {
+    align-self:center;
+  }
+  
+  * > .flex-as-s {
+    align-self:flex-start;
+  }
+  
+  * > .flex-as-e {
+    align-self:flex-end;
+  }
+  
+  * > .flex-column-nowrap {
+    flex-flow:column nowrap;
+  }
+  
+  * > .flex-column-wrap {
+    flex-flow:column wrap;
+  }
+  
+  .flex-ch-basis-0 > * {
+    flex-basis:0;
+  }
+  
+  * > .flex-1-0-0 {
+    flex:1 0 0;
+  }
+  
 /* 커스텀 */
 
 
 /* 임시 */
-
-body {
-    background-color: salmon;
-}
-
 .con {
     max-width: 1465px;
     /* 반응형웹사이트, con2개 잡아도 됨. */
@@ -236,10 +299,9 @@ body {
 
 
 /* 팝업창 꾸미기 */
-
 .popup-box-1 {
     position: absolute;
-    width: 480px;
+    width:900px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -248,24 +310,25 @@ body {
     box-sizing: border-box;
 }
 
-.popup-box-1>.row>.cell {
+.popup-box-1>.img-box>a>img{
+    display: block
+}
+.popup-box-1>.img-box>.row>.cell {
     width: 50%;
 }
 
-.popup-box-1>.row>.cell>a {
+.popup-box-1>.img-box>.row>.cell>a {
     text-align: center;
     color: white;
     background-color: #073C6D;
     padding: 15px 0;
 }
 
-.popup-box-1>.row>.cell:first-child>a {
+.popup-box-1>.img-box>.row>.cell:nth-child(2n)>a {
     background-color: #7C7C7C;
 }
 
-
 /* 페이지 인디케이터 */
-
 .pagination {
     position: fixed;
     right: 20px;
@@ -281,45 +344,30 @@ body {
     padding: 20px;
 }
 
-.pagination a.active:after {
-    box-shadow: inset 0 0 0 5px;
+.pagination a.active::after {
+    background-color:#073c6d;
+    transform:translateX(-50%) translateY(-50%) scale(2);
 }
 
 .pagination a .hover-text {
-    display: none;
-    /* 사용안함, 동그라미 옆 글자들  */
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    padding-right: 15px;
-    white-space: nowrap;
+    display:none;
 }
 
-.pagination a:hover .hover-text {
-    opacity: 1;
-}
-
-.pagination a:after {
+.pagination a::after {
     content: "";
-    transition: box-shadow 0.5s ease;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     display: block;
-    border: 1px solid;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    top:50%;
+    left:50%;
+    background-color:#adadad;
+    transform:translateX(-50%) translateY(-50%);
 }
 
 
 /* 페이지1 */
-
-
 /* 페이지1-아울캐러셀적용 */
 
 .page-1>.my-carousel-1 {
@@ -404,75 +452,100 @@ body {
 }
 
 
-/* 페이지2 */
-
-.page-2 .head>.con {
-    /* 헤드 안에 콘주기.줄어들지 않도록 */
-    max-width: 1120px;
+/* 페이지2시작 */
+.page-2 .head > .con {
+    max-width:1120px;
 }
 
 .page-2 .head {
-    background-image: url(http://rolling-pasta.com/_imgs/intro_bg.png);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image:url(http://rolling-pasta.com/_imgs/intro_bg.png);
+    padding-top:200px;
+    padding-bottom:30px;
+ 
 }
 
-.page-2 .head>.con>.logo-cell {
-    width: 127px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 100px;
+.page-2 .head > .con > .logo-cell {
+    width:127px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:100px;
 }
 
-.page-2 .head>.con>.menu-cell {
-    width: calc(100% - 227px);
-    /* 127+50+50 */
+.page-2 .head > .con > .menu-cell {
+    width:calc(100% - 227px);
 }
 
-.page-2 .head>.con>.menu-cell>h1 {
-    margin-top: 10px;
-    color: #003b5A;
-    font-weight: 700;
-    font-size: 1.25rem;
+.page-2 .head > .con > .menu-cell > h1 {
+    margin-top:10px;
+    color:#003b5A;
+    font-weight:700;
+    font-size:1.25rem;
 }
 
-.page-2 .head>.con>.menu-cell>.des {
-    margin-top: 10px;
-    color: #003B5A;
+.page-2 .head > .con > .menu-cell > .des {
+    margin-top:10px;
+    color:#003B5A;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1 {
-    width: calc(100% - 120px);
-    margin: 0 auto;
-    margin-top: 40px;
+.page-2 .head > .con > .menu-cell > .list-1 {
+    width:calc(100% - 120px);
+    margin:0 auto;
+    margin-top:40px;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li {
-    width: 25%;
+.page-2 .head > .con > .menu-cell > .list-1 > li {
+    width:25%;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li>a {
-    width: 150px;
-    margin: 0 auto;
-    /* a가 부드럽게 줄어든다. 화면줄이면 반응형에 적합 */
+.page-2 .head > .con > .menu-cell > .list-1 > li > a {
+    width:150px;
+    margin:0 auto;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li>a>img:first-child {
-    display: none;
+.page-2 .head > .con > .menu-cell > .list-1 > li > a > img:first-child {
+    display:none;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:first-child {
-    display: block;
+.page-2 .head > .con > .menu-cell > .list-1 > li:hover > a > img:first-child, .page-2 .head > .con > .menu-cell > .list-1 > li.selected > a > img:first-child {
+    display:block;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:last-child {
-    display: none;
+.page-2 .head > .con > .menu-cell > .list-1 > li:hover > a > img:last-child, .page-2 .head > .con > .menu-cell > .list-1 > li.selected > a > img:last-child {
+    display:none;
 }
 
-.page-2 .head>.con>.menu-cell>.list-1>li>.text {
-    margin-top: 20px;
+.page-2 .head > .con > .menu-cell > .list-1 > li > .text {
+    margin-top:20px;
 }
 
+.page-2 .slick-slider-box-1 {
+    max-width:1280px;
+    margin:0 auto;
+    position:relative;
+}
+
+.page-2 .slick-slider-box-1 > .slick-slider {
+    margin-left:80px;
+    margin-right:80px;
+}
+
+.page-2 .slick-slider-box-1 > .btn-left, .page-2 .slick-slider-box-1 > .btn-right {
+    position:absolute;
+    left:50px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.page-2 .slick-slider-box-1 > .btn-right {
+    right:50px;
+    left:auto;
+}
+
+.page-2 .slick-slider-box-1 > div >span {
+    font-size: 3rem;
+    font-weight: 100;
+    color:gray;
+}
 .page-3 {
     height: 80vh;
 }
