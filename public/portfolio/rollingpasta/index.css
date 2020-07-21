@@ -135,6 +135,7 @@ body {
 
 .con {
     max-width: 1465px;
+    /* 반응형웹사이트, con2개 잡아도 됨. */
 }
 
 
@@ -144,10 +145,12 @@ body {
     transition: background-color 0.3s;
     border-bottom: 2px solid transparent;
     position: fixed;
+    /* 유령화되므로 너비 줄어들음. width100% */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
+    /* 많이 준다. 맨위에 올라오도록 */
 }
 
 .top-bar .logo {
@@ -160,6 +163,9 @@ body {
     position: relative;
 }
 
+
+/* 탑바가 active되면 밑줄 움직이는 밑줄효과 */
+
 .top-bar .menu-box-1>ul>li>a::after {
     content: "";
     display: block;
@@ -167,10 +173,13 @@ body {
     background-color: #003E73;
     position: absolute;
     bottom: 0;
+    /* 한줄로 나온다. */
     left: 5px;
+    /* 왼쪽 오른쪽 여분을 주니까 끊어져 보임. */
     right: 5px;
     visibility: hidden;
     transition: visibility 0s 0.6s;
+    /* 0.6초 기다렸다가 짠 하고 나타남 */
 }
 
 .top-bar .menu-box-1>ul>li.active>a::after {
@@ -179,18 +188,23 @@ body {
 
 .top-bar .logo>.on {
     opacity: 0;
+    /* 평소엔 보이지 않고 */
     transition: opacity 0.3s;
+    /* 로고가 부드럽게 바뀌도록 */
 }
 
 .top-bar .menu-box-1>ul>li.cs-center-cell>a {
     padding-right: 30px;
+    /* ico-1 있을 공간부여.(-> )cs-center-cell 선택자명 */
 }
 
 .top-bar .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
     width: 25px;
+    /* 너비 위치를 정확하게 기억. */
     height: 25px;
     background-image: url(http://rolling-pasta.com/_imgs/ico.png);
     background-position-x: -50px;
+    /* 위치를 정확하게 기억. */
     background-position-y: 0px;
 }
 
@@ -211,214 +225,13 @@ body {
 .top-bar:hover .logo>.on,
 .top-bar.hover .logo>.on {
     opacity: 1;
+    /* 다른 로고 보이게 */
 }
 
 .top-bar:hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1,
 .top-bar.hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
     background-position-x: 0;
-}
-
-
-/* 페이지 인디케이터 */
-
-.pagination {
-    position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.pagination a {
-    display: block;
-    color: white;
-    position: relative;
-    padding: 20px;
-}
-
-.pagination a.active:after {
-    box-shadow: inset 0 0 0 5px;
-}
-
-.pagination a .hover-text {
-    display: none;
-    /* 사용안함 */
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    padding-right: 15px;
-    white-space: nowrap;
-}
-
-.pagination a:hover .hover-text {
-    opacity: 1;
-}
-
-.pagination a:after {
-    content: "";
-    transition: box-shadow 0.5s ease;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border: 1px solid;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-/* 페이지 */
-
-.page-1>.my-carousel-1 {
-    height: 802px;
-    overflow: hidden;
-}
-
-.page-1>.my-carousel-1>.owl-carousel,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
-    height: 100%;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    margin-right: 500px;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
-    right: auto;
-    left: 50%;
-    margin-left: 500px;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev>.btn-left,
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
-    display: block;
-    width: 41px;
-    height: 41px;
-    background-image: url(http://rolling-pasta.com/_imgs/ico.png);
-    background-position: -50px -50px;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
-    background-position: -50px -100px;
-}
-
-.page-1 .scroll-down-icon-box {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%);
-    z-index: 9;
-    margin-top: 280px;
-}
-
-.page-1 .scroll-down-icon-box.active {
-    animation-name: up-down;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes up-down {
-    0% {
-        margin-top: 280px;
-    }
-    50% {
-        margin-top: 300px;
-    }
-    100% {
-        margin-top: 280px;
-    }
-}
-
-.page-2 .head>.con {
-    max-width: 1120px;
-}
-
-.page-2 .head {
-    background-image: url(http://rolling-pasta.com/_imgs/intro_bg.png);
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.page-2 .head>.con>.logo-cell {
-    width: 127px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 100px;
-}
-
-.page-2 .head>.con>.menu-cell {
-    width: calc(100% - 227px);
-}
-
-.page-2 .head>.con>.menu-cell>h1 {
-    margin-top: 10px;
-    color: #003b5A;
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-
-.page-2 .head>.con>.menu-cell>.des {
-    margin-top: 10px;
-    color: #003B5A;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1 {
-    width: calc(100% - 120px);
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li {
-    width: 25%;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li>a {
-    width: 150px;
-    margin: 0 auto;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li>a>img:first-child {
-    display: none;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:first-child {
-    display: block;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:last-child {
-    display: none;
-}
-
-.page-2 .head>.con>.menu-cell>.list-1>li>.text {
-    margin-top: 20px;
-}
-
-.page-3 {
-    height: 80vh;
-}
-
-.page-4 {
-    height: 180vh;
-}
-
-.page-5 {
-    height: 70vh;
+    /*파란색아이콘보이게 위치지정 */
 }
 
 
@@ -448,4 +261,226 @@ body {
 
 .popup-box-1>.row>.cell:first-child>a {
     background-color: #7C7C7C;
+}
+
+
+/* 페이지 인디케이터 */
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.pagination a.active:after {
+    box-shadow: inset 0 0 0 5px;
+}
+
+.pagination a .hover-text {
+    display: none;
+    /* 사용안함, 동그라미 옆 글자들  */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    content: "";
+    transition: box-shadow 0.5s ease;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* 페이지1 */
+
+
+/* 페이지1-아울캐러셀적용 */
+
+.page-1>.my-carousel-1 {
+    height: 802px;
+}
+
+.page-1>.my-carousel-1>.owl-carousel,
+.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer,
+.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage,
+.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item,
+.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
+    height: 100%;
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+    background-color: transparent;
+    /* <> 둘이 겹친 상태*/
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: 500px/* 사이거리 */
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+    right: auto;
+    /*  <       > 오른쪽으로 옮기기 */
+    left: 50%;
+    margin-left: 500px;
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev>.btn-left,
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+    background-position: -50px -50px;
+    /*  < 왼쪽버튼  */
+}
+
+.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+    background-position: -50px -100px;
+    /*  > 오른쪽버튼  */
+}
+
+
+/* 페이지1-스크롤다운아이콘 -움직이는 아래로 긴 화살표*/
+
+.page-1 .scroll-down-icon-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    /* 페이지1에 반쯤 걸쳐진 상태. */
+    z-index: 9;
+    /* 팝업 바로 아래에 나와야 하므로 팝업은 10 */
+    margin-top: 280px;
+}
+
+.page-1 .scroll-down-icon-box.active {
+    animation-name: up-down;
+    /* 키프레임 업 다운 */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* active가 들어갔을때 반복. */
+}
+
+@keyframes up-down {
+    0% {
+        margin-top: 280px;
+    }
+    50% {
+        margin-top: 300px;
+    }
+    100% {
+        margin-top: 280px;
+    }
+}
+
+
+/* 페이지2 */
+
+.page-2 .head>.con {
+    /* 헤드 안에 콘주기.줄어들지 않도록 */
+    max-width: 1120px;
+}
+
+.page-2 .head {
+    background-image: url(http://rolling-pasta.com/_imgs/intro_bg.png);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.page-2 .head>.con>.logo-cell {
+    width: 127px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.page-2 .head>.con>.menu-cell {
+    width: calc(100% - 227px);
+    /* 127+50+50 */
+}
+
+.page-2 .head>.con>.menu-cell>h1 {
+    margin-top: 10px;
+    color: #003b5A;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.page-2 .head>.con>.menu-cell>.des {
+    margin-top: 10px;
+    color: #003B5A;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1 {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li {
+    width: 25%;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li>a {
+    width: 150px;
+    margin: 0 auto;
+    /* a가 부드럽게 줄어든다. 화면줄이면 반응형에 적합 */
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li>a>img:first-child {
+    display: none;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:first-child {
+    display: block;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:last-child {
+    display: none;
+}
+
+.page-2 .head>.con>.menu-cell>.list-1>li>.text {
+    margin-top: 20px;
+}
+
+.page-3 {
+    height: 80vh;
+}
+
+.page-4 {
+    height: 180vh;
+}
+
+.page-5 {
+    height: 70vh;
 }

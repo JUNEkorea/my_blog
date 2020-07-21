@@ -31,7 +31,7 @@
 </head>
 
 <body>
-
+<!-- 탑바 -->
 <div class="top-bar relative">
     <a href="#" class="logo absolute-left absolute-middle img-box">
         <img src="http://rolling-pasta.com/_imgs/header_logo.png" alt="">
@@ -53,12 +53,12 @@
         </ul>
     </nav>
 </div>
-
+<!-- 페이지 인디케이터 박스 (스크롤리파이) -->
 <div class="page-indicator-box"></div>
-
+<!-- 팝업박스 -->
 <div class="popup-box-1">
     <div class="img-box">
-        <img src="http://rolling-pasta.com/upload/popup/W_390057001566961886.jpg" alt="">
+        <img src="http://junekorea.github.io/img1/ph/rollingpasta/p2.jpg" alt="">
     </div>
     <div class="row">
         <div class="cell">
@@ -69,7 +69,7 @@
         </div>
     </div>
 </div>
-
+<!-- 페이지1 시작 -->
 <div class="pages">
     <div data-section-name="page-1" class="page page-1 relative">
         <div class="scroll-down-icon-box">
@@ -77,31 +77,32 @@
                 <img src="http://rolling-pasta.com/_imgs/scroll2.png" alt="">
             </a>
         </div>
-
+        <!-- 아울캐러셀 -->
         <div class="my-carousel-1">
             <div class="owl-carousel owl-theme">
-                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_560185001558932311.jpg);">
+                <div class="item" style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/22.jpg);">
                 </div>
-                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_455015001558932328.jpg);">
+                <div class="item" style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/17.jpg);">
                 </div>    
-                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_418069001564558567.jpg);">
+                <div class="item" style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/16.jpg);">
                 </div>
-                <div class="item" style="background-image: url(http://rolling-pasta.com/upload/bnr/W_543547001559122792.jpg);">
+                <div class="item" style="background-image: url(http://junekorea.github.io/img1/ph/rollingpasta/14.jpg);">
                 </div>  
             </div>
         </div>
     </div>
+    <!-- 페이지2 시작 -->
     <div data-section-name="page-2" class="page page-2">
         <div class="head">
             <div class="con row">
                 <div class="cell logo-cell">
                     <a href="#" class="block img-box">
-                        <img src="http://rolling-pasta.com/_imgs/intro_logo.png" alt="">
+                        <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_logo.png" alt="">
                     </a>
                 </div>
                 <div class="cell menu-cell text-align-center">
                     <span class="inline-block">
-                        <img src="http://rolling-pasta.com/_imgs/intro_img.png" alt="">
+                        <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_img.png" alt="">
                     </span>
                     <h1>
                         이탈리안 파스타의 캐주얼한 해석
