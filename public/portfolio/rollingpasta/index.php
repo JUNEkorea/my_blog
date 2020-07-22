@@ -180,7 +180,7 @@
                 <div class="slick-slider">
                     <div class="item">
                         <div class="img-box">
-                            <img src="http://rolling-pasta.com/_imgs/intro_slide1.jpg" alt="">
+                            <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_slide1_0506.jpg" alt="">
                         </div>
                         <div class="txt-box row">
                             <div class="cell cell-title">최상의 맛을 위한 <br>식재료를 사용합니다. </div>
@@ -191,7 +191,7 @@
                     </div>
                     <div class="item">
                         <div class="img-box">
-                            <img src="http://rolling-pasta.com/_imgs/intro_slide2.jpg" alt="">
+                            <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_slide2.jpg" alt="">
                         </div>
                         <div class="txt-box row">
                             <div class="cell cell-title">합리적인 가격으로 즐기는 <br>파스타요리</div>
@@ -202,7 +202,7 @@
                     </div>
                     <div class="item">
                         <div class="img-box">
-                            <img src="http://rolling-pasta.com/_imgs/intro_slide3.jpg" alt="">
+                            <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_slide3.jpg" alt="">
                         </div>
                         <div class="txt-box row">
                             <div class="cell cell-title">쉐프의 아이디어가 돋보이는 <br>트렌디한 메뉴</div>
@@ -211,7 +211,7 @@
                     </div>
                     <div class="item">
                         <div class="img-box">
-                            <img src="http://rolling-pasta.com/_imgs/intro_slide4.jpg" alt="">
+                            <img src="http://junekorea.github.io/img1/ph/rollingpasta/intro_slide4.jpg" alt="">
                         </div>
                         <div class="txt-box row">
                             <div class="cell cell-title">노천카페의 분의기를 담은 <br>감각적인 공간</div>
@@ -250,31 +250,31 @@
         </div>
         <div class="body">
             <div class="slick-slider-box-2">
-                <div class="btn-left">
-                    좌
-                </div>
-                <div class="btn-right">
-                    우
-                </div>
+            <div class="btn-left">
+                <span class="slick-prev"></span>
+            </div>
+            <div class="btn-right">
+                <span class="slick-next"></span>
+            </div>
                 <div class="slick-slider">
                     <div class="item">
                         <div class="con">
                             <div class="img-box">
-                                <img src="http://rolling-pasta.com/upload/menu/W_716763001558943799.png" alt="">
+                                <img src="http://rolling-pasta.com/upload/menu/W_640911001595296494.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="con">
                             <div class="img-box">
-                                <img src="http://rolling-pasta.com/upload/menu/W_34778001580808758.png" alt="">
+                                <img src="http://rolling-pasta.com/upload/menu/W_434765001595296652.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="con">
                             <div class="img-box">
-                                <img src="http://rolling-pasta.com/upload/menu/W_264881001564558785.png" alt="">
+                                <img src="http://rolling-pasta.com/upload/menu/W_224594001586768064.png" alt="">
                             </div>    
                         </div>
 
@@ -282,7 +282,7 @@
                     <div class="item">
                         <div class="con">
                             <div class="img-box">
-                                <img src="http://rolling-pasta.com/upload/menu/W_442175001580808799.png" alt="">
+                                <img src="http://rolling-pasta.com/upload/menu/W_438069001595296688.png" alt="">
                             </div>    
                         </div>
 
@@ -296,8 +296,8 @@
                     </div>
                     <div class="item">
                         <div class="con">
-                            <div class="img-box">
-                                <img src="http://rolling-pasta.com/upload/menu/W_882157001564558817.png" alt="">
+                            <div class="img-box" style ="background-color:url(http://junekorea.github.io/img1/ph/rollingpasta/12.jpg);">
+                                <img src="http://rolling-pasta.com/upload/menu/W_876558001595296709.png" alt="">
                             </div>
                         </div>
                     </div>

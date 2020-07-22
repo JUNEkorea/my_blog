@@ -623,7 +623,7 @@
         width: 41px;
         height: 41px;
         background-image: url(http://rolling-pasta.com/_imgs/ico.png);
-        background-position: 0 0;
+        background-position: 0 -50px;
     }
     
     .page-3 .slick-slider-box-2>div>.slick-next {
@@ -631,7 +631,7 @@
         width: 41px;
         height: 41px;
         background-image: url(http://rolling-pasta.com/_imgs/ico.png);
-        background-position: 0 0;
+        background-position: 0 -100px;
     }
     
     .page-3 .slick-slider-box-2>div>span.active {
