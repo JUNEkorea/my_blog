@@ -1,559 +1,652 @@
-/*  폰트 적용 */
-
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-html {
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-
-/* 노말라이즈 */
-
-body,
-ul,
-li,
-h1 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/* 라이브러리 */
-
-.con {
-    margin: 0 auto;
-}
-
-.img-box>img {
-    width: 100%;
-    display: block;
-}
-
-.row::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.cell {
-    float: left;
-    box-sizing: border-box;
-}
-
-.cell-right {
-    float: right;
-    box-sizing: border-box;
-}
-
-.margin-0-auto {
-    margin: 0 auto;
-}
-
-.block {
-    display: block;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.line-height-0-ch-only {
-    line-height: 0;
-}
-
-.line-height-0-ch-only>* {
-    line-height: normal;
-}
-
-.relative {
-    position: relative;
-}
-
-.absolute-left {
-    position: absolute;
-    left: 0;
-}
-
-.absolute-top {
-    position: absolute;
-    top: 0;
-}
-
-.absolute-right {
-    position: absolute;
-    right: 0;
-}
-
-.absolute-middle {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.width-100p {
-    width: 100%;
-}
-
-.table {
-    display: table;
-}
-
-.table-cell {
-    display: table-cell;
-}
-
-.vertical-align-top {
-    vertical-align: top;
-}
-
-.vertical-align-middle {
-    vertical-align: middle;
-}
-
-.vertical-align-bottom {
-    vertical-align: bottom;
-}
-
-/* 라이브러리 - flex */
-* > .flex {
-    display:flex;
-  }
-  
-  * > .flex-grow-1 {
-    flex-grow:1;
-  }
-  
-  * > .flex-jc-c {
-    justify-content:center;
-  }
-  
-  * > .flex-jc-s {
-    justify-content:flex-start;
-  }
-  
-  * > .flex-jc-e {
-    justify-content:flex-end;
-  }
-  
-  * > .flex-jc-sb {
-    justify-content:space-between;
-  }
-  
-  * > .flex-ai-c {
-    align-items:center;
-  }
-  
-  * > .flex-ai-s {
-    align-items:flex-start;
-  }
-  
-  * > .flex-ai-e {
-    align-items:flex-end;
-  }
-  
-  * > .flex-as-s {
-    align-self:stretch;
-  }
-  
-  * > .flex-as-c {
-    align-self:center;
-  }
-  
-  * > .flex-as-s {
-    align-self:flex-start;
-  }
-  
-  * > .flex-as-e {
-    align-self:flex-end;
-  }
-  
-  * > .flex-column-nowrap {
-    flex-flow:column nowrap;
-  }
-  
-  * > .flex-column-wrap {
-    flex-flow:column wrap;
-  }
-  
-  .flex-ch-basis-0 > * {
-    flex-basis:0;
-  }
-  
-  * > .flex-1-0-0 {
-    flex:1 0 0;
-  }
-  
-/* 커스텀 */
-
-
-/* 임시 */
-.con {
-    max-width: 1465px;
-    /* 반응형웹사이트, con2개 잡아도 됨. */
-}
-
-
-/* 탑바 */
-
-.top-bar {
-    transition: background-color 0.3s;
-    border-bottom: 2px solid transparent;
-    position: fixed;
-    /* 유령화되므로 너비 줄어들음. width100% */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    /* 많이 준다. 맨위에 올라오도록 */
-}
-
-.top-bar .logo {
-    margin-left: 50px;
-}
-
-.top-bar .menu-box-1>ul>li>a {
-    padding: 30px 10px;
-    color: white;
-    position: relative;
-}
-
-
-/* 탑바가 active되면 밑줄 움직이는 밑줄효과 */
-
-.top-bar .menu-box-1>ul>li>a::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #003E73;
-    position: absolute;
-    bottom: 0;
-    /* 한줄로 나온다. */
-    left: 5px;
-    /* 왼쪽 오른쪽 여분을 주니까 끊어져 보임. */
-    right: 5px;
-    visibility: hidden;
-    transition: visibility 0s 0.6s;
-    /* 0.6초 기다렸다가 짠 하고 나타남 */
-}
-
-.top-bar .menu-box-1>ul>li.active>a::after {
-    visibility: visible;
-}
-
-.top-bar .logo>.on {
-    opacity: 0;
-    /* 평소엔 보이지 않고 */
-    transition: opacity 0.3s;
-    /* 로고가 부드럽게 바뀌도록 */
-}
-
-.top-bar .menu-box-1>ul>li.cs-center-cell>a {
-    padding-right: 30px;
-    /* ico-1 있을 공간부여.(-> )cs-center-cell 선택자명 */
-}
-
-.top-bar .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
-    width: 25px;
-    /* 너비 위치를 정확하게 기억. */
-    height: 25px;
-    background-image: url(http://rolling-pasta.com/_imgs/ico.png);
-    background-position-x: -50px;
-    /* 위치를 정확하게 기억. */
-    background-position-y: 0px;
-}
-
-
-/* 탑바 - 호버 */
-
-.top-bar:hover,
-.top-bar.hover {
-    background-color: white;
-    border-bottom-color: black;
-}
-
-.top-bar:hover .menu-box-1>ul>li>a,
-.top-bar.hover .menu-box-1>ul>li>a {
-    color: #003E73;
-}
-
-.top-bar:hover .logo>.on,
-.top-bar.hover .logo>.on {
-    opacity: 1;
-    /* 다른 로고 보이게 */
-}
-
-.top-bar:hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1,
-.top-bar.hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
-    background-position-x: 0;
-    /*파란색아이콘보이게 위치지정 */
-}
-
-
-/* 팝업창 꾸미기 */
-.popup-box-1 {
-    position: absolute;
-    width:900px;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 10;
-    border: 1px solid #dfdfdf;
-    box-sizing: border-box;
-}
-
-.popup-box-1>.img-box>a>img{
-    display: block
-}
-.popup-box-1>.img-box>.row>.cell {
-    width: 50%;
-}
-
-.popup-box-1>.img-box>.row>.cell>a {
-    text-align: center;
-    color: white;
-    background-color: #073C6D;
-    padding: 15px 0;
-}
-
-.popup-box-1>.img-box>.row>.cell:nth-child(2n)>a {
-    background-color: #7C7C7C;
-}
-
-/* 페이지 인디케이터 */
-.pagination {
-    position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.pagination a {
-    display: block;
-    color: white;
-    position: relative;
-    padding: 20px;
-}
-
-.pagination a.active::after {
-    background-color:#073c6d;
-    transform:translateX(-50%) translateY(-50%) scale(2);
-}
-
-.pagination a .hover-text {
-    display:none;
-}
-
-.pagination a::after {
-    content: "";
-    width: 7px;
-    height: 7px;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    background-color:#adadad;
-    transform:translateX(-50%) translateY(-50%);
-}
-
-
-/* 페이지1 */
-/* 페이지1-아울캐러셀적용 */
-
-.page-1>.my-carousel-1 {
-    height: 802px;
-}
-
-.page-1>.my-carousel-1>.owl-carousel,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item,
-.page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
-    height: 100%;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
-    background-color: transparent;
-    /* <> 둘이 겹친 상태*/
-    border: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    margin-right: 500px/* 사이거리 */
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
-    right: auto;
-    /*  <       > 오른쪽으로 옮기기 */
-    left: 50%;
-    margin-left: 500px;
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev>.btn-left,
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
-    display: block;
-    width: 41px;
-    height: 41px;
-    background-image: url(http://rolling-pasta.com/_imgs/ico.png);
-    background-position: -50px -50px;
-    /*  < 왼쪽버튼  */
-}
-
-.page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
-    background-position: -50px -100px;
-    /*  > 오른쪽버튼  */
-}
-
-
-/* 페이지1-스크롤다운아이콘 -움직이는 아래로 긴 화살표*/
-
-.page-1 .scroll-down-icon-box {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%);
-    /* 페이지1에 반쯤 걸쳐진 상태. */
-    z-index: 9;
-    /* 팝업 바로 아래에 나와야 하므로 팝업은 10 */
-    margin-top: 280px;
-}
-
-.page-1 .scroll-down-icon-box.active {
-    animation-name: up-down;
-    /* 키프레임 업 다운 */
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    /* active가 들어갔을때 반복. */
-}
-
-@keyframes up-down {
-    0% {
+    /*  폰트 적용 */
+    
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    html {
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    /* 노말라이즈 */
+    
+    body,
+    ul,
+    li,
+    h1 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    /* 라이브러리 */
+    
+    .con {
+        margin: 0 auto;
+    }
+    
+    .img-box>img {
+        width: 100%;
+        display: block;
+    }
+    
+    .row::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .cell {
+        float: left;
+        box-sizing: border-box;
+    }
+    
+    .cell-right {
+        float: right;
+        box-sizing: border-box;
+    }
+    
+    .margin-0-auto {
+        margin: 0 auto;
+    }
+    
+    .block {
+        display: block;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .text-align-center {
+        text-align: center;
+    }
+    
+    .line-height-0-ch-only {
+        line-height: 0;
+    }
+    
+    .line-height-0-ch-only>* {
+        line-height: normal;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .absolute-left {
+        position: absolute;
+        left: 0;
+    }
+    
+    .absolute-top {
+        position: absolute;
+        top: 0;
+    }
+    
+    .absolute-right {
+        position: absolute;
+        right: 0;
+    }
+    
+    .absolute-middle {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .width-100p {
+        width: 100%;
+    }
+    
+    .table {
+        display: table;
+    }
+    
+    .table-cell {
+        display: table-cell;
+    }
+    
+    .vertical-align-top {
+        vertical-align: top;
+    }
+    
+    .vertical-align-middle {
+        vertical-align: middle;
+    }
+    
+    .vertical-align-bottom {
+        vertical-align: bottom;
+    }
+    /* 라이브러리 - flex */
+    
+    *>.flex {
+        display: flex;
+    }
+    
+    *>.flex-grow-1 {
+        flex-grow: 1;
+    }
+    
+    *>.flex-jc-c {
+        justify-content: center;
+    }
+    
+    *>.flex-jc-s {
+        justify-content: flex-start;
+    }
+    
+    *>.flex-jc-e {
+        justify-content: flex-end;
+    }
+    
+    *>.flex-jc-sb {
+        justify-content: space-between;
+    }
+    
+    *>.flex-ai-c {
+        align-items: center;
+    }
+    
+    *>.flex-ai-s {
+        align-items: flex-start;
+    }
+    
+    *>.flex-ai-e {
+        align-items: flex-end;
+    }
+    
+    *>.flex-as-s {
+        align-self: stretch;
+    }
+    
+    *>.flex-as-c {
+        align-self: center;
+    }
+    
+    *>.flex-as-s {
+        align-self: flex-start;
+    }
+    
+    *>.flex-as-e {
+        align-self: flex-end;
+    }
+    
+    *>.flex-column-nowrap {
+        flex-flow: column nowrap;
+    }
+    
+    *>.flex-column-wrap {
+        flex-flow: column wrap;
+    }
+    
+    .flex-ch-basis-0>* {
+        flex-basis: 0;
+    }
+    
+    *>.flex-1-0-0 {
+        flex: 1 0 0;
+    }
+    /* 커스텀 */
+    /* 임시 */
+    
+    .con {
+        max-width: 1465px;
+        /* 반응형웹사이트, con2개 잡아도 됨. */
+    }
+    /* 탑바 */
+    
+    .top-bar {
+        transition: background-color 0.3s;
+        border-bottom: 2px solid transparent;
+        position: fixed;
+        /* 유령화되므로 너비 줄어들음. width100% */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        /* 많이 준다. 맨위에 올라오도록 */
+    }
+    
+    .top-bar .logo {
+        margin-left: 50px;
+    }
+    
+    .top-bar .menu-box-1>ul>li>a {
+        padding: 30px 10px;
+        color: white;
+        position: relative;
+    }
+    /* 탑바가 active되면 밑줄 움직이는 밑줄효과 */
+    
+    .top-bar .menu-box-1>ul>li>a::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #003E73;
+        position: absolute;
+        bottom: 0;
+        /* 한줄로 나온다. */
+        left: 5px;
+        /* 왼쪽 오른쪽 여분을 주니까 끊어져 보임. */
+        right: 5px;
+        visibility: hidden;
+        transition: visibility 0s 0.6s;
+        /* 0.6초 기다렸다가 짠 하고 나타남 */
+    }
+    
+    .top-bar .menu-box-1>ul>li.active>a::after {
+        visibility: visible;
+    }
+    
+    .top-bar .logo>.on {
+        opacity: 0;
+        /* 평소엔 보이지 않고 */
+        transition: opacity 0.3s;
+        /* 로고가 부드럽게 바뀌도록 */
+    }
+    
+    .top-bar .menu-box-1>ul>li.cs-center-cell>a {
+        padding-right: 30px;
+        /* ico-1 있을 공간부여.(-> )cs-center-cell 선택자명 */
+    }
+    
+    .top-bar .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
+        width: 25px;
+        /* 너비 위치를 정확하게 기억. */
+        height: 25px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position-x: -50px;
+        /* 위치를 정확하게 기억. */
+        background-position-y: 0px;
+    }
+    /* 탑바 - 호버 */
+    
+    .top-bar:hover,
+    .top-bar.hover {
+        background-color: white;
+        border-bottom-color: black;
+    }
+    
+    .top-bar:hover .menu-box-1>ul>li>a,
+    .top-bar.hover .menu-box-1>ul>li>a {
+        color: #003E73;
+    }
+    
+    .top-bar:hover .logo>.on,
+    .top-bar.hover .logo>.on {
+        opacity: 1;
+        /* 다른 로고 보이게 */
+    }
+    
+    .top-bar:hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1,
+    .top-bar.hover .menu-box-1>ul>li.cs-center-cell>a>.ico-1 {
+        background-position-x: 0;
+        /*파란색아이콘보이게 위치지정 */
+    }
+    /* 팝업창 꾸미기 */
+    
+    .popup-box-1 {
+        position: absolute;
+        width: 900px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 10;
+        border: 1px solid #dfdfdf;
+        box-sizing: border-box;
+    }
+    
+    .popup-box-1>.img-box>a>img {
+        display: block
+    }
+    
+    .popup-box-1>.img-box>.row>.cell {
+        width: 50%;
+    }
+    
+    .popup-box-1>.img-box>.row>.cell>a {
+        text-align: center;
+        color: white;
+        background-color: #073C6D;
+        padding: 15px 0;
+    }
+    
+    .popup-box-1>.img-box>.row>.cell:nth-child(2n)>a {
+        background-color: #7C7C7C;
+    }
+    /* 페이지 인디케이터 */
+    
+    .pagination {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    
+    .pagination a {
+        display: block;
+        color: white;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .pagination a.active::after {
+        background-color: #073c6d;
+        transform: translateX(-50%) translateY(-50%) scale(2);
+    }
+    
+    .pagination a .hover-text {
+        display: none;
+    }
+    
+    .pagination a::after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #adadad;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    /* 페이지1 */
+    /* 페이지1-아울캐러셀적용 */
+    
+    .page-1>.my-carousel-1 {
+        height: 802px;
+    }
+    
+    .page-1>.my-carousel-1>.owl-carousel,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-stage-outer>.owl-stage>.owl-item>.item {
+        height: 100%;
+    }
+    
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+        background-color: transparent;
+        /* <> 둘이 겹친 상태*/
+        border: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: 500px/* 사이거리 */
+    }
+    
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next {
+        right: auto;
+        /*  <       > 오른쪽으로 옮기기 */
+        left: 50%;
+        margin-left: 500px;
+    }
+    
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-prev>.btn-left,
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position: -50px -50px;
+        /*  < 왼쪽버튼  */
+    }
+    
+    .page-1>.my-carousel-1>.owl-carousel>.owl-nav>.owl-next>.btn-right {
+        background-position: -50px -100px;
+        /*  > 오른쪽버튼  */
+    }
+    /* 페이지1-스크롤다운아이콘 -움직이는 아래로 긴 화살표*/
+    
+    .page-1 .scroll-down-icon-box {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        /* 페이지1에 반쯤 걸쳐진 상태. */
+        z-index: 9;
+        /* 팝업 바로 아래에 나와야 하므로 팝업은 10 */
         margin-top: 280px;
     }
-    50% {
-        margin-top: 300px;
+    
+    .page-1 .scroll-down-icon-box.active {
+        animation-name: up-down;
+        /* 키프레임 업 다운 */
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        /* active가 들어갔을때 반복. */
     }
-    100% {
-        margin-top: 280px;
+    
+    @keyframes up-down {
+        0% {
+            margin-top: 280px;
+        }
+        50% {
+            margin-top: 300px;
+        }
+        100% {
+            margin-top: 280px;
+        }
     }
-}
-
-
-/* 페이지2시작 */
-.page-2 .head > .con {
-    max-width:1120px;
-}
-
-.page-2 .head {
-    background-image:url(http://rolling-pasta.com/_imgs/intro_bg.png);
-    padding-top:200px;
-    padding-bottom:30px;
- 
-}
-
-.page-2 .head > .con > .logo-cell {
-    width:127px;
-    margin-left:50px;
-    margin-right:50px;
-    margin-top:100px;
-}
-
-.page-2 .head > .con > .menu-cell {
-    width:calc(100% - 227px);
-}
-
-.page-2 .head > .con > .menu-cell > h1 {
-    margin-top:10px;
-    color:#003b5A;
-    font-weight:700;
-    font-size:1.25rem;
-}
-
-.page-2 .head > .con > .menu-cell > .des {
-    margin-top:10px;
-    color:#003B5A;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 {
-    width:calc(100% - 120px);
-    margin:0 auto;
-    margin-top:40px;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li {
-    width:25%;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li > a {
-    width:150px;
-    margin:0 auto;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li > a > img:first-child {
-    display:none;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li:hover > a > img:first-child, .page-2 .head > .con > .menu-cell > .list-1 > li.selected > a > img:first-child {
-    display:block;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li:hover > a > img:last-child, .page-2 .head > .con > .menu-cell > .list-1 > li.selected > a > img:last-child {
-    display:none;
-}
-
-.page-2 .head > .con > .menu-cell > .list-1 > li > .text {
-    margin-top:20px;
-}
-
-.page-2 .slick-slider-box-1 {
-    max-width:1280px;
-    margin:0 auto;
-    position:relative;
-}
-
-.page-2 .slick-slider-box-1 > .slick-slider {
-    margin-left:80px;
-    margin-right:80px;
-}
-
-.page-2 .slick-slider-box-1 > .btn-left, .page-2 .slick-slider-box-1 > .btn-right {
-    position:absolute;
-    left:50px;
-    top:50%;
-    transform:translateY(-50%);
-}
-
-.page-2 .slick-slider-box-1 > .btn-right {
-    right:50px;
-    left:auto;
-}
-
-.page-2 .slick-slider-box-1 > div >span {
-    font-size: 3rem;
-    font-weight: 100;
-    color:gray;
-}
-.page-3 {
-    height: 80vh;
-}
-
-.page-4 {
-    height: 180vh;
-}
-
-.page-5 {
-    height: 70vh;
-}
+    /* 페이지2시작 */
+    
+    .page-2 .head>.con {
+        max-width: 1120px;
+    }
+    
+    .page-2 .head {
+        background-image: url(http://rolling-pasta.com/_imgs/intro_bg.png);
+        padding-top: 200px;
+        padding-bottom: 30px;
+    }
+    
+    .page-2 .head>.con>.logo-cell {
+        width: 127px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
+    
+    .page-2 .head>.con>.menu-cell {
+        width: calc(100% - 227px);
+    }
+    
+    .page-2 .head>.con>.menu-cell>h1 {
+        margin-top: 10px;
+        color: #003b5A;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.des {
+        margin-top: 10px;
+        color: #003B5A;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1 {
+        width: calc(100% - 120px);
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li {
+        width: 25%;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li>a {
+        width: 150px;
+        margin: 0 auto;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li>a>img:first-child {
+        display: none;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:first-child,
+    .page-2 .head>.con>.menu-cell>.list-1>li.selected>a>img:first-child {
+        display: block;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li:hover>a>img:last-child,
+    .page-2 .head>.con>.menu-cell>.list-1>li.selected>a>img:last-child {
+        display: none;
+    }
+    
+    .page-2 .head>.con>.menu-cell>.list-1>li>.text {
+        margin-top: 20px;
+    }
+    /*슬릭슬라이스-1 시작 */
+    
+    .page-2 .slick-slider-box-1 {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    .page-2 .slick-slider-box-1>.slick-slider {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .page-2 .slick-slider-box-1>.btn-left,
+    .page-2 .slick-slider-box-1>.btn-right {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .page-2 .slick-slider-box-1>.btn-right {
+        right: 50px;
+        left: auto;
+    }
+    
+    .page-2 .slick-slider-box-1>div>.slick-prev {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position: 0 -50px;
+    }
+    
+    .page-2 .slick-slider-box-1>div>.slick-next {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position: 0 -100px;
+    }
+    
+    .page-2 .slick-slider-box-1>div.active>span {
+        border: 1px solid #003b5A;
+        border-radius: 3px;
+    }
+    
+    .page-2 .slick-slider-box-1>.slick-slider>.item>.txt-box>.cell-title {
+        font-weight: 700;
+        font-size: 20px;
+        border: 1px solid red;
+    }
+    
+    .page-2 .slick-slider-box-1>.slick-slider>.item>.txt-box>.cell-des {
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid red;
+    }
+    /* 3페이지 시작 */
+    
+    .page-3 .head {
+        background-image: url(http://rolling-pasta.com/_imgs/intro_bg.png);
+        padding-top: 200px;
+        padding-bottom: 30px;
+    }
+    
+    .page-3 .head>.con>.list-1 {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .page-3 .head>.con>.list-1::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .page-3 .head>.con>.list-1>li {
+        float: none;
+        display: inline-block;
+    }
+    
+    .page-3 .head>.con>.list-1>li.selected>a {
+        color: red;
+    }
+    
+    .page-3 .con {
+        max-width: 1110px;
+    }
+    
+    .page-3 .slick-slider-box-2 {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    .page-3 .slick-slider-box-2>.slick-slider {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .page-3 .slick-slider-box-2>.btn-left,
+    .page-3 .slick-slider-box-2>.btn-right {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .page-3 .slick-slider-box-2>.btn-right {
+        right: 50px;
+        left: auto;
+    }
+    
+    .page-3 .slick-slider-box-2>div>.slick-prev {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position: 0 0;
+    }
+    
+    .page-3 .slick-slider-box-2>div>.slick-next {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-image: url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position: 0 0;
+    }
+    
+    .page-3 .slick-slider-box-2>div>span.active {
+        border: 1px solid #003b5A;
+        border-radius: 3px;
+    }
+    
+    .page-3 {
+        height: 80vh;
+    }
+    
+    .page-4 {
+        height: 180vh;
+    }
+    
+    .page-5 {
+        height: 70vh;
+    }

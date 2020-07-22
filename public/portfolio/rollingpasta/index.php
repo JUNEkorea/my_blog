@@ -108,6 +108,7 @@
     </div>
     <!-- 페이지2 시작 -->
     <div data-section-name="page-2" class="page page-2">
+
         <div class="head">
             <div class="con row">
                 <div class="cell logo-cell">
@@ -167,13 +168,14 @@
                 </div>
             </div>
         </div>
+
         <div class="body">
             <div class="slick-slider-box-1">
                 <div class="btn-left">
-                    <span><i class="fas fa-chevron-left"></i></span>
+                    <span class="slick-prev"></span>
                 </div>
                 <div class="btn-right">
-                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span class="slick-next"></span>
                 </div>
                 <div class="slick-slider">
                     <div class="item">
@@ -222,7 +224,86 @@
      </div>
     <!-- 페이지3시작 -->
     <div data-section-name="page-3" class="page page-3">
-        <h1>페이지 3</h1>
+        <div class="head">
+            <div class="con">
+                <ul class="list-1 row">
+                    <li class="cell selected">
+                        <a href="#" class="block" onclick="return false;">Special Menu</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block" onclick="return false;">Pasta</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block" onclick="return false;">Steak＆Stew</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block" onclick="return false;">Pizza＆Salad</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block" onclick="return false;">Doria</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block" onclick="return false;">Beverage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div class="slick-slider-box-2">
+                <div class="btn-left">
+                    좌
+                </div>
+                <div class="btn-right">
+                    우
+                </div>
+                <div class="slick-slider">
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_716763001558943799.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_34778001580808758.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_264881001564558785.png" alt="">
+                            </div>    
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_442175001580808799.png" alt="">
+                            </div>    
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_600464001580808817.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="con">
+                            <div class="img-box">
+                                <img src="http://rolling-pasta.com/upload/menu/W_882157001564558817.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div data-section-name="page-4" class="page page-4">
         <h1>페이지 4</h1>
