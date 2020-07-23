@@ -639,14 +639,371 @@
         border-radius: 3px;
     }
     
-    .page-3 {
-        height: 80vh;
+    
+    
+    /* 페이지 4 시작 */
+    .page-4 .title-box {
+        margin-bottom:30px;
+        padding-top:100px;
+    }
+    /* li 너비계산 */
+    .page-4 > .list-box-1 ul.row-1 > li:nth-child(1),
+    .page-4 > .list-box-1 ul.row-1 > li:nth-child(2),
+    .page-4 > .list-box-1 ul.row-1 > li:nth-child(4)
+    {
+        width:160px;
+    /*     border:1px solid red; */
+    }
+    /* 제목 */
+    .page-4 > .list-box-1 > .head > .row > li > a {
+        font-size:16px;
+        display:block;
+        padding:19px 10px;
+        color:#003E73;
+        font-weight:700;
+        text-align:center;
     }
     
-    .page-4 {
-        height: 180vh;
+    .page-4 > .list-box-1 > .head > .row {
+        border-bottom :2px solid #003E73;   
+    }
+    /* 목록내 글자 */
+    .page-4 > .list-box-1 > .body {
+        display:none;
+    }/*디스플레이none을 해야 하는 이유.- 탭 자바스크립트 넣을때 넣어햐 나는 부분 */
+    
+    .page-4 > .list-box-1 > .body.active {
+        display:block;
+    }/*디스플레이block을 해야 하는 이유. */
+    
+    .page-4 > .list-box-1 > .body > .row > li > .row > .cell > a {
+        font-size:14px;
+        display:block;
+        padding:25px 10px 26px;
+        text-align:center;
     }
     
-    .page-5 {
-        height: 70vh;
+    .page-4 > .list-box-1 ul.row-1 {
+        border-bottom :1px solid #dfdfdf;
     }
+    
+    
+    .page-4 > .list-box-1 > .body  >ul>li >ul:hover{
+        background-color:#003E73;
+        color: white;
+        font-weight:700;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li > .row > .cell:not(:nth-child(5)) {
+        padding:5.5px 0;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li > .row > .cell > a > .btn-up,
+    .page-4 > .list-box-1 > .body > .row > li > .row > .cell > a > .btn-down {
+        margin:0 auto;
+        display:block;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li > .row > .cell > a > .btn-up {
+        display:none;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li.active > .row > .cell > a > .btn-up {
+        display:block;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li.active > .row > .cell > a > .btn-down {
+        display:none;
+    }
+    
+    .page-4 > .list-box-1 ul.row-1 > li:nth-child(5) {
+        width:50px;
+        text-align:center;
+    }
+    
+    .page-4 > .list-box-1 ul.row-1 > li:nth-child(3) {
+        width:calc(100% - 160px * 3 - 50px);
+    }
+    /* 클릭시 2차 목록. content 보임.*/
+    .page-4 > .list-box-1 > .body > .row > li > .content {
+        display:none;
+    }
+    /* 가게사진 */
+    .page-4 > .list-box-1 > .body > .row > li > .content > .cell:first-child {
+        width:40%;
+        padding:20px;
+    }
+    /* 가게 설명*/
+    .page-4 > .list-box-1 > .body > .row > li > .content > .cell:last-child {
+        width:60%;
+        padding:20px;
+    }
+    /* 가게 설명에서 다시 나누어서  */
+    .page-4 > .list-box-1 > .body > .row > li > .content > .cell:last-child > ul > li > .cell:first-child {
+    /*     background-color:red; */
+        width:110px;
+    }
+    
+    .page-4 > .list-box-1 > .body > .row > li > .content > .cell:last-child > ul > li > .cell:last-child {
+    /*     background-color:blue; */
+        width:calc(100% - 110px);
+    }
+    
+    
+    @media ( max-width:900px ) {
+        .page-4 > .list-box-1 > .head {
+            display:none;
+        }
+    
+        .page-4 > .list-box-1 > .body > .row > li > .content > .cell {
+            width:100%;
+        }
+    
+        .page-4 > .list-box-1 ul.row-1 > li:nth-child(1),
+        .page-4 > .list-box-1 ul.row-1 > li:nth-child(3),
+        .page-4 > .list-box-1 ul.row-1 > li:nth-child(4)
+        {
+            display:none;
+        }
+        
+        .page-4 > .list-box-1 ul.row-1 > li:nth-child(2) {
+            width:calc(100% - 50px);
+        }
+    }
+    /* 아이콘*/
+    .ico.ico-toggle {
+        width:30px;
+        height:30px;
+        display:inline-block;
+        background-image:url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position:-49px -139px;
+    }
+    
+    .ico.ico-down {
+        width:30px;
+        height:30px;
+        display:inline-block;
+        background-image:url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position:9px -139px;
+        background-color:#073d6c;
+        border-radius:50%;
+    }
+    
+    .ico.ico-up {
+        width:30px;
+        height:30px;
+        display:inline-block;
+        background-image:url(http://rolling-pasta.com/_imgs/ico.png);
+        background-position:-92px -141px;
+        border-radius:50%;
+        background-color:white;
+    }
+    
+    .page > .list-box-1 >nav.page-box-1>ul {
+        width: 210px;
+        margin:0 auto;    
+    }
+    
+    
+    .page > .list-box-1 >.page-box-1 >ul>li>a{
+        display:block;
+        padding:10px;
+        text-align:center;
+    }
+
+/* 페이지 5 프렌차이즈 시작 */
+
+
+.con {
+    max-width:1440px;
+}
+
+.page-5 .list-box > ul {
+    margin:0 -12.5px;
+}
+
+.page-5 .list-box > ul > li {
+    width:25%;
+    padding: 0 12.5px;
+    margin-top:20px;
+}
+
+@media ( max-width:750px ) {
+    .page-5 .list-box > ul > li {
+        width:50%;
+    }
+}
+
+@media ( max-width:400px ) {
+    .page-5 .list-box > ul > li {
+        width:100%;
+    }
+}
+
+.page-5 >.title-box > h1{
+    padding-top:200px;
+    font-size:43px;
+    color:#1E1E1E;
+}
+
+.page-5 >.title-box > .des{
+    font-size:16px ;
+    color:#1E1E1E;
+}
+
+.page-5 .list-box{
+    margin-top:30px;
+}
+.page-5 .list-box > ul > li > div {
+    border:1px solid #000;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.page-5 .list-box > ul > li > div > .img-box {
+    width:97px;
+    margin:0 auto;
+}
+
+.page-5 .list-box > ul > li > div > .no-box {
+    background-color:#003E73;
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    margin-top:30px;
+    position:relative;
+    border-radius:50%;
+}
+
+.page-5 .list-box > ul > li > div > .no-box > span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    color:white;
+}
+
+.page-5 .list-box > ul > li > div > h1 {
+    color:#003E73;
+    font-size:1.250rem;
+    text-align:center;
+    margin-top:30px;
+}
+
+.page-5 .list-box > ul > li > div > .des {
+    margin-top:30px;
+    color:#1E1E1E;
+    line-height:1.9;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.page-5 >.des-box {
+    font-size:16px;
+    color:#1E1E1E;
+    margin-top:30px;
+    font-weight: 300;
+}
+
+.page-5 >.des-box > span{
+    font-size: 20px;
+    color:#003E73;
+    font-weight:bold;
+}
+
+.page-5 >.btn-box >.btn > a{
+    margin-top:30px;
+    display:block;
+    background-color :#003E73;
+    padding:18px;
+    font-size:16px;
+    color:white;
+    width:300px;   
+}
+
+.page-5 >.btn-box:hover >.btn > a{
+    background-color: white;
+    color:#003E73;
+   
+}
+
+
+@media ( max-width:1440px ) {
+    .page-5 .list-box > ul > li > div > .des > br {
+        display:none;
+    }
+}
+
+
+
+/* footer */
+.con {
+    max-width:1440px;
+}
+
+.footer-box {
+    background-color:#003E73;
+    margin-top : 100px;
+  
+}
+
+.footer-box > .con {
+     padding-top: 50px;
+    padding-bottom: 30px;}
+    
+.footer-box > .con > ul >li{
+ 
+}
+
+.footer-box > .con > ul >li >img{
+    width:221px;
+}
+
+.footer-box > .con > ul > .text-box{
+    width: calc(100% - 500px);
+}
+
+.footer-box > .con > ul > .text-box >.text-wrap{
+    margin-left:15%;
+}
+
+.footer-box > .con > ul > .text-box >.text-wrap > .title {
+    display:block;
+    font-size: 14px;
+    margin-bottom:20px;
+    color:white;
+
+}
+
+.footer-box > .con > ul > .text-box >.text-wrap > .des{
+    font-size: 13px;
+    line-height:1.5rem;
+    color:white;
+}
+
+.footer-box > .con > ul >.familysite-box{
+    background-color:rgb(22, 22, 70);
+    border:1px solid white;
+}
+.footer-box > .con > ul >li >a{
+    width:200px;
+    padding: 0;
+    text-align:center;
+    display:inline-block;
+    padding:10px;
+    color:white;
+}
+
+.footer-box > .con > ul >li> span{
+    font-size:1.5rem;
+    color:white;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
