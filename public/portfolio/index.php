@@ -78,18 +78,18 @@ include "../../part/head.php";
             </div>
         </li>
 
-        <li class="cell"><!--5 -->
+        <li class="cell"><!--5.라인프렌즈 -->
             <div class="img-box ">
-                <img src="https://junekorea.github.io/img1/ph/rollingpasta/rp-cp.jpg" alt="">
+                <img src="https://junekorea.github.io/img1/ph/linefriends/lf-cp.jpg" alt="">
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <ul class="row list-box">
-                <li class="cell title"><a href="#">RollingPasta</a></li>
+                <li class="cell title"><a href="#">LineFriends</a></li>
                 <li class="cell-right title-1"><a href="/portfolio/rollingpasta" target="_blank">모작</a></li>
-                <li class="cell-right title-2"><a href="http://rolling-pasta.com/#kv" target="_blank">원본</a></li>
+                <li class="cell-right title-2"><a href="https://www.linefriends.com/?lang=ko" target="_blank">원본</a></li>
             </ul>
-            <div class="des">롤링파스타<br>
-                이탈리안파스타의 캐즈얼한 해석!
+            <div class="des">라인프렌즈<br>
+               메신저 라인에서 나온 캐릭터들
             </div>
         </li>
 
