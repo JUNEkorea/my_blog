@@ -85,7 +85,7 @@ include "../../part/head.php";
             </div>
             <ul class="row list-box">
                 <li class="cell title"><a href="#">LineFriends</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/rollingpasta" target="_blank">모작</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/linefriends" target="_blank">모작</a></li>
                 <li class="cell-right title-2"><a href="https://www.linefriends.com/?lang=ko" target="_blank">원본</a></li>
             </ul>
             <div class="des">라인프렌즈<br>
