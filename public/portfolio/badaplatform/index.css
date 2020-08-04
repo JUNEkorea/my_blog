@@ -1,0 +1,590 @@
+    /* 폰트적용 */
+    
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    html {
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    
+    html {
+        font-family: "Roboto", "Noto Sans KR", sans-serif;
+    }
+    /* 노말라이즈 */
+    
+    body,
+    ul,
+    li,
+    h1 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    label[for] {
+        cursor: pointer;
+        user-select: none;
+    }
+    /* 라이브러리 */
+    
+    .block {
+        display: block;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .absolute-left {
+        position: absolute;
+        left: 0;
+    }
+    
+    .absolute-right {
+        position: absolute;
+        right: 0;
+    }
+    
+    .absolute-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .absolute-top {
+        position: absolute;
+        top: 0;
+    }
+    
+    .absolute-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .absolute-middle {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .absolute-middle.absolute-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .cell {
+        float: left;
+        box-sizing: border-box;
+    }
+    
+    .cell-right {
+        float: right;
+        box-sizing: border-box;
+    }
+    
+    .row::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .clear-both {
+        clear: both;
+    }
+    
+    .img-box>img {
+        width: 100%;
+        display: block;
+    }
+    
+    .con {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .margin-0-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text-align-center {
+        text-align: center;
+    }
+    
+    .text-align-right {
+        text-align: right;
+    }
+    
+    .line-height-0 {
+        line-height: 0;
+    }
+    
+    .line-height-0>* {
+        line-height: normal;
+    }
+    
+    .width-30px {
+        width: 30px;
+    }
+    
+    .width-35px {
+        width: 35px;
+    }
+    
+    .width-40px {
+        width: 35px;
+    }
+    
+    .width-45px {
+        width: 35px;
+    }
+    
+    .width-50px {
+        width: 50px;
+    }
+    
+    .width-80px {
+        width: 80px;
+    }
+    
+    .width-100px {
+        width: 100px;
+    }
+    
+    .width-100p {
+        width: 100%;
+    }
+    
+    .width-60p {
+        width: 60%;
+    }
+    
+    .width-55p {
+        width: 55%;
+    }
+    
+    .width-50p {
+        width: 50%;
+    }
+    
+    .width-45p {
+        width: 45%;
+    }
+    
+    .width-40p {
+        width: 40%;
+    }
+    
+    .width-30p {
+        width: 30%;
+    }
+    
+    .width-35p {
+        width: 35%;
+    }
+    
+    .width-100p-except-30px {
+        width: calc(100% - 30px);
+    }
+    
+    .width-100p-except-35px {
+        width: calc(100% - 35px);
+    }
+    
+    .width-100p-except-40px {
+        width: calc(100% - 40px);
+    }
+    
+    .width-100p-except-50px {
+        width: calc(100% - 50px);
+    }
+    
+    .width-100p-except-80px {
+        width: calc(100% - 80px);
+    }
+    
+    .width-100p-except-100px {
+        width: calc(100% - 100px);
+    }
+    
+    .height-100p {
+        height: 100%;
+    }
+    
+    .height-50p {
+        height: 50%;
+    }
+    
+    .border-box {
+        box-sizing: border-box;
+    }
+    
+    .font-size-dot-8rem {
+        font-size: .8rem;
+    }
+    
+    .table-row {
+        display: table;
+    }
+    
+    .table-row.row::after {
+        display: inline;
+        clear: non;
+    }
+    
+    .table-row>.cell {
+        float: none;
+        display: table-cell;
+    }
+    
+    .border-red {
+        border: 10px solid red;
+    }
+    
+    .border-green {
+        border: 10px solid green;
+    }
+    
+    .border-blue {
+        border: 10px solid blue;
+    }
+    
+    .border-gold {
+        border: 10px solid gold;
+    }
+    
+    .border-pink {
+        border: 10px solid pink;
+    }
+    /* 라이브러리 - flex */
+    
+    *>.flex {
+        display: flex;
+    }
+    
+    *>.flex-grow-1 {
+        flex-grow: 1;
+    }
+    
+    *>.flex-jc-c {
+        justify-content: center;
+    }
+    
+    *>.flex-jc-s {
+        justify-content: flex-start;
+    }
+    
+    *>.flex-jc-e {
+        justify-content: flex-end;
+    }
+    
+    *>.flex-jc-sb {
+        justify-content: space-between;
+    }
+    
+    *>.flex-ai-c {
+        align-items: center;
+    }
+    
+    *>.flex-ai-s {
+        align-items: flex-start;
+    }
+    
+    *>.flex-ai-e {
+        align-items: flex-end;
+    }
+    
+    *>.flex-as-s {
+        align-self: stretch;
+    }
+    
+    *>.flex-as-c {
+        align-self: center;
+    }
+    
+    *>.flex-as-s {
+        align-self: flex-start;
+    }
+    
+    *>.flex-as-e {
+        align-self: flex-end;
+    }
+    
+    *>.flex-column-nowrap {
+        flex-flow: column nowrap;
+    }
+    
+    *>.flex-column-wrap {
+        flex-flow: column wrap;
+    }
+    
+    .flex-ch-basis-0>* {
+        flex-basis: 0;
+    }
+    
+    *>.flex-1-0-0 {
+        flex: 1 0 0;
+    }
+    /* 커스텀 */
+    
+    .con {
+        width: 1196px;
+    }
+    
+    .con-min-width {
+        min-width: 1196px;
+    }
+    
+    .page-height-full {
+        height: 100vh;
+    }
+    /* 탑바 시작*/
+    
+    .top-bar {
+        position: fixed;
+        display: block;
+        padding: 0 80px;
+        width: 100%;
+        min-width: 1196px;
+        height: 137px;
+        box-sizing: border-box;
+        z-index: 999;
+        border: 1px solid gold;
+    }
+    
+    .top-bar>.logo {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .top-bar .menu-box-1 {
+        border: 1px solid red;
+    }
+    
+    .top-bar .menu-box-1>ul>li>a {
+        position: relative;
+        display: block;
+        padding: 0 28px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0;
+        font-weight: 700;
+        color: #9cc2e6;
+        font-size: 20px;
+        line-height: 137px;
+        /*     transition: all 0.3s ease-in-out */
+    }
+    /* 메뉴위 점 */
+    
+    .top-bar .menu-box-1>ul>li>a::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 2.5px);
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .top-bar .menu-box-1>ul>li:hover>a::before,
+    .top-bar .menu-box-1>ul>li:hover>a {
+        opacity: 1;
+        visibility: visible;
+        color: white;
+    }
+    
+    .top-bar .menu-box-1>ul>li {
+        position: relative;
+    }
+    /* 2차메뉴 하얀창 */
+    
+    .top-bar .menu-box-1>ul>li>ul {
+        background-color: white;
+        top: 70%;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .top-bar .menu-box-1>ul>li>ul::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: calc(50%);
+        transform: translateX(-50%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    .top-bar .menu-box-1>ul>li>ul,
+    .top-bar .menu-box-1>ul>li>ul::before {
+        display: none;
+    }
+    
+    .top-bar .menu-box-1>ul>li:hover>ul,
+    .top-bar .menu-box-1>ul>li:hover>ul::before {
+        display: block;
+    }
+    
+    .top-bar .menu-box-1>ul>li>ul>li>a {
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 39px;
+        color: #333;
+        white-space: nowrap;
+        transition: all 0.2s ease-in-out;
+        padding: 0 10px;
+        margin-left: 20px;
+    }
+    
+    .top-bar .menu-box-1>ul>li>ul>li:hover>a {
+        border-bottom: 2px solid #333;
+        font-weight: 700;
+    }
+    /* 언어선택박스 */
+    
+    .top-bar>.lang-select>ul>li>a>span:last-child {
+        transition: transform 1s;
+        font-size: 5px;
+    }
+    
+    .top-bar>.lang-select>ul>li:not(.flex-order-m1)>a>span:last-child {
+        visibility: hidden;
+    }
+    
+    .top-bar>.lang-select.active>ul>li>a>span:last-child {
+        transform: rotate(180deg);
+    }
+    
+    .top-bar>.lang-select {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        display: inline-block;
+        border-radius: 10px;
+        height: 22px;
+        overflow: hidden;
+        transition: height 1s;
+    }
+    
+    .top-bar>.lang-select.active {
+        height: 42px;
+    }
+    /* 1p 메인구현 시작 */
+    
+    .page-1 {}
+    
+    .page-1>.main-visual {
+        position: relative;
+        height: 100vh;
+        padding: 0 80px;
+        background-image: linear-gradient(to bottom right, #2e3797, #18b4e6);
+        box-sizing: border-box;
+    }
+    
+    .page-1>.main-visual>.txt-box {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        z-index: 5;
+    }
+    
+    .page-1>.main-visual>.txt-box>strong {
+        display: block;
+        margin-bottom: 25px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        font-size: 86px;
+        line-height: 140px;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    .page-1>.main-visual>.txt-box>p {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        font-size: 18px;
+        line-height: 31px;
+        font-weight: 500;
+        color: #45aad8;
+    }
+    
+    .page-1>.main-visual>.img-box {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 60vh;
+        transform: translateY(-46%);
+        transition: all 0.4s ease-in-out;
+        z-index: 100;
+    }
+    
+    .page-1>.main-visual>.btn-mv {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        /* display: table; */
+        width: 100%;
+        height: 15vh;
+        border-top: 1px solid rgba(255, 255, 255, .25);
+    }
+    
+    .page-1>.main-visual>.btn-mv>* {
+        /* display: table-cell; */
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .page-1>.main-visual>.btn-mv>ul>li {
+        position: relative;
+        display: inline-block;
+        padding: 0 2% 0 5.5%;
+        width: 33.333%;
+        font-size: 16px;
+        text-align: left;
+        vertical-align: top;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+    
+    .page-1>.main-visual>.btn-mv>ul>li::after {
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: -20px;
+        height: 10vh;
+        width: 1px;
+        background: rgba(255, 255, 255, .25);
+    }
+    
+    .page-1>.main-visual>.btn-mv>ul>li>strong>a,
+    .page-1>.main-visual>.btn-mv>ul>li>p {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        line-height: 1.6;
+        font-weight: 500;
+        letter-spacing: 0;
+    }

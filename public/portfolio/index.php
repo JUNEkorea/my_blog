@@ -93,6 +93,20 @@ include "../../part/head.php";
             </div>
         </li>
 
+        <li class="cell"><!--6.바다플랫폼 -->
+            <div class="img-box ">
+                <img src="https://junekorea.github.io/img1/ph/badaplatform/bada-cp.jpg" alt="">
+                <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
+            </div>
+            <ul class="row list-box">
+                <li class="cell title"><a href="#">Bada Platform</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/badaplatform" target="_blank">모작</a></li>
+                <li class="cell-right title-2"><a href="http://www.badaplatform.org/" target="_blank">원본</a></li>
+            </ul>
+            <div class="des">바다플랫폼<br>
+               조선해양 loT, 빅데이터 인프라
+            </div>
+        </li>
 
 </div>
 
