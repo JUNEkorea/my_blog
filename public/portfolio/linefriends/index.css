@@ -427,6 +427,32 @@ body {
 }
 
 
+.scroll-top-0-up .top-bar{
+  background-color:white;
+  border-bottom: 1px solid rgba(48, 47, 47, 0.2);
+}
+
+.scroll-top-0-up .top-bar > .con > .menu-box-1> ul> li>a {
+  color: black;
+}
+
+.scroll-top-0-up .top-bar > .con > .lang-select-box-1 > span{
+  color: black;
+}
+
+.top-bar > .con> a > img:last-child{
+  display:none;
+} 
+
+.top-bar > .con> a > img:last-child,.scroll-top-0-up .top-bar>.con>img:last-child{
+  display:block;
+}
+
+.top-bar > .con> a > img:first-child,.scroll-top-0-up .top-bar>.con>img:first-child{
+  display:none;
+}
+
+
 /* 탑바 - 언어 선택 박스 */
 .top-bar>.con>.lang-select-box-1>ul {
   position: absolute;
@@ -781,7 +807,7 @@ html.youtube-popup-actived>body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: red;
+  /* background-color: red; */
 }
 
 .slider-x>.side-btns>div:last-child {
@@ -820,10 +846,13 @@ html.youtube-popup-actived>body {
 }
 
 .slider-x>.page-box>button {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 50px 1.5px;
 
 }
+.page-5 > .media-box >.page-box-1
+
+
 
 /*페이지 5*/
 
@@ -934,14 +963,14 @@ html.youtube-popup-actived>body {
   font-family: volteSemiBold;
   color: #404040;
   text-align: center;
-  margin-top: 400px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 
 
 /* 게시판 head 부분- 제목표시줄  */
 .page-6>.notice-box>.notice-list-box>.head>ul {
-  width: 600px;
+  width: 1200px;
   margin: 0 auto;
   border-bottom: 1px solid rgba(128, 128, 128, .2);
   border-top: 1px solid rgba(128, 128, 128, .2);
@@ -1094,19 +1123,24 @@ html.youtube-popup-actived>body {
   line-height: 24px;
 }
 
-.page-7>.channel-box>.ip_list>.cell>.info-box>.more-btn>a {
-  display: block;
+.page-7>.channel-box>.ip_list>.cell>.more-btn>a {
+ 
   font-family: volteSemiBold;
   padding-right: 15px;
   margin-left: 18px;
   font-size: 14px;
   font-weight: 700;
-  color: #999;
-  background-image: url('https://junekorea.github.io/img1/ph/linefriends/spr.png');
-  background-position-x: 100%;
-  background-position-y: 4px;
-  background-size: 8px;
+  color:black;
 }
+.page-7>.channel-box>.ip_list>.cell>.more-btn:hover>a {
+  color: #999;
+}
+
+.page-7>.channel-box>.ip_list>.cell>.more-btn>a >img {
+  width:11px;
+  height:11px;
+}
+
 
 /* 페이지 8 푸터 하단 구현  */
 .page-8 {
@@ -1223,7 +1257,7 @@ html.youtube-popup-actived>body {
 .page-8>.footer-box>.social_area>.social>.social-5>a {
   width: 22px;
   height: 17px;
-  background-position: -80px 0;
+  background-position: 0 -80px;
   display: block;
   background: url(https://junekorea.github.io/img1/ph/linefriends/spr.png);
 }

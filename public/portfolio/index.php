@@ -113,12 +113,12 @@ include "../../part/head.php";
     <ul class="row">
     <li class="cell"><!--1.농협 -->
             <div class="img-box ">
-                <img src="https://junekorea.github.io/img1/ph/nonghyup/nh-cp.jpg" alt="">
+                <img src="https://junekorea.github.io/img1/ph/design/iPhone SE - 4.png"  alt="">
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <ul class="row list-box">
-                <li class="cell title"><a href="#">NONGHYUP</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/nonghyup" target="_blank">모작</a></li>
+                <li class="cell title"><a href="#">이미지</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/design" target="_blank">모작</a></li>
                 <li class="cell-right title-2"><a href="https://nonghyup.com/main/psniMain.do"
                         target="_blank">원본</a></li>
             </ul>

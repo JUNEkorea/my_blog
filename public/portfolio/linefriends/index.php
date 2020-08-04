@@ -33,6 +33,7 @@
             <div class="con flex flex-ai-c flex-jc-sb">
                 <a href="#" class="block img-box ">
                     <img src="https://www.linefriends.com/img/img_logo.png" alt="">
+                    <img src="https://www.linefriends.com/img/img_logo2.png" alt="">
                 </a>
 
                 <nav class="menu-box-1 ">
@@ -141,7 +142,7 @@
                 <ul class="btn_area">
                     <li>
                         <a href="">
-                            <span>제휴제안</span>
+                            <span>제휴제안&nbsp;&nbsp;<i class="far fa-file"></i></span>
                         </a>
 
                     </li>
@@ -548,7 +549,7 @@
                                 호텔 등 다양한 영역에서 만날 수 있는 글로벌 라이프스타일<br>
                                 브랜드가 되었습니다.</p>
                         </div>
-                        <div class="more-btn"><a href="" target="_blank">OFFICIAL CHANNEL</a></div>
+                        <div class="more-btn"><a href="#" target="_blank">OFFICIAL CHANNEL &nbsp;<img src="https://www.linefriends.com/img/bg_btn_arrow2_off.png" alt=""></a></div>
                     </li>
                     <li class="cell">
                         <div class="img-box"><img src="https://junekorea.github.io/img1/ph/linefriends/bt21.jpg" alt="">
@@ -562,8 +563,8 @@
                                 밀레니얼들의 폭발적인 공감을 이끌어내며 큰 사랑을 받고 있습니다.</p>
                         </div>
                         <div class="more-btn">
-                            <a href="#" target="_blank">OFFICIAL CHANNEL</a>
-                            <a href="#" target="_blank">OFFICIAL CHANNEL</a>
+                            <a href="#" target="_blank">OFFICIAL CHANNEL &nbsp;<img src="https://www.linefriends.com/img/bg_btn_arrow2_off.png" alt=""></a>
+                            <a href="#" target="_blank">OFFICIAL CHANNEL &nbsp;<img src="https://www.linefriends.com/img/bg_btn_arrow2_off.png" alt=""></a>
 
                         </div>
                     </li>
@@ -578,7 +579,7 @@
                                 취지에 맞춰, 왕위엔의 긍정적인 기운과 라인프렌즈의 디자인<br>
                                 역량이 가미된 6종의 캐릭터가 탄생했습니다.</p>
                         </div>
-                        <div class="more-btn"><a href="" target="_blank">OFFICIAL CHANNEL</a></div>
+                        <div class="more-btn"><a href="#" target="_blank">OFFICIAL CHANNEL &nbsp; <img src="https://www.linefriends.com/img/bg_btn_arrow2_off.png" alt=""></a></div>
                     </li>
                 </ul>
             </div>

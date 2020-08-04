@@ -1,3 +1,21 @@
+var $window = $(window);
+var $html = $('html');
+
+function Window__init() {
+  $window.scroll(function() {
+    var scrollTop = $window.scrollTop();
+    
+    if ( scrollTop > 0 ) {
+      $html.addClass('scroll-top-0-up');
+    }
+    else {
+      $html.removeClass('scroll-top-0-up');
+    }
+  });
+}
+$(function() {
+    Window__init();
+  });
 // 페이지1 아울캐러셀
 function MySlider1__init() {
     $('.my-slider-1 > .owl-carousel').owlCarousel({
@@ -198,6 +216,7 @@ function TabBox__init() {
 
 
 $(function () {
+    Window__init();
     MySlider1__init();
     SliderX__init();
     TabBox__init();
