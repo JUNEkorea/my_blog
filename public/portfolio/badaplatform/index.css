@@ -533,10 +533,10 @@
         position: absolute;
         right: 0;
         top: 50%;
-        height: 60vh;
+        width:700px;
+        height:65vh;
         transform: translateY(-46%);
-        transition: all 0.4s ease-in-out;
-        z-index: 100;
+        border: 1px solid blue;
     }
     
     .page-1>.main-visual>.btn-mv {

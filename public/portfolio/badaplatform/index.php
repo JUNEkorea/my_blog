@@ -74,7 +74,7 @@
                 <p>for Ship and Shipbuilding Industry</p>
             </div>
             <div class="img-box">
-                <img src="http: //www.badaplatform.org/images/main/main_visual.png" alt="">
+                <img src="http://www.badaplatform.org/images/main/main_visual.png" alt="">
             </div>
 
             <div class="btn-mv">
