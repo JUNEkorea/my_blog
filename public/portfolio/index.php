@@ -120,60 +120,56 @@ include "../../part/head.php";
 
         <div class="more-btn cell-right">
             <a href="/portfolio/nonghyup" target="_blank">READ<br>
-            MORE</a>
+                MORE</a>
         </div>
     </div>
-
     <ul class="row">
-    <li class="cell"><!--1.농협 -->
+        <li class="cell">
+            <!--1.식물앱 -->
             <div class="img-box ">
-                <img src="https://junekorea.github.io/img1/ph/design/iPhone SE - 4.png"  alt="">
+                <img src="https://junekorea.github.io/img1/ph/design/iPhone SE - 4.png" alt="">
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <ul class="row list-box">
                 <li class="cell title"><a href="#">이미지</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/design" target="_blank">모작</a></li>
-                <li class="cell-right title-2"><a href="https://nonghyup.com/main/psniMain.do"
-                        target="_blank">원본</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/design" target="_blank">식물앱</a></li>
+                <li class="cell-right title-2"><a href="#" target="_blank"></a></li>
             </ul>
-            <div class="des">함께하는 100년 농협<br>
-                활력넘치는 농촌과 즐거운 국민!
+            <div class="des">
+                식물들을 키우는데 필요한 정보와 쇼핑몰
             </div>
         </li>
-
-    
-        <li class="cell"><!--1.농협 -->
+        <li class="cell">
+            <!--2.준인테리어 -->
             <div class="img-box ">
-                <img src="https://junekorea.github.io/img1/ph/nonghyup/nh-cp.jpg" alt="">
+                <img src="https://junekorea.github.io/img1/ph/design/공간인테리어상세페이지-cp.png" alt="">
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <ul class="row list-box">
-                <li class="cell title"><a href="#">NONGHYUP</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/nonghyup" target="_blank">모작</a></li>
-                <li class="cell-right title-2"><a href="https://nonghyup.com/main/psniMain.do"
-                        target="_blank">원본</a></li>
+                <li class="cell title"><a href="#">이미지</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/design" target="_blank">JUNe 인테리어</a></li>
+                <li class="cell-right title-2"><a href="#" target="_blank"></a></li>
             </ul>
-            <div class="des">함께하는 100년 농협<br>
-                활력넘치는 농촌과 즐거운 국민!
+            <div class="des">
+                친환경 인테리어를 추구하는 JUNe인테리어
             </div>
         </li>
-
-        <li class="cell"><!--1.농협 -->
+        <li class="cell"><!--준인테리어  -->
             <div class="img-box ">
-                <img src="https://junekorea.github.io/img1/ph/nonghyup/nh-cp.jpg" alt="">
+                <img src="https://junekorea.github.io/img1/ph/design/JUNeInterior-M-1.jpg" alt="">
                 <div class="link-txt"><i aria-hidden="true" class="fa fa-search"> view</i></div>
             </div>
             <ul class="row list-box">
-                <li class="cell title"><a href="#">NONGHYUP</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/nonghyup" target="_blank">모작</a></li>
-                <li class="cell-right title-2"><a href="https://nonghyup.com/main/psniMain.do"
-                        target="_blank">원본</a></li>
+                <li class="cell title"><a href="#">JUNe interior</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/design/mainpage-01.png" target="_blank">시안</a></li>
+                <li class="cell-right title-1"><a href="/portfolio/interior" target="_blank">구현</a></li>
             </ul>
-            <div class="des">함께하는 100년 농협<br>
-                활력넘치는 농촌과 즐거운 국민!
+            <div class="des">JUNe Interior<br>
+               친환경 인테리어를 추구하는 JUNe 인테리어
             </div>
         </li>
 
+    </ul>
 </div>
 
 
