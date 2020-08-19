@@ -162,7 +162,7 @@ include "../../part/head.php";
             <ul class="row list-box">
                 <li class="cell title"><a href="#">JUNe interior</a></li>
                 <li class="cell-right title-1"><a href="/portfolio/design/mainpage-01.png" target="_blank">시안</a></li>
-                <li class="cell-right title-1"><a href="/portfolio/interior" target="_blank">구현</a></li>
+                <li class="cell-right title-2"><a href="/portfolio/interior" target="_blank">구현</a></li>
             </ul>
             <div class="des">JUNe Interior<br>
                친환경 인테리어를 추구하는 JUNe 인테리어

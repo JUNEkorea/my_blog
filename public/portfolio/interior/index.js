@@ -95,23 +95,19 @@ function SliderP__stopAnimate($slider) {
 
 SliderP__init('.slider-p-1');
 
-new fullpage('#fullpage', {
-	sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6','yellow'],
-	navigation:true,
-	navigationPosition: 'left',
-	scrollBar:true,
-	menu: '#menu',
-	controlArrows: true,
-	anchors: ['anchor1', 'anchor2', 'anchor3'],	
-});
+function Fullpage(){
+	$('#fullpage').fullpage({
+		navigation:true,
+		navigationPosition: 'left',
+		scrollBar:true,
+		menu: '#menu',
+		controlArrows: true,
+		anchors: ['anchor1', 'anchor2', 'anchor3'],	
 
-
-
-
-
+	})
+}
 $(function(){
-    SliderP__show($slider, 0);
-    SliderP__show($slider, postIndex);
-    SliderP__startAnimate($slider);
-    SliderP__init('.slider-p-1');
-});
+	Fullpage();
+	SliderP__init('.slider-p-1');
+	
+})
