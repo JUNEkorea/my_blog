@@ -51,7 +51,17 @@
 				<li class="cell"><a class="block" href="#">EVENT</a></li>
 			</ul>
 		</nav>
+		<div class="estimate-select-box-1 relative ">
+                    <span>가격견적내기</span>
+                    <span><i class="fas fa-angle-down"></i></span>
+                    <span><i class="fas fa-angle-up"></i></span>
 
+                    <ul>
+                        <li><a class="block" href="#">상업공간견적</a></li>
+                        <li><a class="block" href="#">주거공간견적</a></li>
+                    
+                    </ul>
+                </div>
 	</div>
 </div>
 <!-- 고정바 -->
@@ -67,10 +77,18 @@
 
 <div id="fullpage">
 	<div class="section page-1">
-		<!-- 		<div class="text-box">
- <div class="small-text">친환경인테리어를 선도하는</div>
- <h1>JUNe Interior</h1>
-   </div> -->
+		<!-- 메인글 -->
+		<div class="text-box">
+			<div class="wrap">
+				<div class="mark"></div>
+				<div class="small-text">친환경인테리어를 선도하는</div>
+				<h1>JUNe Interior</h1>
+			</div>
+			<p>고객의 뜻에 따라 고객의 만족으로 이어지는 고객의 감동. <br>
+				고객님의 다양한 취향을 더욱더 품격 있고 아름다운 공간으로 연출하기 위해<br> 끊임없이 노력하고 최선을 다할때 '준 디자인'은 고객님과 함께 빛을 발할 것입니다. </p>
+		</div>
+		
+
 		<!-- 	네비바.프로그레스바.슬라이드	 -->
 		<div class="slider-p slider-p-1" data-slider-p-animate-duration="5000">
 			<div class="nav-box flex">
@@ -107,30 +125,31 @@
 		<div class="up-wrap con con-min-width">
 			<div class="row">
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/8.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 215100.jpg" alt="">
 				</div>
 				<div class="text-box cell">
 					<span>JUNe interior</span>은 "건축의 새물결"을 모토로<br>단순히 변형된 건축물이 아닌,<br>건축물의 모든 요소에 인간이 중심이 되는<br> 새로운 가치,최상의 가치를 부여하며 건축물과 환경이 하나가 되는 새로운<br>양식을 추구합니다.
 
 				</div>
-				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/9.jpg" alt="">
+				<div class="img-box cell-right">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 222144.jpg" alt="">
 				</div>
 			</div>
 		</div>
 		<div class="down-wrap con ">
+			<div class="long-mark"></div>
 			<div class="row ">
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/8.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 204811.jpg" alt="">
 				</div>
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/8.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 202958.jpg" alt="">
 				</div>
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/8.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 203924.jpg" alt="">
 				</div>
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/8.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 202903.jpg" alt="">
 				</div>
 			</div>
 		</div>

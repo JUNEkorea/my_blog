@@ -1,3 +1,23 @@
+// 탑바 스크롤할때 내려오는 JS
+var $window = $(window);
+var $html = $('html');
+
+function Window__init() {
+  $window.scroll(function() {
+    var scrollTop = $window.scrollTop();
+    
+    if ( scrollTop > 0 ) {
+      $html.addClass('scroll-top-0-up');
+    }
+    else {
+      $html.removeClass('scroll-top-0-up');
+    }
+  });
+}
+$(function() {
+    Window__init();
+  });
+//메인 속도바
 function SliderP__init(selector) {
 	var $slider = $(selector);
 
@@ -95,6 +115,7 @@ function SliderP__stopAnimate($slider) {
 
 SliderP__init('.slider-p-1');
 
+// 풀페이지
 function Fullpage(){
 	$('#fullpage').fullpage({
 		navigation:true,
@@ -106,8 +127,10 @@ function Fullpage(){
 
 	})
 }
+
+
 $(function(){
+	Window__init();
 	Fullpage();
-	SliderP__init('.slider-p-1');
-	
+	SliderP__init('.slider-p-1')	
 })
