@@ -128,14 +128,15 @@
 					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 215100.jpg" alt="">
 				</div>
 				<div class="text-box cell">
-					<span>JUNe interior</span>은 "건축의 새물결"을 모토로<br>단순히 변형된 건축물이 아닌,<br>건축물의 모든 요소에 인간이 중심이 되는<br> 새로운 가치,최상의 가치를 부여하며 건축물과 환경이 하나가 되는 새로운<br>양식을 추구합니다.
+					<div>JUNe interior</div>은 "건축의 새물결"을 모토로<br>단순히 변형된 건축물이 아닌,<br>건축물의 모든 요소에 인간이 중심이 되는<br> 새로운 가치,최상의 가치를 부여하며 건축물과 환경이 하나가 되는 새로운<br>양식을 추구합니다.
 
 				</div>
-				<div class="img-box cell-right">
+				<!-- <div class="img-box cell-right">
 					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 222144.jpg" alt="">
-				</div>
+				</div> -->
 			</div>
 		</div>
+		<!-- 포트폴리오 이미지  박스-->
 		<div class="down-wrap con ">
 			<div class="long-mark"></div>
 			<div class="row ">
@@ -155,55 +156,120 @@
 		</div>
 	</div>
 	<!-- 페이지3	 -->
-	<div class="section page-3 " style="background-image: url(https://junekorea.github.io/img1/ph/interior/m1 .jpg);">
-		<div class="content-wrap">
+	<div class="section page-3 "
+		style="background-image: url(https://junekorea.github.io/img1/ph/interior/modern-minimalist-bathroom-3115450_1280.jpg)">
+		
+		<div class="content-wrap con">
 			<ul class=" box1 row">
-				<li class="content cell"><a href="#">
-						<div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">현관</div>
+							<div class="text En">ENTRANCE</div>
+							<div class="text p">집의 첫 인상을 결정짓는<br>행복의 통로 현관</div>
+							<div class="wrap-b">
+								<div class="text p">주거공간에서 출입을 위한 처음 접하는 공간이자 마지막으로 접하는 공간입니다. </div>
+								<div class="text En">VIEW MORE + </div>
+							</div>
 						</div>
-					</a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
 							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
+							<div class="text En">LIVINGROOM</div>
 							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-			</ul>
-			<ul class=" box2 row">
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
-				<li class="content cell"><a href="#"><div class="wrap">
-							<div class="text title">거실</div>
-							<div class="text En">LIVING ROOM</div>
-							<div class="text p">삶과 여유를 즐길수 있는<br>아름다운 공간</div>
-						</div></a></li>
+							<div class="wrap-b">
+								<div class="text p">거실은 가족 모두가 공유하고 소통하며,생활의 중심이 되는 공간인 동시에 드러나는 공간이기도 합니다.</div>
+								<div class="text En">VIEW MORE + </div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">주방</div>
+							<div class="text En">KITCHEN</div>
+							<div class="text p">가족이 모여 대화하고 함께<br>즐기는 생활 공간 주방</div>
+							<div class="wrap-b">
+								<div class="text p">이제 주방은 단순히 음식을 만들고 식사하는 공간이 아니라, 가족이 모여 대화하고 함께 즐기는 생활공간으로 거듭나고 있습니다. </div>
+								<div class="text En">VIEW MORE + </div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">안방</div>
+							<div class="text En">BEDFOOM</div>
+							<div class="text p">하루의 피로를 풀고<br>대화 및 휴식을 위한 공간 안방</div>
+							<div class="wrap-b">
+								<div class="text p">침실은 오직 부부만이 공유할수 있고 휴식을 위한 공간입니다.</div>
+								<div class="text En">VIEW MORE + </div>
+							</div>
+						</div>
+					</a>
+				</li>
 			</ul>
 
+			<ul class=" box2 row">
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">서재</div>
+							<div class="text En">ENTRANCE</div>
+							<div class="text p">마음의 여유를 가질 수 있는 <br>나만의 공간 서재</div>
+							<div class="wrap-b">
+								<div class="text p"> 요즘 서재는 책을 가득 채운 서재, 음악 감상과 영화 감상을 할 수 있는 서재 등 다양한 용도로 쓰이고 있습니다.  </div>
+								<div class="text En">VIEW MORE +</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">아이방</div>
+							<div class="text En">LIVINGROOM</div>
+							<div class="text p">다양한 용도로 활용<br>가능한 아이방</div>
+							<div class="wrap-b">
+								<div class="text p">활동량이 많고 수납 공간이 충분히 필요하다고 복합적인 기능을 담당해야 하는 아이방은 그에 맞는 큰 공간을 필요로 합니다. </div>
+								<div class="text En">VIEW MORE +</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">공용욕실</div>
+							<div class="text En">KITCHEN</div>
+							<div class="text p">안락하고 휴식을 위한 세커드 리빙룸<br>공용욕실</div>
+
+							<div class="wrap-b">
+								<div class="text p">21세기의 욕실은 단지 생리적인 현상을 해결하는 공간에서 벗어나, 휴식을 위한 '세컨드 리빙룰'으로서의 비전을 담고 있습니다 .</div>
+								<div class="text En">VIEW MORE +</div>
+							</div>
+							</div>
+					</a>
+				</li>
+				<li class="content cell">
+					<a href="#">
+						<div class="wrap-a">
+							<div class="text title">부부욕실</div>
+							<div class="text En">BEDFOOM</div>
+							<div class="text p">심플하고 편안한 여유로운 공간<br>부부욕실</div>
+							<div class="wrap-b">
+								<div class="text p">부부욕실은 하루 동안 쌍인 피로와 스트레스를 날려버릴 수 있도록 여유로우면서 담백하고 세련된 모던 스타일로 꾸미는 것이 최근 트렌드입니다. </div>
+								<div class="text En">VIEW MORE +</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
 		</div>
 
 	</div>
@@ -211,6 +277,7 @@
 	<div class="section page-4"></div>
 	<!-- 페이지5	 -->
 	<div class="section page-5"></div>
-</div>
-</body>
-</html>
+	</div>
+	</body>
+
+	</html>

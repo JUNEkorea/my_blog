@@ -622,57 +622,55 @@ body,html{
 }
 
 /*2페이지구현*/
-.page-2 {}
-
-.page-2 .up-wrap .row {
-	margin: 0 auto;
+.page-2 {
+	overflow: hidden;
 	position: relative;
 }
 
+.page-2 .up-wrap .row {
+	margin: 0 auto;
+}
+/* 이미지 나오는 부분 */
 .page-2 .up-wrap .row>div {
-	width: 33.3333%;
-	background-color: blue;
-}
-
-.page-2 .up-wrap .row > div > img {
-	width: 300px;
-	height: 300px;
-	
-}
-
-.page-2 .up-wrap .row> div > img:first-child {
 	position: absolute;
-	top: 0;
-	left: -1000px;
-	bottom: 0;
-	width: 100%;
-	opacity: 0;
-	transition-delay: 800ms;
-	transition-duration: 800ms;
+	/* background-color: blue; */
+	top:50%;
+	transform: translateY(-50%);
+}
+.page-2 .up-wrap .row>.img-box{
+	z-index: -1;
+}
+.page-2 .up-wrap .row>.img-box:first-child{
+	left: -100%;
+	width: 40%;
+	height: 40%;
+	transition: left 1s;
+}
+.page-2.active .up-wrap .row>.img-box:first-child{
+	transition: left 1s;
+	left: 0%;
 }
 
-.page-2 .up-wrap .row> div > img:nth-child(2) {
-	position: absolute;
-	top: 0;
-	right: -1000px;
-	bottom: 0;
-	width: 100%;
-	opacity: 0;
-	transition-delay: 800ms;
-	transition-duration: 800ms;
+.page-2 .up-wrap .row>.img-box:nth-child(2){
+	right: -100%;
+	width:40%;
+	height: 100%;
+	transition: right 1s;
+}
+.page-2 .up-wrap .row>.img-box:nth-child(2){
+	transition: right 1s;
+	left: 0%;
+}
+/* 이미지 나오는 부분 */
+
+.page-2 .up-wrap .row>.text-box{
+	top:10%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
 }
 
-.page-2.active .up-wrap .row>div>img:first-child {
-	left: 0;
-	opacity: 1;
-}
-
-.page-2.active .up-wrap .row>div>img:nth-child(2) {
-	right: 0;
-	opacity: 1;
-}
-
-/* 메인글 */
+/* 가운데 메인글 */
 .page-2 .up-wrap .row >.text-box {
 	font-size: 15px;
 	color: #cdcdcd;
@@ -680,22 +678,25 @@ body,html{
 	padding: 20px;
 }
 
-.page-2 .up-wrap .row > .text-box > span {
+.page-2 .up-wrap .row > .text-box > div {
 	font-size: 20px;
-	color: grey;
+	color:gold;
 	font-weight: bold;
 }
 
-/*토트폴리오  */
+/*포트폴리오  */
 .page-2 .down-wrap .row {
 	margin: 0 auto;
+	border: 1px solid green;
 	
 }
 
 .page-2 .down-wrap{
-	position: relative;
+	position: absolute;
+	top:60%;
+	left:0;
 }
-
+/* 가운데 롱 마크 줄 */
 .page-2 .down-wrap .long-mark{
 	position:absolute;
 	top:0;
@@ -704,6 +705,7 @@ body,html{
 	height:10px;
 	color:gold;
 	border-top-right-radius: 10px;
+	z-index: 100;
 	/* transform: translateY(1000px);
 	opacity:0; */
 }
@@ -717,6 +719,7 @@ body,html{
 .page-2 .down-wrap .row>div {
 	margin: 0 20px;
 	border : 1px solid red;	
+
 }
 
 .page-2 .down-wrap .row>div>img {
@@ -735,46 +738,92 @@ body,html{
 
 /* 페이지3구현*/
 .page-3 {
-	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .page-3 .content-wrap {
-	width: 100%;
-	/* 	border:1px solid red; */
-	position: absolute;
-	top: 20%;
-	left: 0%;
+	/* border:1px solid red; */
 }
-
+.page-3 .content-wrap ul{
+	/* border:2px solid gold; */
+}
 .page-3 .content-wrap ul>li {
+	/* border:2px solid red; */
+}
+/* 트랜지션변화 */
+.page-3 .content-wrap ul>li>a>.wrap-a {
 	width: 200px;
 	height: 200px;
-	background-color: green;
+	background-color: rgba(48, 47, 47, 0.5);
 	border-radius: 10px;
 	margin: 20px;
+	position:relative;
 }
 
-.page-3 .content-wrap ul>li>a>.wrap {
-	margin: 20px;
+.page-3 .content-wrap ul>li>a>.wrap-a >.wrap-b{
+height:100%;
+width:100%;
+background-color: #65bec0;
+/* border:1px solid red; */
+box-sizing: border-box;
+padding:10px;
+border-radius: 10px;
+transform:rotatey(90deg);
+transition:.3s;
+position:absolute;
+top:0;
+left:0;
 }
 
-.page-3 .content-wrap ul>li>a>.wrap>.text {
+.page-3 .content-wrap ul>li>a>.wrap-a:hover>.wrap-b{
+	transform:rotatey(0deg);
+}
+
+
+.page-3 .content-wrap ul>li>a>.wrap-a>.text {
 	padding: 10px;
 	color: white;
 }
 
-.page-3 .content-wrap ul>li>a>.wrap>.title {
+.page-3 .content-wrap ul>li>a>.wrap-a>.title {
 	font-size: 16px;
 	font-weight: 400;
 }
 
-.page-3 .content-wrap ul>li>a>.wrap>.En {
+.page-3 .content-wrap ul>li>a>.wrap-a>.En {
 	font-size: 14px;
 	font-weight: 700;
 	color: #65bec0;
 }
 
-.page-3 .content-wrap ul>li>a>.wrap>.p {
+.page-3 .content-wrap ul>li>a>.wrap-a>.p {
 	font-size: 12px;
 	font-weight: 200;
 }
+
+
+
+.page-3 .content-wrap ul>li>a>.wrap-a >.wrap-b >.text {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 200;
+	color:white;
+	padding:10px;
+	padding-top:20px;
+}
+
+
+
+.page-3 .content-wrap ul>li>a>.wrap-a >.wrap-b >.En{
+	position : absolute;
+	bottom : 5%;
+	left:0;
+	width:100%;
+	color: gold;
+	font-weight: :700;
+	font-size: 14px;
+
+}
+	
