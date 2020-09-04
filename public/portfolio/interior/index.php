@@ -125,15 +125,15 @@
 		<div class="up-wrap con con-min-width">
 			<div class="row">
 				<div class="img-box cell">
-					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 215100.jpg" alt="">
+					<img src="https://junekorea.github.io/img1/ph/interior/drawing1.png" alt="">
 				</div>
 				<div class="text-box cell">
 					<div>JUNe interior</div>은 "건축의 새물결"을 모토로<br>단순히 변형된 건축물이 아닌,<br>건축물의 모든 요소에 인간이 중심이 되는<br> 새로운 가치,최상의 가치를 부여하며 건축물과 환경이 하나가 되는 새로운<br>양식을 추구합니다.
 
 				</div>
-				<!-- <div class="img-box cell-right">
-					<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 222144.jpg" alt="">
-				</div> -->
+				<div class="img-box cell-right">
+					<img src="https://junekorea.github.io/img1/ph/interior/drawing3.png" alt="">
+				</div>
 			</div>
 		</div>
 		<!-- 포트폴리오 이미지  박스-->
@@ -157,7 +157,7 @@
 	</div>
 	<!-- 페이지3	 -->
 	<div class="section page-3 "
-		style="background-image: url(https://junekorea.github.io/img1/ph/interior/modern-minimalist-bathroom-3115450_1280.jpg)">
+		style="background-image: url(https://junekorea.github.io/img1/ph/interior/bath.jpg)">
 		
 		<div class="content-wrap con">
 			<ul class=" box1 row">
@@ -274,7 +274,36 @@
 
 	</div>
 	<!-- 페이지4	 -->
-	<div class="section page-4"></div>
+	<div class="section page-4 con con-min-width">
+	<div class="container row">
+			<div class="left cell">
+				<div class="sticker example-1">
+					<div class="text-box">
+						<div class="title" >Interior <br> Trend</div>
+						<div class="dot"></div>
+					</div>
+				</div>
+				<div class="sticker example-2">
+					<div class="text-box">
+						<div class="title" >Interior <br> Tip</div>
+						<div class="dot"></div>
+					</div>
+				</div>
+				<div class="sticker example-3">
+					<div class="text-box">
+						<div class="title" >Interior <br> Board</div>
+						<div class="dot"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right cell">
+			<div class=" wrap trend-box">
+				<div class="img-box"></div>
+				<div class="des"></div>
+			</div>
+		</div>
+	</div>
 	<!-- 페이지5	 -->
 	<div class="section page-5"></div>
 	</div>
