@@ -285,6 +285,27 @@
 		</div>
 		<!-- 페이지4	 -->
 		<div class="section page-4 ">
+			<div class="container-wrap">
+				<div class="bg-banner">
+					<img src="https://junekorea.github.io/img1/ph/interior/grid-3227459_1920.jpg" alt="">
+				</div>
+				<div class="box-list con">
+					<ul class="box-1">
+						<li class="item-1">
+							<ul class="list">
+								<li class="img-box"><img src="" alt=""></li>
+								<li class="text-box">
+									<div class="title"></div>
+									<div class="des"></div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 페이지5	 -->
+		<div class="section page-5">
 			<div class="container con con-min-width flex">
 				<div class="left">
 					<!-- 동그람 -->
@@ -304,57 +325,53 @@
 						</div>
 					</div>
 				</div>
-			<div class="right">
-				<div class=" wrap trend-box">
-					<div class="wrap-1 flex">
-						<div class="img-box">
-							<a href="#">
-								<img
-									src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
-									alt="">
-							</a>
-						</div>
-						<div class="text-list">
-								<div class="title"><a href="#">레트로 퓨처리즘</a>	</div>
+				<div class="right">
+					<div class=" wrap trend-box">
+						<div class="wrap-1 flex">
+							<div class="img-box">
+								<a href="#">
+									<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
+										alt="">
+								</a>
+							</div>
+							<div class="text-list">
+								<div class="title"><a href="#">레트로 퓨처리즘</a> </div>
 								<div class="date">2020.9.05</div>
 								<div class="des"><a href="#">안정적인 대칭 구조, 심플한 디자인의 가구를 활용. 시크한 연출.</a></div>
+							</div>
 						</div>
-					</div>	
-					<div class="wrap-1 flex">
-						<div class="img-box">
-							<a href="#">
-								<img
-									src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
-									alt="">
-							</a>
-						</div>
-						<div class="text-list">
-								<div class="title"><a href="#">레트로 퓨처리즘</a>	</div>
+						<div class="wrap-1 flex">
+							<div class="img-box">
+								<a href="#">
+									<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
+										alt="">
+								</a>
+							</div>
+							<div class="text-list">
+								<div class="title"><a href="#">레트로 퓨처리즘</a> </div>
 								<div class="date">2020.9.05</div>
 								<div class="des"><a href="#">안정적인 대칭 구조, 심플한 디자인의 가구를 활용. 시크한 연출.</a></div>
+							</div>
 						</div>
-					</div>	
-					<div class="wrap-1 flex">
-						<div class="img-box">
-							<a href="#">
-								<img
-									src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
-									alt="">
-							</a>
-						</div>
-						<div class="text-list">
-								<div class="title"><a href="#">레트로 퓨처리즘</a>	</div>
+						<div class="wrap-1 flex">
+							<div class="img-box">
+								<a href="#">
+									<img src="https://junekorea.github.io/img1/ph/interior/주석 2020-08-05 211450.jpg"
+										alt="">
+								</a>
+							</div>
+							<div class="text-list">
+								<div class="title"><a href="#">레트로 퓨처리즘</a> </div>
 								<div class="date">2020.9.05</div>
 								<div class="des"><a href="#">안정적인 대칭 구조, 심플한 디자인의 가구를 활용. 시크한 연출.</a></div>
+							</div>
 						</div>
-					</div>					
+					</div>
+
 				</div>
-				
 			</div>
-			</div>
+
 		</div>
-		<!-- 페이지5	 -->
-		<div class="section page-5"></div>
 	</div>
 </body>
 

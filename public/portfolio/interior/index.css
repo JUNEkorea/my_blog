@@ -867,20 +867,57 @@ html {
 }
 
 
-/* 4페이지 구현 */
-/* .page-4 > .container 하면 안되는 이유. > 확인 요망. 그안에 다른 자식이 있다. 풀페이지 */
+/* page4 구현 */
 
-.page-4 .container{
+.page-4 .content-wrap {
+    /* border:1px solid red; */
+}
+.page-4 .container-wrap >.bg-banner{
+    width:100%;
+    opacity: .3;
+    position : relative;
+} 
+
+.page-4 .container-wrap >.bg-banner > img{
+
+}
+
+.page-4 .container-wrap > .box-list{
+    border:1px solid red;
+    position: absolute;
+    top:20%;
+    left:20%;
+    width:80%;
+    height:80%;
+    z-index:1;
+}
+
+.page-4 .container-wrap > .box-list >.box-1{
+    border : 1px solid green;
+}
+
+.page-4 .container-wrap > .box-list >.box-1 > .item-1{
+    border : 1px solid blue;
+}
+
+
+
+
+
+/* 5페이지 구현 */
+/* .page-5 > .container 하면 안되는 이유. > 확인 요망. 그안에 다른 자식이 있다. 풀페이지 */
+
+.page-5 .container{
     /* border:2px solid red; */
 }
-.page-4 .container>.left{
+.page-5 .container>.left{
     /* border:2px solid yellow; */
 }
-.page-4 .container>.right{
+.page-5 .container>.right{
     /* border:2px solid blue; */
 
 }
-.page-4 .container>.left>.sticker {
+.page-5 .container>.left>.sticker {
     width: 180px;
     height: 180px;
     margin:50px, 0;
@@ -890,7 +927,7 @@ html {
  }
 
 
-.page-4 .container>.left>.sticker>.text-box {
+ .page-5 .container>.left>.sticker>.text-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -903,7 +940,7 @@ html {
    
 }
 
-.page-4 .container >.left>.sticker>.tex-box>.dot {
+.page-5 .container >.left>.sticker>.tex-box>.dot {
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -914,60 +951,60 @@ html {
     z-index: 110;
 }
 
-.page-4 .container>.left>.example-1 .sticker-img {
+.page-5 .container>.left>.example-1 .sticker-img {
     background-color: #65bec0;;
     /* border: 5px dashed white;
     box-sizing:border-box; */
 }
 
-.page-4 .container>.left>.example-1 .sticker-shadow {
+.page-5 .container>.left>.example-1 .sticker-shadow {
     opacity: 0.6;
 }
 
-.page-4 .container>.left>.example-2 .sticker-img {
+.page-5 .container>.left>.example-2 .sticker-img {
     background-color:#65bec0;;
 }
 
-.page-4 .container>.left>.example-2 .sticker-shadow {
+.page-5 .container>.left>.example-2 .sticker-shadow {
     opacity: 0.6;
 }
 
-.page-4 .container>.left>.example-3 .sticker-img {
+.page-5 .container>.left>.example-3 .sticker-img {
     background-color: #65bec0;;
 }
 
-.page-4.container>.left>.example-3 .sticker-shadow {
+.page-5.container>.left>.example-3 .sticker-shadow {
     opacity: 0.6;
 }
 
 
-.page-4 .container>.right{
+.page-5 .container>.right{
     margin-left:50px;
 }
 
-.page-4 .container>.right >.trend-box{
+.page-5 .container>.right >.trend-box{
     /* border: 1px solid red; */
 }
 
-.page-4 .container>.right >.trend-box > .wrap-1{
+.page-5 .container>.right >.trend-box > .wrap-1{
     border-bottom : 1px solid rgba(44,44,44,.2);
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.img-box {
+.page-5 .container>.right >.trend-box >.wrap-1 >.img-box {
    
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.img-box > a > img{
+.page-5 .container>.right >.trend-box >.wrap-1 >.img-box > a > img{
     width: 200px;
     height:180px;
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.text-list {
+.page-5 .container>.right >.trend-box >.wrap-1 >.text-list {
     margin-left: 30px;
     /* border: 1px solid greenyellow; */
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.text-list > .title{
+.page-5 .container>.right >.trend-box >.wrap-1 >.text-list > .title{
     font-size: 20px;
     color: rgb(44, 44, 44);
     font-weight: bold;
@@ -976,7 +1013,7 @@ html {
     text-align:left;
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.text-list > .date{
+.page-5 .container>.right >.trend-box >.wrap-1 >.text-list > .date{
     font-size: 14px;
     color: rgb(44, 44, 44);
     font-weight:nomal;
@@ -985,7 +1022,7 @@ html {
     text-align:left;
 }
 
-.page-4 .container>.right >.trend-box >.wrap-1 >.text-list >.des{
+.page-5 .container>.right >.trend-box >.wrap-1 >.text-list >.des{
     font-size: 16px;
     color: rgb(44, 44, 44);
     /* border: 1px solid salmon; */
