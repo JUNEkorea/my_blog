@@ -676,24 +676,24 @@ html {
 
 .page-2.active .up-wrap .row>.img-box:first-child {
     transition: left 1s;
-    left: 0%;
+    left: 15%;
 }
 
-.page-2 .up-wrap .row>.img-box:nth-child(2) {
+.page-2 .up-wrap .row>.img-box:nth-child(3) {
     right: -100%;
     width: 30%;
-    height: 70%;
+    height: 80%;
     transition: right 1s;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-.page-2 .up-wrap .row>.img-box:nth-child(2) {
+.page-2 .up-wrap .row>.img-box:nth-child(3) {
     transition: right 1s;
-    right: 0%;
+    right: 10%;
 }
 
 
-/* 이미지 나오는 부분 */
+/* 이미지 나오는 부분 끝 */
 
 .page-2 .up-wrap .row>.text-box {
     top: 10%;
@@ -707,7 +707,7 @@ html {
 
 .page-2 .up-wrap .row>.text-box {
     font-size: 16 px;
-    color: #cdcdcd;
+    color: #dfdfdf;
     line-height: 40px;
     padding: 20px;
 }
@@ -723,13 +723,13 @@ html {
 
 .page-2 .down-wrap .row {
     margin: 0 auto;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .page-2 .down-wrap {
     position: absolute;
     top: 60%;
-    left: 0;
+    left: 20%;
 }
 
 
@@ -756,7 +756,7 @@ html {
 
 .page-2 .down-wrap .row>div {
     margin: 0 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .page-2 .down-wrap .row>div>img {
@@ -868,29 +868,42 @@ html {
 
 
 /* 4페이지 구현 */
+/* .page-4 > .container 하면 안되는 이유. > 확인 요망. 그안에 다른 자식이 있다. 풀페이지 */
 
-.page-4>.container>.left>.sticker {
+.page-4 .container{
+    /* border:2px solid red; */
+}
+.page-4 .container>.left{
+    /* border:2px solid yellow; */
+}
+.page-4 .container>.right{
+    /* border:2px solid blue; */
+
+}
+.page-4 .container>.left>.sticker {
     width: 180px;
     height: 180px;
-    padding: 70px;
+    margin:50px, 0;
+    margin-bottom:20px;
+    /* border: 1px solid red; */
     position: relative;
-}
+ }
 
-.page-4>.container>.left>.sticker>.text-box>.title {
+
+.page-4 .container>.left>.sticker>.text-box {
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: translatex(-50%) translatey(-50%);
+    transform: translatex(-50%) translatey(-50%);
     z-index: 100;
     font-size: 25px;
     color: white;
     line-height: 40px;
     text-align: center;
+   
 }
 
-.page-4>.container>.left>.sticker>.tex-box>.dot {
-    content: "";
-    border: 2px solid white;
+.page-4 .container >.left>.sticker>.tex-box>.dot {
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -901,26 +914,82 @@ html {
     z-index: 110;
 }
 
-.page-4>.container>.left>.example-1 .sticker-img {
-    background-color: #ff4a85;
+.page-4 .container>.left>.example-1 .sticker-img {
+    background-color: #65bec0;;
+    /* border: 5px dashed white;
+    box-sizing:border-box; */
 }
 
-.page-4>.container>.left>.example-1 .sticker-shadow {
+.page-4 .container>.left>.example-1 .sticker-shadow {
     opacity: 0.6;
 }
 
-.page-4>.container>.left>.example-2 .sticker-img {
-    background-color: #ff4a85;
+.page-4 .container>.left>.example-2 .sticker-img {
+    background-color:#65bec0;;
 }
 
-.page-4>.container>.left>.example-2 .sticker-shadow {
+.page-4 .container>.left>.example-2 .sticker-shadow {
     opacity: 0.6;
 }
 
-.page-4>.container>.left>.example-3 .sticker-img {
-    background-color: #ff4a85;
+.page-4 .container>.left>.example-3 .sticker-img {
+    background-color: #65bec0;;
 }
 
-.page-4>.container>.left>.example-3 .sticker-shadow {
+.page-4.container>.left>.example-3 .sticker-shadow {
     opacity: 0.6;
+}
+
+
+.page-4 .container>.right{
+    margin-left:50px;
+}
+
+.page-4 .container>.right >.trend-box{
+    /* border: 1px solid red; */
+}
+
+.page-4 .container>.right >.trend-box > .wrap-1{
+    border-bottom : 1px solid rgba(44,44,44,.2);
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.img-box {
+   
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.img-box > a > img{
+    width: 200px;
+    height:180px;
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.text-list {
+    margin-left: 30px;
+    /* border: 1px solid greenyellow; */
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.text-list > .title{
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    /* border: 1px solid salmon; */
+    padding: 20px 0;
+    text-align:left;
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.text-list > .date{
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+    font-weight:nomal;
+    /* border: 1px solid salmon; */
+    padding: 20px 0;
+    text-align:left;
+}
+
+.page-4 .container>.right >.trend-box >.wrap-1 >.text-list >.des{
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    /* border: 1px solid salmon; */
+    padding: 20px 0;
+    text-align:left;
+    /* vertical-align: middle; */
 }
