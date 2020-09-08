@@ -288,15 +288,62 @@
 			<div class="container-wrap">
 				<div class="bg-banner">
 					<img src="https://junekorea.github.io/img1/ph/interior/grid-3227459_1920.jpg" alt="">
-				</div>
+</div>
 				<div class="box-list con">
-					<ul class="box-1">
-						<li class="item-1">
+					<ul class="box-1 row">
+						<li class="item-1 cell">
 							<ul class="list">
-								<li class="img-box"><img src="" alt=""></li>
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
 								<li class="text-box">
-									<div class="title"></div>
-									<div class="des"></div>
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
+								</li>
+							</ul>
+						</li>
+						<li class="item-2 cell">
+							<ul class="list">
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
+								<li class="text-box">
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
+								</li>
+							</ul>
+						</li>
+						<li class="item-3 cell">
+							<ul class="list">
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
+								<li class="text-box">
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="box-2 row">
+						<li class="item-4 cell">
+							<ul class="list">
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
+								<li class="text-box">
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
+								</li>
+							</ul>
+						</li>
+						<li class="item-5 cell">
+							<ul class="list">
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
+								<li class="text-box">
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
+								</li>
+							</ul>
+						</li>
+						<li class="item-6 cell">
+							<ul class="list">
+								<li class="img-box"><a href="#"><img src="https://junekorea.github.io/img1/ph/interior/ex3.jpg" alt=""></a></li>
+								<li class="text-box">
+									<div class="title">화이트한 화려함을 보여주는 공간</div>
+									<div class="des">아파트형|26평|오랜지블록</div>
 								</li>
 							</ul>
 						</li>

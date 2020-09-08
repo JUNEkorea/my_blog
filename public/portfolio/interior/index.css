@@ -878,12 +878,8 @@ html {
     position : relative;
 } 
 
-.page-4 .container-wrap >.bg-banner > img{
-
-}
-
 .page-4 .container-wrap > .box-list{
-    border:1px solid red;
+   border: 2px solid green;
     position: absolute;
     top:20%;
     left:20%;
@@ -892,15 +888,14 @@ html {
     z-index:1;
 }
 
-.page-4 .container-wrap > .box-list >.box-1{
-    border : 1px solid green;
+.page-4 .container-wrap > .box-list > ul >li {
+    border: 2px solid purple;
+    width: 300px;
 }
 
-.page-4 .container-wrap > .box-list >.box-1 > .item-1{
-    border : 1px solid blue;
+.page-4 .container-wrap > .box-list > ul >li > ul > li > a >img {
+    width :33%;
 }
-
-
 
 
 
