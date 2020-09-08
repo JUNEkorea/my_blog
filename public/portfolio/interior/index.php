@@ -284,7 +284,7 @@
 
 		</div>
 		<!-- 페이지4	 -->
-		<div class="section page-4 ">
+		<!-- <div class="section page-4 ">
 			<div class="container-wrap">
 				<div class="bg-banner">
 					<img src="https://junekorea.github.io/img1/ph/interior/grid-3227459_1920.jpg" alt="">
@@ -350,7 +350,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- 페이지5	 -->
 		<div class="section page-5">
 			<div class="container con con-min-width flex">
